@@ -1,5 +1,5 @@
 # import xml.etree.ElementTree as ET
-
+import bcrypt
 from django.shortcuts import render
 
 from cafeperfeito.models import *
