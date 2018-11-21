@@ -24,7 +24,7 @@ SECRET_KEY = ')ckgxu=yx+dt8y4177-h%lrozd0i+j-wwhsv^yiv(hshq)u=yp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.cafeperfeito.com.br', 'cafeperfeito.com.br', '127.0.0.1']
 
 # Application definition
 
@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cafeperfeito',
 ]
 
 MIDDLEWARE = [
@@ -72,9 +73,27 @@ WSGI_APPLICATION = 'ftpcafeperfeito.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'cafeperfeito',
+        'USER': 'cafeperfeito',
+        'PASSWORD': 'Tlm487901',
+        'HOST': 'mysql.cafeperfeito.com.br',
+        'PORT': '3306',
+        'TEST': {
+            'NAME': 'testecafeperfeito',
+        },
+        # 'OPTIONS': {
+        #     'init_command': 'SET default_storage_engine=INNODB',
+        # }
+        'OPTIONS': {
+            # 'charset': 'utf8mb4',
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        }
     }
 }
 
@@ -97,11 +116,11 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Internationalization
-# https://docs.djangoproject.com/en/2.1/topics/i18n/
+# https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Manaus'
 
 USE_I18N = True
 
@@ -110,6 +129,8 @@ USE_L10N = True
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.1/howto/static-files/
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '/home/cafeperfeito/www/static'
