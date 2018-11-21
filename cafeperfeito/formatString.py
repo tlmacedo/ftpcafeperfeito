@@ -1,0 +1,12 @@
+import re
+
+
+def formatTelefone(telefones):
+    print('Telefones: [{}]'.format(telefones))
+    listTel = []
+    for tel in telefones:
+        print('tel: [{}]'.format(tel))
+        listTel.insert(re.sub(r'(\d)?(\d{4})(\d{4})', r'\1 \2-\3', tel))
+    return listTel
+# else:
+#     return re.sub(r'(\d)?(\d{4})(\d{4})', r'\1 \2-\3', telefones)
