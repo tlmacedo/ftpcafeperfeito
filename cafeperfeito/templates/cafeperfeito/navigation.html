@@ -1,0 +1,10 @@
+{% extends "cafeperfeito/principal_base.html" %}
+{% block navigation %}
+    <nav>
+        <ul id="nav" class="menu-items">
+            {% for menu_item in menu_itens %}
+                <li value="{{ menu_item }}"><a href="" {{ menu_item.menulabel }}</li>
+            {% endfor %}
+        </ul>
+    </nav>
+{% endblock %}

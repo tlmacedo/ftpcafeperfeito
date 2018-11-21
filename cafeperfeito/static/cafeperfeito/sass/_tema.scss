@@ -1,0 +1,101 @@
+
+.tema {
+  &-#{$tema} {
+    button {
+      background-color: $corPrincipal;
+      color: $corBackground;
+    }
+    .navbar {
+      background-color: $corPrincipal;
+      img {
+        width: 40px;
+        border-radius: 50%;
+        background-color: $corBackground;
+      }
+    }
+
+    .navbar-brand {
+      color: $corBackground;
+
+      &:hover {
+        color: $corBackground;
+      }
+
+      &:active {
+        color: $corBackground;
+      }
+
+      &:focus {
+        color: $corBackground;
+      }
+    }
+
+    .nav {
+      > li {
+        > a {
+          color: $corBackground;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0);
+          }
+
+          &:focus {
+            background-color: rgba(0, 0, 0, 0);
+          }
+        }
+      }
+
+      .open {
+        > a {
+          background-color: rgba(0, 0, 0, 0);
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0);
+          }
+
+          &:focus {
+            background-color: rgba(0, 0, 0, 0);
+          }
+        }
+      }
+    }
+
+    .bars {
+      color: $corPrincipal;
+    }
+
+    .sidebar {
+      .menu {
+        .list {
+          li.active {
+            background-color: rgba(0, 0, 0, 0);
+
+            > :first-child {
+              i, span {
+                color: $corPrincipal;
+              }
+            }
+          }
+
+          .toggled {
+            background-color: rgba(0, 0, 0, 0);
+          }
+
+          .ml-menu {
+            background-color: rgba(0, 0, 0, 0);
+          }
+        }
+      }
+
+      .legal {
+        background-color: $corBackground;
+
+        .copyright {
+          a {
+            color: $corPrincipal !important;
+          }
+        }
+      }
+    }
+  }
+}

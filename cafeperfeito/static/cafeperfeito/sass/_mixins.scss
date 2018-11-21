@@ -1,0 +1,124 @@
+// keyframes mixin
+@mixin keyframes($nome) {
+  @-webkit-keyframes #{$nome} {
+    @content;
+  }
+  //@-moz-keyframes #{$nome} {
+  //  @content;
+  //}
+  //@-ms-keyframes #{$nome} {
+  //  @content;
+  //}
+  @keyframes #{$nome} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content
+  }
+  :-moz-placeholder {
+    @content
+  }
+  ::-moz-placeholder {
+    @content
+  }
+  :-ms-input-placeholder {
+    @content
+  }
+}
+
+@mixin animacao-generica($valor, $animacao: '') {
+  -webkit-animation#{$animacao}: $valor;
+  -moz-animation#{$animacao}: $valor;
+  animation#{$animacao}: $valor;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadowinfo) {
+  -webkit-box-shadow: $shadowinfo;
+  -moz-box-shadow: $shadowinfo;
+  -ms-box-shadow: $shadowinfo;
+  box-shadow: $shadowinfo;
+}
+
+@mixin transform($transform) {
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  -webkit-transform: $transform;
+  transform: $transform;
+}
+
+@mixin transition($transition) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+@mixin three-dots-overflow() {
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin navbar-link-color($textcolor, $navbarcolor, $opacity) {
+  .navbar-brand,
+  .navbar-brand:hover,
+  .navbar-brand:active,
+  .navbar-brand:focus {
+    color: $textcolor;
+  }
+
+  .nav > li > a:hover,
+  .nav > li > a:focus,
+  .nav .open > a,
+  .nav .open > a:hover,
+  .nav .open > a:focus {
+    background-color: transparentize($navbarcolor, $opacity);
+  }
+
+  .nav > li > a {
+    color: $textcolor;
+  }
+
+  .bars {
+    float: left;
+    padding: 10px 20px;
+    font-size: 22px;
+    color: $textcolor;
+    margin-right: 10px;
+    margin-left: -10px;
+    margin-top: 4px;
+  }
+
+  .bars:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
+//height: 250px;
+//width: 250px;
+//margin: 0 auto;
+//background-color: red;
+//animation-name: stretch;
+//animation-duration: 1.5s;
+//animation-timing-function: ease-out;
+//animation-delay: 0;
+//animation-direction: alternate;
+//animation-iteration-count: infinite;
+//animation-fill-mode: none;
+//animation-play-state: running;
+
+
+

@@ -1,0 +1,119 @@
+.background-page-login, .background-page-index {
+    background-image: url("../img/sistema/logo.png");
+}
+
+.imagem-login {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url("../img/sistema/logo.png") no-repeat, center;
+    width: 250px;
+    height: 250px;
+    padding-left: 250px;
+}
+
+.tema-cafe-perfeito button {
+    background-color: #FF6600;
+    color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .navbar {
+    background-color: #FF6600;
+}
+
+.tema-cafe-perfeito .navbar img {
+    width: 40px;
+    border-radius: 50%;
+    background-color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .navbar-brand {
+    color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .navbar-brand:hover {
+    color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .navbar-brand:active {
+    color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .navbar-brand:focus {
+    color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .nav > li > a {
+    color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .nav > li > a:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .nav > li > a:focus {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .nav .open > a {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .nav .open > a:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .nav .open > a:focus {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .bars {
+    color: #FF6600;
+}
+
+.tema-cafe-perfeito .sidebar .menu .list li.active {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .sidebar .menu .list li.active > :first-child i, .tema-cafe-perfeito .sidebar .menu .list li.active > :first-child span {
+    color: #FF6600;
+}
+
+.tema-cafe-perfeito .sidebar .menu .list .toggled {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .sidebar .menu .list .ml-menu {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .sidebar .legal {
+    background-color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .sidebar .legal .copyright a {
+    color: #FF6600 !important;
+}
+
+button {
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+button:hover, button:focus {
+    opacity: 0.6;
+}
+
+/*# sourceMappingURL=cafeperfeito.css.map */
