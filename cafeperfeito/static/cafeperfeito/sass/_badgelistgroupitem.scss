@@ -105,7 +105,7 @@
     }
   }
 
-  @each $key, $val in $siscolors {
+  @each $key, $val in $colors {
     .pl-#{$key} {
       stroke: $val;
     }

@@ -58,7 +58,7 @@
   }
 }
 
-@each $key, $val in $siscolors {
+@each $key, $val in $colors {
   .nav-tabs.tab-col-#{$key} {
     > li {
       > a {

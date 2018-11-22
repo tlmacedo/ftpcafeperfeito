@@ -113,7 +113,7 @@
   }
 }
 
-@each $key, $val in $siscolors {
+@each $key, $val in $colors {
   .bg-#{$key} {
     background-color: $val !important;
     color: #fff;
@@ -127,7 +127,7 @@
   }
 }
 
-@each $key, $val in $siscolors {
+@each $key, $val in $colors {
   .col-#{$key} {
     color: $val !important;
   }

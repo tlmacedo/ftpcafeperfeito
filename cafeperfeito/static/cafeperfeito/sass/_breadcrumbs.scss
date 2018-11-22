@@ -28,7 +28,7 @@
   }
 }
 
-@each $key, $val in $siscolors {
+@each $key, $val in $colors {
   .breadcrumb-col-#{$key} {
     li {
       a {

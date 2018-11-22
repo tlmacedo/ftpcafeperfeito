@@ -123,7 +123,7 @@
   @include border-radius(3px);
 }
 
-@each $key, $val in $siscolors {
+@each $key, $val in $colors {
   .col-#{$key} {
     .navbar {
       @include navbar-link-color(#fff, #000, .95);

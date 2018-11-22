@@ -1,5 +1,5 @@
 ﻿.panel-group {
-  @each $key, $val in $siscolors {
+  @each $key, $val in $colors {
     .panel-col-#{$key} {
       border: 1px solid $val;
 
@@ -83,7 +83,7 @@
 }
 
 .full-body {
-  @each $key, $val in $siscolors {
+  @each $key, $val in $colors {
     .panel-col-#{$key} {
       .panel-body {
         border-top-color: #fff !important;
