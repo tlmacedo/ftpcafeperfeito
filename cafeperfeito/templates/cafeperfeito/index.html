@@ -1,35 +1,5 @@
 {% extends "cafeperfeito/index_base.html" %}
 
 {% block titulo_page %}
-    Café Perfeito.
-{% endblock %}
-
-{% block content %}
-
-    {% if messages %}
-        <ul>
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
-
-    <div class="form-group row">
-        <label for="usuarios">Selecionar usúario</label>
-        <select class="form-control" name="usuarios" id="usuarios" required>
-            {% for usuario in usuarios %}
-                <option value="{{ usuario }}">{{ usuario.apelido }}</option>
-            {% endfor %}
-        </select>
-        <label for="senha">Senha</label>
-        <input type="password" class="form-control" placeholder="Entre com a senha" name="senha" id="senha"
-               required><br>
-        <input type="checkbox" checked="checked"> Lembre-me
-        <button type="submit" value="logar">Login</button>
-        <button type="button" onclick="document.getElementById('caixa-login').style.display='none'" class="cancelbtn">
-            Cancelar
-        </button>
-        {#            <span class="psw">Forgot <a href="#">password?</a></span>#}
-    </div>
-
+    Café Perfeito
 {% endblock %}
