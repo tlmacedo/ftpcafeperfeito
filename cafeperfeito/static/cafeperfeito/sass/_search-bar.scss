@@ -1,0 +1,53 @@
+/* Searchbar =========================================================================== */
+.search-bar {
+  position: fixed;
+  top: -200px;
+  left: 0;
+  z-index: 9999999;
+  width: 100%;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.search-bar.open {
+  top: 0;
+}
+
+.search-bar .search-icon {
+  position: absolute;
+  top: 20px;
+  left: 14px;
+}
+
+.search-bar .search-icon .material-icons {
+  color: #999;
+}
+
+.search-bar .close-search {
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 14px;
+}
+
+.search-bar .close-search .material-icons {
+  color: #999;
+  opacity: 1;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.search-bar .close-search .material-icons:hover {
+  opacity: .5;
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  font-size: 16px;
+  padding: 25px 60px 23px 56px;
+  border: none;
+}
