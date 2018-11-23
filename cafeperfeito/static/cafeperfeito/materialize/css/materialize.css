@@ -1,3 +1,52 @@
+/* RGB */
+.cor-cafeperfeito {
+    background-color: #FF6600 !important;
+}
+
+.cor-cafeperfeito-text {
+    color: #FF6600 !important;
+}
+
+.cor-cafeperfeito.lighten-1 {
+    background-color: #F27D17 !important;
+}
+
+.cor-cafeperfeito-text.text-lighten-1 {
+    color: #F27D17 !important;
+}
+
+.cor-cafeperfeito.lighten-2 {
+    background-color: #FF9E2F !important;
+}
+
+.cor-cafeperfeito-text.text-lighten-2 {
+    color: #FF9E2F !important;
+}
+
+.cor-cafeperfeito.darken-1 {
+    background-color: #C24E00 !important;
+}
+
+.cor-cafeperfeito-text.text-darken-1 {
+    color: #C24E00 !important;
+}
+
+.cor-cafeperfeito.darken-2 {
+    background-color: #913A00 !important;
+}
+
+.cor-cafeperfeito-text.text-darken-2 {
+    color: #913A00 !important;
+}
+
+.cor-cafeperfeito.darken-3 {
+    background-color: #4F2000 !important;
+}
+
+.cor-cafeperfeito-text.text-darken-3 {
+    color: #4F2000 !important;
+}
+
 .materialize-red {
     background-color: #e51c23 !important;
 }
@@ -5605,10 +5654,6 @@ body.keyboard-focused .dropdown-content li:focus {
     transition-property: transform, opacity;
     transform: scale(0);
     pointer-events: none;
-}
-
-.waves-effect.waves-cafe-perfeito .waves-ripple {
-    background-color: #FF6600;
 }
 
 .waves-effect.waves-light .waves-ripple {

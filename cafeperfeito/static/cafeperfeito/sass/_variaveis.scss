@@ -1,4 +1,4 @@
-@import "mixins.scss";
+@import "_mixins";
 
 //$siscolors: (cafe-perfeito: #FF6600, red: #F44336, pink: #E91E63, purple: #9C27B0, deep-purple: #673AB7,
 //        indigo: #3F51B5, blue: #2196F3, light-blue: #03A9F4, cyan: #00BCD4, teal: #009688, green: #4CAF50,
@@ -48,7 +48,7 @@ $painelCertificadoLargura: 500px;
 
 $tema: cafe-perfeito;
 $corPrincipal: $sisColor_cafe-perfeito;
-$corBackground: $sisColor_whiteblack;
+$corSecundaria: $sisColor_whiteblack;
 
 $corJFX-Focus: $corPrincipal;
 $corJFX-Unforcus: $sisColor_black;

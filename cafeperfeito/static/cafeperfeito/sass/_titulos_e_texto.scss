@@ -1,0 +1,11 @@
+h1 {
+  text-align: left;
+  color: #000;
+  padding: 15px;
+
+  .login-sistema & {
+    color: $corPrincipal;
+    text-align: center;
+    font-size: $fontSizeh1;
+  }
+}

@@ -1,7 +1,8 @@
-{% load staticfiles %}
+{% load static %}
 <html>
 <head>
-    <title>{% block titulo_page %} - Login{% endblock %}</title>
+    <title>{% block titulo_page %} - _________{% endblock %}</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,40 +24,7 @@
     <link rel="stylesheet" href="{% static 'cafeperfeito/css/cafeperfeito.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'cafeperfeito/css/animacaoCirculo.css' %}" type="text/css">
 </head>
-
-{#<body class="tema tema-cafe-perfeito background-page">#}
-<body class="login-sistema">
-<h1>Café Perfeito</h1>
-<button onclick="document.getElementById('meu-login').style.display='block'" style="width: auto;">
-    fazer login<i class="material-icons md-18">account_balance_wallet</i>
-</button>
-
-<div id="meu-login" class="modal">
-    <form name="frmlogin" class="modal-content" method="post">
-        <div class="caixa-login">
-            <div class="fecha" onclick="document.getElementById('meu-login').style.display='none'"><i
-                    class="material-icons">close</i></div>
-            <div class="caixa-login logo"></div>
-        </div>
-    </form>
-
-    {#<div id="caixa-login" class="modal caixa-login">#}
-    {#    <form name="formlogin" class="modal-content animate" method="post">#}
-    {#        {% csrf_token %}#}
-    {#        <div class="caixa-imagem-login">#}
-    {#            <div class="fecha-caixa-login material-icons md-18"#}
-    {#                 onclick="document.getElementById('caixa-login').style.display='none'">close#}
-    {#            </div>#}
-    {#            <div class="imagem-login"/>#}
-    {#            <img class="imagem-login" src="{% static 'cafeperfeito/img/sistema/logo.png' %}" alt="Logo">#}
-    {#        </div>#}
-    {##}
-    {#        <div class="container">#}
-    {#            {% block content %}{% endblock %}#}
-    {#        </div>#}
-    {#    </form>#}
-    {#</div>#}
-</div>
+<body>
 
 
 <!-- jQuery - Slim version (=without AJAX) -->
@@ -69,7 +37,6 @@
 <script type="text/javascript" src="{% static 'cafeperfeito/materialize/js/materialize.js' %}"></script>
 <!-- Our Custom CSS -->
 <script type="text/javascript" src="{% static 'cafeperfeito/js/cafeperfeito.js' %}"></script>
-
 </body>
 
 </html>

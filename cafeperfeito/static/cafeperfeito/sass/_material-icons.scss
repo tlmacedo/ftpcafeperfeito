@@ -1,7 +1,11 @@
 .material-icons {
+  &:hover {
+    opacity: 0.6;
+  }
+
   color: $corPrincipal;
   opacity: 1;
-  @include transition(.5s);
+  @include transition(.4s);
 
   &:hover {
     opacity: .6;
@@ -38,4 +42,6 @@
   &.md-48 {
     font-size: 48px;
   }
+
+
 }

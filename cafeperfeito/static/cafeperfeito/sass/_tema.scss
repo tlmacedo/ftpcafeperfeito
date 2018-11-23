@@ -3,37 +3,37 @@
   &-#{$tema} {
     button {
       background-color: $corPrincipal;
-      color: $corBackground;
+      color: $corSecundaria;
     }
     .navbar {
       background-color: $corPrincipal;
       img {
         width: 40px;
         border-radius: 50%;
-        background-color: $corBackground;
+        background-color: $corSecundaria;
       }
     }
 
     .navbar-brand {
-      color: $corBackground;
+      color: $corSecundaria;
 
       &:hover {
-        color: $corBackground;
+        color: $corSecundaria;
       }
 
       &:active {
-        color: $corBackground;
+        color: $corSecundaria;
       }
 
       &:focus {
-        color: $corBackground;
+        color: $corSecundaria;
       }
     }
 
     .nav {
       > li {
         > a {
-          color: $corBackground;
+          color: $corSecundaria;
 
           &:hover {
             background-color: rgba(0, 0, 0, 0);
@@ -88,7 +88,7 @@
       }
 
       .legal {
-        background-color: $corBackground;
+        background-color: $corSecundaria;
 
         .copyright {
           a {
