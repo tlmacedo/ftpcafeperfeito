@@ -166,3 +166,5 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+/cafeperfeito/static/materialize-src/
+/cafeperfeito/static/bootstrap-4.1.3/
