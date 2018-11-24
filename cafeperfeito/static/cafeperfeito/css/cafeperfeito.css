@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .material-icons {
   color: #FF6600;
   opacity: 1;
@@ -66,7 +70,7 @@ h1 {
     font-size: 24px;
 }
 
-.login-sistema label {
+label {
     color: #FF6600;
     padding: 5px 0px 0px 5px;
 }
@@ -75,17 +79,13 @@ h1 {
     color: #FF6600;
 }
 
-.login-sistema input[type=text] {
-    color: #FF6600;
-    padding: 6px 10px;
-}
-
-.login-sistema input[type=password] {
+input {
     color: #FF6600;
     padding: 6px 10px;
 }
 
 .logo-redonda {
+    width: 80%;
     text-align: center;
 }
 
@@ -132,11 +132,6 @@ button:hover .material-icons, button:focus .material-icons {
     justify-content: center;
     margin: 0 auto;
     width: 180px;
-}
-
-div, label, select, input, button {
-    border: 2px solid red;
-    border-color: orange;
 }
 
 .caixa-login {
