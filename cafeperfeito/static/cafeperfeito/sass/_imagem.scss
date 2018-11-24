@@ -1,16 +1,14 @@
-div {
-  .caixa-login {
-    .logo {
-      display: flex;
-      justify-content: center;
-      margin: 0 auto;
-      border-radius: 50%;
-      //-moz-box-sizing: border-box;
-      //box-sizing: border-box;
-      background: url("../img/sistema/logo.png") no-repeat, center;
-      width: $larguraLogoLogin;
-      height: $altutaLogoLogin;
-      //padding-left: $larguraLogoLogin;
-    }
+.logo-redonda {
+  width: $larguraLogoLogin;
+  height: $altutaLogoLogin;
+  text-align: center;
+
+  img {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #eee; // rgba(245, 245, 245, 0.7);
+    width: ($larguraLogoLogin - 5);
+    height: ($altutaLogoLogin - 5);
   }
 }
