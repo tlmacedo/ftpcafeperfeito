@@ -1,10 +1,12 @@
 @import "_variaveis";
 @import "_material-icons";
 @import "_titulos_e_texto";
-
-@import "_searchbar";
-@import "_background";
+@import "_label";
+@import "_select";
+@import "_input";
 @import "_imagem";
-//@import "_tema";
 @import "_botoes";
 @import "_personalizacao";
+@import "searchbar.scss";
+@import "background.scss";
+//@import "_tema";

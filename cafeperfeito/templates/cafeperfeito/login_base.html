@@ -34,17 +34,19 @@
     <form name="frmlogin" class="modal-content" method="post">
         <div class="container-fluid row login">
             <div class="col-1"></div>
-            <div class="col-10 logo-redonda">
+            <div class="col-09 logo-redonda">
                 <img src="../../static/cafeperfeito/img/sistema/logo.png" alt="logo.png">
+                {#                <i class="material-icons md-18 fecha"#}
+                {#                   onclick="document.getElementById('meu-login').style.display='none'">close</i>#}
             </div>
             <div class="col-1">
                 <i class="material-icons md-18 fecha"
                    onclick="document.getElementById('meu-login').style.display='none'">close</i>
             </div>
         </div>
-        <div class="container">
+        {#        <div class="container">#}
             {% block content %}{% endblock %}
-        </div>
+        {#        </div>#}
     </form>
 
     {#<div id="caixa-login" class="modal caixa-login">#}

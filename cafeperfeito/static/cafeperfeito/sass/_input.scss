@@ -1,0 +1,14 @@
+input[type=text] {
+  .login-sistema & {
+    color: $corPrincipal;
+    padding: 6px 10px;
+  }
+}
+
+input[type=password] {
+  .login-sistema & {
+    color: $corPrincipal;
+    padding: 6px 10px;
+  }
+
+}
