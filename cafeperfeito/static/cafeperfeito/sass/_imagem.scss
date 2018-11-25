@@ -1,14 +1,15 @@
 .logo-redonda {
-  width: 80%;
+  //width: 80%;
   //height: $altutaLogoLogin;
-  text-align: center;
+  //text-align: center;
 
   img {
+
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 50%;
     background-color: #eee; // rgba(245, 245, 245, 0.7);
-    width: (($larguraLogoLogin*0.7) - 5);
+    width: ($larguraLogoLogin - 5);
     //height: ($altutaLogoLogin - 5);
   }
 }

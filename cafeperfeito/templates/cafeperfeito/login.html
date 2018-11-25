@@ -1,34 +1,110 @@
-{% extends "cafeperfeito/login_base.html" %}
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="pt-br">
+<head>
+    <title>Café Perfeito - Login</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {#    <link rel="icon" href="../../static/cafeperfeito/img/sistema/icon.iconset/icon_16x16.png">#}
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-{% block titulo_page %}
-    Café Perfeito
-{% endblock %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'cafeperfeito/bootstrap/css/bootstrap.css' %}" type="text/css">
 
-{% block content %}
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext"
+          type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css"/>
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="{% static 'cafeperfeito/materialize/css/materialize.css' %}"
+          media="screen,projection" type="text/css"/>
 
-    {% if messages %}
-        <ul>
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="{% static 'cafeperfeito/css/cafeperfeito.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'cafeperfeito/css/animacaoCirculo.css' %}" type="text/css">
+</head>
 
-    <div class="form-group row">
-        <label for="usuarios">Selecionar usúario</label>
-        <select class="form-control" name="usuarios" id="usuarios" required>
-            {% for usuario in usuarios %}
-                <option value="{{ usuario }}">{{ usuario.apelido }}</option>
-            {% endfor %}
-        </select>
-        <label for="senha">Senha</label>
-        <input type="password" class="txt" placeholder="Entre com a senha" name="senha" id="senha" required><br>
-        <input type="checkbox" checked="checked"> Lembre-me
-        <button type="submit" value="logar">Login</button>
-        <button type="button" onclick="document.getElementById('caixa-login').style.display='none'" class="cancelbtn">
-            Cancelar
-        </button>
-        {#            <span class="psw">Forgot <a href="#">password?</a></span>#}
+{#<body class="tema tema-cafe-perfeito background-page">#}
+{#<body class="login-sistema">#}
+{#<h1>Café Perfeito</h1>#}
+
+<body class="text-center">
+<form class="form-signin" name="frmlogin" method="post">
+    <div class="logo-redonda">
+        <img class="circle responsive-img" src="../../static/cafeperfeito/img/sistema/logo.png" alt="logo.png">
     </div>
+    {% csrf_token %}
+    {#    <h1 class="h3 mb-3 font-weight-normal">Login</h1>#}
+    {#    <label for="inputEmail" class="sr-only">Email address</label>#}
+    <input type="email" id="loginEmail" name="loginEmail" class="form-control" placeholder="Email" required autofocus>
+    {#    <label for="inputPassword" class="sr-only">Password</label>#}
+    <input type="password" id="loginSenha" name="loginSenha" class="form-control" placeholder="Password" required>
+    {#    <div class="checkbox mb-3">#}
+    {#        <label>#}
+    {#            <input type="checkbox" value="remember-me"> Remember me#}
+    {#        </label>#}
+    {#    </div>#}
+    {#    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>#}
+    <button type="submit">Login</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2006-2018</p>
+</form>
 
-{% endblock %}
+
+{#<button onclick="document.getElementById('meu-login').style.display='block'" style="width: auto;">#}
+{#    fazer login<i class="material-icons md-18">account_balance_wallet</i>#}
+{#</button>#}
+{#<div id="meu-login" class="modal">#}
+{#    <form name="frmlogin" class="modal-content" method="post">#}
+{#        <div class="container-fluid">#}
+{#            <div class="row valign-wrapper">#}
+{#                <div class="col s11">#}
+{#                    <img src="../../static/cafeperfeito/img/sistema/background-user-img.jpg" class="circle responsive-img"#}
+{#                         alt="logo.png">#}
+{#                </div>#}
+{#                <div class="col s1">#}
+{#                    <span class="material-icons md-18"#}
+{#                       onclick="document.getElementById('meu-login').style.display='none'">close</span>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="container">#}
+{#        {% block content %}{% endblock %}#}
+{#        </div>#}
+{#    </form>#}
+{##}
+{#<div id="caixa-login" class="modal caixa-login">#}
+{#    <form name="formlogin" class="modal-content animate" method="post">#}
+{#        {% csrf_token %}#}
+{#        <div class="caixa-imagem-login">#}
+{#            <div class="fecha-caixa-login material-icons md-18"#}
+{#                 onclick="document.getElementById('caixa-login').style.display='none'">close#}
+{#            </div>#}
+{#            <div class="imagem-login"/>#}
+{#            <img class="imagem-login" src="{% static 'cafeperfeito/img/sistema/logo.png' %}" alt="Logo">#}
+{#        </div>#}
+{##}
+{#        <div class="container">#}
+{#            {% block content %}{% endblock %}#}
+{#        </div>#}
+{#    </form>#}
+{#</div>#}
+{#</div>#}
+
+
+{#<!-- jQuery - Slim version (=without AJAX) -->#}
+{#<script type="text/javascript" src="{% static 'cafeperfeito/jquery/jquery-3.3.1.js' %}"></script>#}
+{#<!-- Popper.JS -->#}
+{#<script type="text/javascript" src="{% static 'cafeperfeito/bootstrap/js/bootstrap.bundle.js' %}"></script>#}
+{#<!-- Bootstrap JS -->#}
+{#<script type="text/javascript" src="{% static 'cafeperfeito/bootstrap/js/bootstrap.js' %}"></script>#}
+{#<!--JavaScript at end of body for optimized loading-->#}
+{#<script type="text/javascript" src="{% static 'cafeperfeito/materialize/js/materialize.js' %}"></script>#}
+{#<!-- Our Custom CSS -->#}
+{#<script type="text/javascript" src="{% static 'cafeperfeito/js/cafeperfeito.js' %}"></script>#}
+
+</body>
+
+</html>

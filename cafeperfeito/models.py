@@ -176,12 +176,12 @@ class Uf(models.Model):
 
 class Usuario(models.Model):
     id = models.OneToOneField(Colaborador, models.DO_NOTHING, db_column='id', primary_key=True)
-    situacao = models.IntegerField(blank=True, null=True)
     senha = models.CharField(max_length=60, blank=True, null=True)
+    email = models.CharField(max_length=120, blank=False, null=False)
 
     class Meta:
         managed = False
         db_table = 'usuario'
 
-    def get_Usuario_Senha(self, nusuario):
-        return Usuario.objects.values_list('id__nome', 'senha').get(id__nome=nusuario)
+    def get_Usuario_Senha(self, mailusuario):
+        return Usuario.objects.values_list('email', 'senha').get(email=mailusuario)

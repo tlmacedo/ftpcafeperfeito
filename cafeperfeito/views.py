@@ -73,13 +73,10 @@ def index(request):
     #         # print("5|-----> %s" % filho.getAttribute)
 
     if request.method == 'POST':
-        nusuario = request.POST.get('usuarios')
-        nsenha = request.POST.get('senha')
+        mailusuario = request.POST.get('loginEmail')
+        nsenha = request.POST.get('loginSenha')
 
-        # usuario = Tabcolaborador.autentica_login('', nusuario)
-        usuario = Usuario.get_Usuario_Senha('', nusuario)
-        print('usuario::', usuario[0])
-        print('senha::', usuario[1])
+        usuario = Usuario.get_Usuario_Senha('', mailusuario)
         if usuario is None:
             print('Usuario não existe')
         else:
@@ -92,8 +89,7 @@ def index(request):
 
     # else:
     #     messages.error(request, 'Error wrong username/password')
-    usuarios = Colaborador.objects.all()
-    return render(request, 'cafeperfeito/login.html', {'usuarios': usuarios})
+    return render(request, 'cafeperfeito/login.html')
 
     # colaboradores = Colaborador.objects.select_related('cargo').all()
     # print('colaboradores.count {}'.format(colaboradores.count()))
