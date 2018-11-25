@@ -2,10 +2,10 @@ img {
   .logo-abertura & {
     position: relative;
     top: -50px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border-radius: 50%;
-    background-color: #eee; // rgba(245, 245, 245, 0.7);
-    width: ($larguraLogoLogin - 5);
+    width: ($larguraLogoLogin - 15);
+    //-moz-box-sizing: border-box;
+    //box-sizing: border-box;
+    //border-radius: 50%;
+    //background-color: #eee; // rgba(245, 245, 245, 0.7);
   }
 }

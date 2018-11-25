@@ -194,11 +194,7 @@ button:hover .material-icons, button:focus .material-icons {
 .logo-abertura img {
     position: relative;
     top: -50px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border-radius: 50%;
-    background-color: #eee;
-    width: 245px;
+    width: 235px;
 }
 
 /*# sourceMappingURL=cafeperfeito.css.map */
