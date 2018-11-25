@@ -89,7 +89,7 @@ def index(request):
 
     # else:
     #     messages.error(request, 'Error wrong username/password')
-    return render(request, 'cafeperfeito/login.html')
+    return render(request, 'cafeperfeito/index.html')
 
     # colaboradores = Colaborador.objects.select_related('cargo').all()
     # print('colaboradores.count {}'.format(colaboradores.count()))
