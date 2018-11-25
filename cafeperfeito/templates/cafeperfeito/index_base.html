@@ -27,9 +27,9 @@
     <link rel="stylesheet" href="{% static 'cafeperfeito/css/animacaoCirculo.css' %}" type="text/css">
 </head>
 
-<body class="tema tema-cafe-perfeito">
+<body>
 <!-- Page Loader -->
-<div id="logo" class="tela-branca">
+<div id="logo" class="logo-abertura tela-branca">
     <div class="hoja">
         <img src="../../static/cafeperfeito/img/sistema/logo.png">
     </div>
@@ -39,29 +39,39 @@
 <div class="overlay"></div>
 <!-- #END# Overlay For Sidebars -->
 <!-- Search Bar -->
-{#<div class="search-bar">#}
-{#    <div class="search-icon">#}
-{#        <i class="material-icons">search</i>#}
-{#    </div>#}
-{#    <input type="text" placeholder="Pesquisar por...">#}
-{#    <div class="close-search">#}
-{#        <i class="material-icons">close</i>#}
-{#    </div>#}
-{#</div>#}
+<div class="search-bar" style="display: none;">
+    <div class="search-icon">
+        <i class="material-icons">search</i>
+    </div>
+    <input type="text" placeholder="Pesquisar por...">
+    <div class="close-search">
+        <i class="material-icons">close</i>
+    </div>
+</div>
 <!-- #END# Search Bar -->
-<!-- Top Bar -->
-<nav class="navbar navbar-light fixed-top bg-light flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><img src="../../static/cafeperfeito/img/sistema/logo.png"
-                                                                 alt="logo.png" height="50"></a>
-    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-    <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-            <a class="nav-link" href="#">Sair</a>
-        </li>
-    </ul>
-</nav>
-<!-- #Top Bar -->
-
+<!-- Header -->
+<header id="top">
+    <div class="container-fluid" style="visibility: visible;">
+        <div class="row">
+            <div class="col-3">
+                <a id="logo" href="http://www.cafeperfeito.com.br/ftpcafeperfeito">
+                    <img src="../../static/cafeperfeito/img/sistema/Assinatura03CafePerfeito.png" alt="logo.png"
+                         height="45">
+                </a>
+            </div>
+            <div class="col-9">
+                <ul class="nav navbar-nav">
+                    <!-- Call Search -->
+                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i
+                            class="material-icons md-28">search</i></a>
+                    </li>
+                    <!-- #END# Call Search -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- #END# HEADER -->
 
 <!-- jQuery - Slim version (=without AJAX) -->
 <script type="text/javascript" src="{% static 'cafeperfeito/jquery/jquery-3.3.1.js' %}"></script>
@@ -74,5 +84,4 @@
 <!-- Our Custom CSS -->
 <script type="text/javascript" src="{% static 'cafeperfeito/js/cafeperfeito.js' %}"></script>
 </body>
-
 </html>

@@ -51,5 +51,5 @@ $(function () {
 
     setTimeout(function () {
         $('#logo').fadeOut();
-    }, 1000);
+    }, 30000);
 });
