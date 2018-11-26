@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="{% static 'cafeperfeito/css/animacaoCirculo.css' %}" type="text/css">
 </head>
 
-<body>
+<body class="tema tema-cafe-perfeito">
 <!-- Page Loader -->
 <div id="logo" class="logo-abertura tela-branca">
     <div class="hoja">
@@ -39,38 +39,52 @@
 <div class="overlay"></div>
 <!-- #END# Overlay For Sidebars -->
 <!-- Search Bar -->
-<div class="search-bar" style="display: none;">
-    <div class="search-icon">
-        <i class="material-icons">search</i>
-    </div>
+<div class="search-bar">
+    {#    <div class="search-icon">#}
+    {#        <i class="material-icons">search</i>#}
+    {#    </div>#}
     <input type="text" placeholder="Pesquisar por...">
-    <div class="close-search">
-        <i class="material-icons">close</i>
-    </div>
+    {#    <div class="close-search">#}
+    {#        <i class="material-icons">close</i>#}
+    {#    </div>#}
 </div>
 <!-- #END# Search Bar -->
 <!-- Header -->
-<header id="top">
-    <div class="container-fluid" style="visibility: visible;">
-        <div class="row">
-            <div class="col-3">
-                <a id="logo" href="http://www.cafeperfeito.com.br/ftpcafeperfeito">
-                    <img src="../../static/cafeperfeito/img/sistema/Assinatura03CafePerfeito.png" alt="logo.png"
-                         height="45">
-                </a>
-            </div>
-            <div class="col-9">
-                <ul class="nav navbar-nav">
-                    <!-- Call Search -->
-                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i
-                            class="material-icons md-28">search</i></a>
-                    </li>
-                    <!-- #END# Call Search -->
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
+<nav class="navbar fixed-top flex-md-nowrap">
+    <a id="logo" class="navbar-brand col-sm-3 col-md-2 mr-0" href="http://www.cafeperfeito.com.br/ftpcafeperfeito">
+        <img src="../../static/cafeperfeito/img/sistema/logo.png" alt="logo.png"
+             height="45">
+    </a>
+    <ul class="nav navbar-nav">
+        <!-- Call Search -->
+        <li><a href="javascript:void(0);" class="js-search" data-close="true"><i
+                class="material-icons md-28">search</i></a>
+        </li>
+        <!-- #END# Call Search -->
+    </ul>
+
+    {#    <div class="row">#}
+    {#        <div class="col-3">#}
+    {#            <a id="logo" href="http://www.cafeperfeito.com.br/ftpcafeperfeito">#}
+    {#                <img src="../../static/cafeperfeito/img/sistema/Assinatura03CafePerfeito.png" alt="logo.png"#}
+    {#                     height="45">#}
+    {#            </a>#}
+    {#            <div class="col-9">#}
+    {#                <ul class="nav navbar-nav">#}
+    {#                    <!-- Call Search -->#}
+    {#                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i#}
+    {#                            class="material-icons md-28">search</i></a>#}
+    {#                    </li>#}
+    {#                    <!-- #END# Call Search -->#}
+    {#                </ul>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+</nav>
+{#<nav id="top">#}
+{#    <div class="container-fluid">#}
+{#    </div>#}
+{#</nav>#}
 <!-- #END# HEADER -->
 
 <!-- jQuery - Slim version (=without AJAX) -->

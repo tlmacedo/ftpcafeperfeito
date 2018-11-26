@@ -6,96 +6,100 @@
       color: $corSecundaria;
     }
     .navbar {
-      background-color: $corPrincipal;
+      background-color: transparent;
       img {
-        width: 40px;
+        height: 50px;
         border-radius: 50%;
         background-color: $corSecundaria;
       }
-    }
 
-    .navbar-brand {
-      color: $corSecundaria;
-
-      &:hover {
-        color: $corSecundaria;
-      }
-
-      &:active {
-        color: $corSecundaria;
-      }
-
-      &:focus {
+      .material-icons {
         color: $corSecundaria;
       }
     }
 
-    .nav {
-      > li {
-        > a {
-          color: $corSecundaria;
-
-          &:hover {
-            background-color: rgba(0, 0, 0, 0);
-          }
-
-          &:focus {
-            background-color: rgba(0, 0, 0, 0);
-          }
-        }
-      }
-
-      .open {
-        > a {
-          background-color: rgba(0, 0, 0, 0);
-
-          &:hover {
-            background-color: rgba(0, 0, 0, 0);
-          }
-
-          &:focus {
-            background-color: rgba(0, 0, 0, 0);
-          }
-        }
-      }
-    }
-
-    .bars {
-      color: $corPrincipal;
-    }
-
-    .sidebar {
-      .menu {
-        .list {
-          li.active {
-            background-color: rgba(0, 0, 0, 0);
-
-            > :first-child {
-              i, span {
-                color: $corPrincipal;
-              }
-            }
-          }
-
-          .toggled {
-            background-color: rgba(0, 0, 0, 0);
-          }
-
-          .ml-menu {
-            background-color: rgba(0, 0, 0, 0);
-          }
-        }
-      }
-
-      .legal {
-        background-color: $corSecundaria;
-
-        .copyright {
-          a {
-            color: $corPrincipal !important;
-          }
-        }
-      }
-    }
+    //  .navbar-brand {
+    //    color: $corSecundaria;
+    //
+    //    &:hover {
+    //      color: $corSecundaria;
+    //    }
+    //
+    //    &:active {
+    //      color: $corSecundaria;
+    //    }
+    //
+    //    &:focus {
+    //      color: $corSecundaria;
+    //    }
+    //  }
+    //
+    //  .nav {
+    //    > li {
+    //      > a {
+    //        color: $corSecundaria;
+    //
+    //        &:hover {
+    //          background-color: rgba(0, 0, 0, 0);
+    //        }
+    //
+    //        &:focus {
+    //          background-color: rgba(0, 0, 0, 0);
+    //        }
+    //      }
+    //    }
+    //
+    //    .open {
+    //      > a {
+    //        background-color: rgba(0, 0, 0, 0);
+    //
+    //        &:hover {
+    //          background-color: rgba(0, 0, 0, 0);
+    //        }
+    //
+    //        &:focus {
+    //          background-color: rgba(0, 0, 0, 0);
+    //        }
+    //      }
+    //    }
+    //  }
+    //
+    //  .bars {
+    //    color: $corPrincipal;
+    //  }
+    //
+    //  .sidebar {
+    //    .menu {
+    //      .list {
+    //        li.active {
+    //          background-color: rgba(0, 0, 0, 0);
+    //
+    //          > :first-child {
+    //            i, span {
+    //              color: $corPrincipal;
+    //            }
+    //          }
+    //        }
+    //
+    //        .toggled {
+    //          background-color: rgba(0, 0, 0, 0);
+    //        }
+    //
+    //        .ml-menu {
+    //          background-color: rgba(0, 0, 0, 0);
+    //        }
+    //      }
+    //    }
+    //
+    //    .legal {
+    //      background-color: $corSecundaria;
+    //
+    //      .copyright {
+    //        a {
+    //          color: $corPrincipal !important;
+    //        }
+    //      }
+    //    }
+    //  }
   }
 }
