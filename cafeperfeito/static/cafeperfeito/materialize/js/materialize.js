@@ -1528,8 +1528,7 @@ M.throttle = function (func, wait, options) {
         return result;
     };
 };
-;
-/*
+; /*
   v2.2.0
   2017 Julian Garnier
   Released under the MIT license
@@ -5204,8 +5203,7 @@ var $jscomp$this = this;
         M.initializeJqueryWrapper(Tooltip, 'tooltip', 'M_Tooltip');
     }
 })(cash, M.anime);
-;
-/*!
+; /*!
   * Waves v0.6.4
   * http://fian.my.id/Waves
   *

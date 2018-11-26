@@ -1,92 +1,91 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-div, label, select, input, button {
-    border: 2px solid red;
-    border-color: orange;
+.pointer {
+  cursor: pointer;
 }
 
 .material-icons {
   color: #FF6600;
   opacity: 1;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .material-icons:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .material-icons:hover {
-    opacity: .6;
+  opacity: .6;
 }
 
 .material-icons.md-18 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .material-icons.md-24 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .material-icons.md-26 {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 .material-icons.md-28 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .material-icons.md-30 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .material-icons.md-32 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .material-icons.md-36 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .material-icons.md-48 {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .material-icons.fecha {
     position: relative;
     top: -3px;
     right: -20px;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #f5f5f5;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
 }
 
 .form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: auto;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
 }
 
 .form-signin .checkbox {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .form-signin .form-control {
@@ -94,126 +93,183 @@ body {
     box-sizing: border-box;
     height: auto;
     padding: 10px;
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .form-signin .form-control:focus {
-    z-index: 2;
+  z-index: 2;
 }
 
 .form-signin input[type="email"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .form-signin input[type="password"] {
     margin-bottom: 10px;
     border-top-left-radius: 0;
-    border-top-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
 button {
-    color: black;
-    background-color: transparent;
-    border-radius: 8px;
-    border: 2px solid #FF6600;
-    font-size: 16px;
-    margin: 4px 2px;
-    padding: 16px 32px;
-    text-align: center;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+  color: black;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 2px solid #FF6600;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 16px 32px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 button:hover, button:focus {
     background-color: #FF6600;
-    color: #e9e9e9;
+  color: #e9e9e9;
 }
 
 button:hover .material-icons, button:focus .material-icons {
-    color: #e9e9e9;
+  color: #e9e9e9;
 }
 
 .logo-abertura img {
-    position: relative;
-    top: -50px;
-    width: 235px;
+  position: relative;
+  top: -50px;
+  width: 235px;
 }
 
 .search-bar {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    z-index: 9999999;
-    width: 100%;
-    -moz-transition: 0.25s;
-    -o-transition: 0.25s;
-    -webkit-transition: 0.25s;
-    transition: 0.25s;
+  position: fixed;
+  background-color: white;
+  top: -200px;
+  left: 0px;
+  height: 65px;
+  z-index: 9999999;
+  width: 100%;
 }
 
-.search-bar .open {
-    top: 0;
+.search-bar.open {
+  top: 0px;
 }
 
 .search-bar .search-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-}
-
-.search-bar .search-icon .material-icons {
-    font-size: 32px;
-    color: #999;
+  position: absolute;
+  top: 16px;
+  left: 14px;
 }
 
 .search-bar .close-search {
     position: absolute;
     cursor: pointer;
-    font-size: 30px;
     top: 16px;
-    right: 18px;
-}
-
-.search-bar .close-search .material-icons {
-    color: #999;
-    opacity: 1;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-}
-
-.search-bar .close-search .material-icons:hover {
-    opacity: .5;
+  right: 14px;
 }
 
 .search-bar input[type="text"] {
     width: 100%;
+  left: 0px;
     font-size: 16px;
-    padding: 25px 60px 23px 56px;
-    border: none;
+  padding: 8px 60px 2px 55px;
+}
+
+.search-bar input[type="text"]:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: -webkit-focus-ring-color auto 0px;
+  background-color: #fafafa;
+}
+
+.background-page-login, .background-page-index {
+  background-image: url("../img/sistema/logo.png");
 }
 
 .tema-cafe-perfeito button {
-    background-color: #FF6600;
-    color: #e9e9e9;
+  background-color: #FF6600;
+  color: #e9e9e9;
 }
-
 .tema-cafe-perfeito .navbar {
-    background-color: transparent;
+  background-color: #FF6600;
 }
 
 .tema-cafe-perfeito .navbar img {
-    height: 50px;
+  width: 40px;
     border-radius: 50%;
-    background-color: #e9e9e9;
+  background-color: #e9e9e9;
 }
 
 .tema-cafe-perfeito .navbar .material-icons {
-    color: #e9e9e9;
+  color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .navbar-brand {
+  color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .navbar-brand:hover {
+  color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .navbar-brand:active {
+  color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .navbar-brand:focus {
+  color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .nav > li > a {
+  color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .nav > li > a:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .nav > li > a:focus {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .nav .open > a {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .nav .open > a:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .nav .open > a:focus {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .bars {
+  color: #FF6600;
+}
+
+.tema-cafe-perfeito .sidebar .menu .list li.active {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .sidebar .menu .list li.active > :first-child i, .tema-cafe-perfeito .sidebar .menu .list li.active > :first-child span {
+  color: #FF6600;
+}
+
+.tema-cafe-perfeito .sidebar .menu .list .toggled {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .sidebar .menu .list .ml-menu {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tema-cafe-perfeito .sidebar .legal {
+  background-color: #e9e9e9;
+}
+
+.tema-cafe-perfeito .sidebar .legal .copyright a {
+  color: #FF6600 !important;
 }
 
 /*# sourceMappingURL=cafeperfeito.css.map */

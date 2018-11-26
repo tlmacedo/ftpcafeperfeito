@@ -1,5 +1,8 @@
-// var $ = django.jQuery;
 $.CafePerfeito = {};
+
+function showMsg(msg) {
+    alert(msg)
+}
 
 /* Searchbar - Function ================================================================================================
 *  You can manage the search bar
@@ -30,14 +33,15 @@ $.CafePerfeito.search = {
     showSearchBar: function () {
         $searchBar.addClass('open');
         $searchBar.find('input[type="text"]').focus();
+        // showMsg("estou no SearchBar")
     },
     hideSearchBar: function () {
         $searchBar.removeClass('open');
         $searchBar.find('input[type="text"]').val('');
+        // showMsg("estou no SearchBar")
     }
 }
 //==========================================================================================================================
-
 
 $(function () {
     $.CafePerfeito.search.activate();

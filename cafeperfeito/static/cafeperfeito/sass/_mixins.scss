@@ -1,3 +1,12 @@
+// Webkit-style focus
+@mixin tab-focus() {
+  // Default
+  outline: thin dotted;
+  // Webkit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;

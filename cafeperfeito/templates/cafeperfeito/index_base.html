@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 {% load staticfiles %}
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <title>Café Perfeito - Principal</title>
@@ -25,6 +25,11 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="{% static 'cafeperfeito/css/cafeperfeito.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'cafeperfeito/css/animacaoCirculo.css' %}" type="text/css">
+    <style type="text/css">
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+        }
+    </style>
 </head>
 
 <body class="tema tema-cafe-perfeito">
@@ -40,12 +45,12 @@
 <!-- #END# Overlay For Sidebars -->
 <!-- Search Bar -->
 <div class="search-bar">
-    {#    <div class="search-icon">#}
-    {#        <i class="material-icons">search</i>#}
-    {#    </div>#}
+    <div class="search-icon">
+        <i class="material-icons">search</i>
+    </div>
     <input type="text" placeholder="Pesquisar por...">
     {#    <div class="close-search">#}
-    {#        <i class="material-icons">close</i>#}
+    <i class="close-search material-icons">close</i>
     {#    </div>#}
 </div>
 <!-- #END# Search Bar -->
@@ -57,8 +62,10 @@
     </a>
     <ul class="nav navbar-nav">
         <!-- Call Search -->
-        <li><a href="javascript:void(0);" class="js-search" data-close="true"><i
-                class="material-icons md-28">search</i></a>
+        <li>
+            {#            <a class="search-icon js-search">#}
+            <i class="js-search pointer material-icons md-28 search-icon">search</i></a>
+            {#            </a>#}
         </li>
         <!-- #END# Call Search -->
     </ul>
