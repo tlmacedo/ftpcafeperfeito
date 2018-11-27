@@ -7,10 +7,11 @@
     }
 
     .navbar {
-      background-color: transparent;
+      background-color: $corPrincipal;
 
       img {
-        width: 40px;
+        position: relative;
+        top: 5px;
         border-radius: 50%;
         background-color: $corSecundaria;
       }
