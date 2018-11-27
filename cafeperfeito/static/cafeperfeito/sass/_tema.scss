@@ -7,7 +7,7 @@
     }
 
     .navbar {
-      background-color: $corPrincipal;
+      background-color: transparent;
 
       img {
         width: 40px;
@@ -21,6 +21,11 @@
     }
 
     .navbar-brand {
+      a {
+        position: absolute;
+        left: 0px;
+      }
+
       color: $corSecundaria;
 
       &:hover {

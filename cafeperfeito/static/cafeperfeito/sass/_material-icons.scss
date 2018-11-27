@@ -3,6 +3,12 @@
     opacity: 0.6;
   }
 
+  .search-icon {
+    position: absolute;
+    top: 16px;
+    right: 14px;
+  }
+
   color: $corPrincipal;
   opacity: 1;
   @include transition(.4s);
