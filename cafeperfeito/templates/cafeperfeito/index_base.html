@@ -49,53 +49,21 @@
 {#    </div>#}
 {#</div>#}
 <!-- #END# Search Bar -->
-<!-- Header -->
-{#<nav class="navbar fixed-top navbar-expand-lg">#}
-{#    <div class="container-fluid">#}
-{#        <a class="navbar-brand" style="font-size: 30px;" href="http://www.cafeperfeito.com.br/ftpcafeperfeito">#}
-{#            <img src="../../static/cafeperfeito/img/sistema/logo.png" alt="logo.png"#}
-{#                 class="d-inline-block align-top"#}
-{#                 height="45"> CafePerfeito#}
-{#        </a>#}
-{#        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"#}
-{#                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">#}
-{#            <span class="navbar-toggler-icon"></span>#}
-{#        </button>#}
-{#        <div class="collapse navbar-collapse" id="navbarNav">#}
-{#            <ul class="navbar-nav ml-auto">#}
-{#                <li>#}
-{#                </li>#}
-{#            </ul>#}
-{#        </div>#}
-{#        <!-- Call Search -->#}
-{#        <a class="search-icon js-search">#}
-{#            <i class="js-search pointer material-icons md-28 search-icon">search</i></a>#}
-{#        </a>#}
-{#        <!-- #END# Call Search -->#}
-{##}
-{#    </div>#}
-{#</nav>#}
-<!-- #END# Header -->
-
-
 <div class="wrapper">
+    <!-- Header -->
     <!-- Sidebar Holder -->
     <nav id="sidebar">
         <div class="sidebar-header">
             <h3>Header as you want </h3>
             </h3>
         </div>
-
         <ul class="list-unstyled components">
             <p>Dummy Heading</p>
             <li class="active">
                 <a href="#menu">Animación</a>
-
             </li>
             <li>
                 <a href="#menu">Ilustración</a>
-
-
             </li>
             <li>
                 <a href="#menu">Interacción</a>
@@ -109,33 +77,60 @@
             <li>
                 <a href="#">contacto</a>
             </li>
-
-
         </ul>
-
-
     </nav>
 
     <!-- Page Content Holder -->
     <div id="content">
-
-        <nav class="navbar navbar-default">
+        <nav class="navbar fixed-top navbar-expand-lg">
             <div class="container-fluid">
-
-                <div class="navbar-header">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                        <i class="glyphicon glyphicon-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button>
-                </div>
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Page</a></li>
+                <a class="navbar-brand" style="font-size: 30px;" href="http://www.cafeperfeito.com.br/ftpcafeperfeito">
+                    <img src="../../static/cafeperfeito/img/sistema/logo.png" alt="logo.png"
+                         class="d-inline-block align-top"
+                         height="45"> CafePerfeito
+                </a>
+                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                    <i class="glyphicon glyphicon-align-left"></i>
+                    <span>Toggle Sidebar</span>
+                </button>
+                {#                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"#}
+                {#                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">#}
+                {#                    <span class="navbar-toggler-icon"></span>#}
+                {#                </button>#}
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li>
+                        </li>
                     </ul>
                 </div>
+                <!-- Call Search -->
+                <a class="search-icon js-search">
+                    <i class="js-search pointer material-icons md-28 search-icon">search</i></a>
+                </a>
+                <!-- #END# Call Search -->
+
             </div>
         </nav>
+        <!-- #END# Header -->
+
+
+        {#        <nav class="navbar navbar-default">#}
+        {#            <div class="container-fluid">#}
+        {##}
+        {#                <div class="navbar-header">#}
+        {#                    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">#}
+        {#                        <i class="glyphicon glyphicon-align-left"></i>#}
+        {#                        <span>Toggle Sidebar</span>#}
+        {#                    </button>#}
+        {#                </div>#}
+        {##}
+        {#                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">#}
+        {#                    <ul class="nav navbar-nav navbar-right">#}
+        {#                        <li><a href="#">Page</a></li>#}
+        {#                    </ul>#}
+        {#                </div>#}
+        {#            </div>#}
+        {#        </nav>#}
 
 
     </div>
