@@ -1,76 +1,99 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .pointer {
-  cursor: pointer;
+    cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    #content.active {
+        width: calc(100% - 250px);
+    }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+}
 .material-icons {
   color: #FF6600;
   opacity: 1;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
   -webkit-transition: 0.4s;
-  transition: 0.4s;
+    transition: 0.4s;
 }
 
 .material-icons:hover {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 .material-icons .search-icon {
     position: absolute;
     top: 16px;
-  right: 14px;
+    right: 14px;
 }
 
 .material-icons:hover {
-  opacity: .6;
+    opacity: .6;
 }
 
 .material-icons.md-18 {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .material-icons.md-24 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 .material-icons.md-26 {
-  font-size: 26px;
+    font-size: 26px;
 }
 
 .material-icons.md-28 {
-  font-size: 28px;
+    font-size: 28px;
 }
 
 .material-icons.md-30 {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 .material-icons.md-32 {
-  font-size: 32px;
+    font-size: 32px;
 }
 
 .material-icons.md-36 {
-  font-size: 36px;
+    font-size: 36px;
 }
 
 .material-icons.md-48 {
-  font-size: 48px;
+    font-size: 48px;
 }
 
 .material-icons.fecha {
     position: relative;
     top: -3px;
     right: -20px;
-  cursor: pointer;
+    cursor: pointer;
 }
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
@@ -80,18 +103,18 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
 
 .form-signin {
   width: 100%;
   max-width: 330px;
   padding: 15px;
-  margin: auto;
+    margin: auto;
 }
 
 .form-signin .checkbox {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .form-signin .form-control {
@@ -99,23 +122,23 @@ body {
     box-sizing: border-box;
     height: auto;
     padding: 10px;
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .form-signin .form-control:focus {
-  z-index: 2;
+    z-index: 2;
 }
 
 .form-signin input[type="email"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .form-signin input[type="password"] {
     margin-bottom: 10px;
     border-top-left-radius: 0;
-  border-top-right-radius: 0;
+    border-top-right-radius: 0;
 }
 
 button {
@@ -129,22 +152,22 @@ button {
   text-align: center;
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
 button:hover, button:focus {
     background-color: #FF6600;
-  color: #e9e9e9;
+    color: #e9e9e9;
 }
 
 button:hover .material-icons, button:focus .material-icons {
-  color: #e9e9e9;
+    color: #e9e9e9;
 }
 
 .logo-abertura img {
   position: relative;
   top: -50px;
-  width: 235px;
+    width: 235px;
 }
 
 .search-bar {
@@ -154,126 +177,225 @@ button:hover .material-icons, button:focus .material-icons {
   left: 0px;
   height: 65px;
   z-index: 9999999;
-  width: 100%;
+    width: 100%;
 }
 
 .search-bar.open {
-  top: 0px;
+    top: 0px;
 }
 
 .search-bar .search-icon {
     position: absolute;
     top: 16px;
-  left: 14px;
+    left: 14px;
 }
 
 .search-bar .close-search {
     position: absolute;
     cursor: pointer;
     top: 16px;
-  right: 14px;
+    right: 14px;
 }
 
 .search-bar input[type="text"] {
     width: 100%;
     left: 0px;
     font-size: 16px;
-  padding: 8px 60px 2px 55px;
+    padding: 8px 60px 2px 55px;
 }
 
 .search-bar input[type="text"]:focus {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  outline: -webkit-focus-ring-color auto 0px;
-  background-color: #fafafa;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: -webkit-focus-ring-color auto 0px;
+    background-color: #fafafa;
 }
 
-.background-page-login, .background-page-index {
-  background-image: url("../img/sistema/logo.png");
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
 }
 
-.tema-cafe-perfeito button {
-  background-color: #FF6600;
-  color: #e9e9e9;
-}
-.tema-cafe-perfeito .navbar {
-  background-color: #FF6600;
-}
-
-.tema-cafe-perfeito .navbar img {
-  position: relative;
-  top: 5px;
-    border-radius: 50%;
-  background-color: #e9e9e9;
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
 }
 
-.tema-cafe-perfeito .navbar .material-icons {
-  color: #e9e9e9;
-}
-.tema-cafe-perfeito .navbar-brand {
-  color: #e9e9e9;
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
-.tema-cafe-perfeito .navbar-brand a {
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff !important;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: white;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before,
+a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
     position: absolute;
-  left: 0px;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
 }
 
-.tema-cafe-perfeito .navbar-brand:hover {
-  color: #e9e9e9;
+a[aria-expanded="true"]::before {
+    content: '\e260';
 }
 
-.tema-cafe-perfeito .navbar-brand:active {
-  color: #e9e9e9;
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
 }
 
-.tema-cafe-perfeito .navbar-brand:focus {
-  color: #e9e9e9;
-}
-.tema-cafe-perfeito .nav > li > a {
-  color: #e9e9e9;
+ul.CTAs {
+    padding: 20px;
 }
 
-.tema-cafe-perfeito .nav > li > a:hover {
-  background-color: rgba(0, 0, 0, 0);
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
 
-.tema-cafe-perfeito .nav > li > a:focus {
-  background-color: rgba(0, 0, 0, 0);
-}
-.tema-cafe-perfeito .nav .open > a {
-  background-color: rgba(0, 0, 0, 0);
+a.download {
+    background: #fff;
+    color: #7386D5;
 }
 
-.tema-cafe-perfeito .nav .open > a:hover {
-  background-color: rgba(0, 0, 0, 0);
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
 }
 
-.tema-cafe-perfeito .nav .open > a:focus {
-  background-color: rgba(0, 0, 0, 0);
-}
-.tema-cafe-perfeito .bars {
-  color: #FF6600;
-}
-.tema-cafe-perfeito .sidebar .menu .list li.active {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.tema-cafe-perfeito .sidebar .menu .list li.active > :first-child i, .tema-cafe-perfeito .sidebar .menu .list li.active > :first-child span {
-  color: #FF6600;
-}
-.tema-cafe-perfeito .sidebar .menu .list .toggled {
-  background-color: rgba(0, 0, 0, 0);
-}
-.tema-cafe-perfeito .sidebar .menu .list .ml-menu {
-  background-color: rgba(0, 0, 0, 0);
-}
-.tema-cafe-perfeito .sidebar .legal {
-  background-color: #e9e9e9;
+/* ---------------------------------------------------
+CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
-.tema-cafe-perfeito .sidebar .legal .copyright a {
-  color: #FF6600 !important;
+#content.active {
+    width: 100%;
+}
+
+/* ---------------------------------------------------
+MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    #content.active {
+        width: calc(100% - 250px);
+    }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+.background-page-login, .background-page-index {
+    background-image: url("../img/sistema/logo.png");
 }
 
 /*# sourceMappingURL=cafeperfeito.css.map */
