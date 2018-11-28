@@ -8,7 +8,7 @@ function showMsg(msg) {
 *  You can manage the left sidebar menu options
 *
 */
-$.AdminBSB.leftSideBar = {
+$.CafePerfeito.leftSideBar = {
     activate: function () {
         var _this = this;
         var $body = $('body');
