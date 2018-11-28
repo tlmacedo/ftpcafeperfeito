@@ -1,11 +1,10 @@
 
 .tema {
   &-#{$tema} {
-    button {
-      background-color: $corPrincipal;
-      color: $corSecundaria;
-    }
-
+    //button {
+    //  background-color: $corPrincipal;
+    //  color: $corSecundaria;
+    //}
     .navbar {
       background-color: $corPrincipal;
 

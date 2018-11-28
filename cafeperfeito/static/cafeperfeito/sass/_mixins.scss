@@ -36,33 +36,14 @@
   transition: $transition;
 }
 
-
-@media (max-width: 768px) {
-  #sidebar {
-    margin-left: -250px;
-  }
-  #sidebar.active {
-    margin-left: 0;
-  }
-  #content {
-    width: 100%;
-  }
-  #content.active {
-    width: calc(100% - 250px);
-  }
-  #sidebarCollapse span {
-    display: none;
-  }
+@mixin three-dots-overflow() {
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-//@mixin three-dots-overflow() {
-//  white-space: nowrap;
-//  -ms-text-overflow: ellipsis;
-//  -o-text-overflow: ellipsis;
-//  text-overflow: ellipsis;
-//  overflow: hidden;
-//}
-//
 //@mixin navbar-link-color($textcolor, $navbarcolor, $opacity) {
 //  .navbar-brand,
 //  .navbar-brand:hover,
