@@ -11,8 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{% static 'cafeperfeito/bootstrap/css/bootstrap.css' %}" type="text/css">
+    {#    <!-- Bootstrap CSS -->#}
+    {#    <link rel="stylesheet" href="{% static 'cafeperfeito/bootstrap/css/bootstrap.css' %}" type="text/css">#}
 
     <!--Import Google Icon Font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext"
@@ -31,7 +31,7 @@
             crossorigin="anonymous"></script>
 
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="{% static 'cafeperfeito/css/cafeperfeito.css' %}" type="text/css">
+    {#    <link rel="stylesheet" href="{% static 'cafeperfeito/css/cafeperfeito.css' %}" type="text/css">#}
     <link rel="stylesheet" href="{% static 'cafeperfeito/css/animacaoCirculo.css' %}" type="text/css">
 </head>
 
@@ -44,100 +44,35 @@
 </div>
 <!-- #END# Page Loader -->
 
-<!-- Search Bar -->
-{#<div class="search-bar">#}
-{#    <div class="search-icon">#}
-{#        <i class="material-icons md-28">search</i>#}
-{#    </div>#}
-{#    <input type="text" placeholder="Pesquisar por...">#}
-{#    <div class="close-search">#}
-{#        <i class="pointer material-icons md-28">close</i>#}
-{#    </div>#}
-{#</div>#}
-<!-- #END# Search Bar -->
 
-{#<!-- Header -->#}
-{#<nav class="navbar fixed-top navbar-expand-lg">#}
-{#    <div class="container-fluid">#}
-{#        <a class="navbar-brand" style="font-size: 30px;" href="http://www.cafeperfeito.com.br/ftpcafeperfeito">#}
-{#            <img src="../../static/cafeperfeito/img/sistema/logo.png" alt="logo.png"#}
-{#                 class="d-inline-block align-top"#}
-{#                 height="45"> CafePerfeito#}
-{#        </a>#}
-{#        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"#}
-{#                aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">#}
-{#            <span class="navbar-toggler-icon"></span>#}
-{#        </button>#}
-{#                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">#}
-{#                    <i class="glyphicon glyphicon-align-left"></i>#}
-{#                    <span>Toggle Sidebar</span>#}
-{#                </button>#}
-{#                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"#}
-{#                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">#}
-{#                    <span class="navbar-toggler-icon"></span>#}
-{#                </button>#}
-{#        <div class="collapse navbar-collapse" id="navbarNav">#}
-{#            <ul class="navbar-nav ml-auto">#}
-{#                <li>#}
-{#                </li>#}
-{#            </ul>#}
+<ul id="slide-out" class="sidenav sidenav-fixed">
+    <li>
+        {% block username %}{% endblock %}
+    </li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+</ul>
+<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+
+{#<div class="wrapper">#}
+{#    <!-- Sidebar -->#}
+{#    <nav id="sidebar">#}
+{#        <div class="user-info">#}
+{#            <div class="image">#}
+{#                <img src="" width="48" height="48" alt="Usuário">#}
+{#            </div>#}
 {#        </div>#}
-{#        <!-- Call Search -->#}
-{#        <a class="search-icon js-search">#}
-{#            <i class="js-search pointer material-icons md-28 search-icon">search</i></a>#}
-{#        </a>#}
-{#        <!-- #END# Call Search -->#}
-{#    </div>#}
-{#</nav>#}
-{#<!-- #END# Header -->#}
-
-{#<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">#}
-{#    <a class="navbar-brand" style="font-size: 30px;" href="http://www.cafeperfeito.com.br/ftpcafeperfeito">#}
-{#        <img src="../../static/cafeperfeito/img/sistema/logo.png" alt="logo.png"#}
-{#             class="d-inline-block align-top"#}
-{#             height="45"> CafePerfeito#}
-{#    </a>#}
-{#    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"#}
-{#            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">#}
-{#        <span class="navbar-toggler-icon"></span>#}
-{#    </button>#}
-{#    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">#}
-{#        <a class="navbar-brand" href="#">Marca escondida</a>#}
-{#        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">#}
-{#            <li class="nav-item active">#}
-{#                <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>#}
-{#            </li>#}
-{#            <li class="nav-item">#}
-{#                <a class="nav-link" href="#">Link</a>#}
-{#            </li>#}
-{#            <li class="nav-item">#}
-{#                <a class="nav-link disabled" href="#">Desativado</a>#}
-{#            </li>#}
-{#        </ul>#}
-{#        <form class="form-inline my-2 my-lg-0">#}
-{#            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">#}
-{#            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>#}
-{#        </form>#}
-{#    </div>#}
-{#</nav>#}
-
-
-<div class="wrapper">
-    <!-- Sidebar -->
-    <nav id="sidebar">
-        <div class="user-info">
-            <div class="image">
-                <img src="" width="48" height="48" alt="Usuário">
-            </div>
-        </div>
-    </nav>
-    <!-- #END# Sidebar -->
-    <!-- Page Content -->
-    <div id="content">
-
-    </div>
-    <!-- #END# Page Content -->
-</div>
+{#    </nav>#}
+{#    <!-- #END# Sidebar -->#}
+{#    <!-- Page Content -->#}
+{#    <!-- #END# Page Content -->#}
+{#</div>#}
 
 
 <!-- jQuery - Slim version (=without AJAX) -->
@@ -151,16 +86,5 @@
 <!-- Our Custom CSS -->
 <script type="text/javascript" src="{% static 'cafeperfeito/js/cafeperfeito.js' %}"></script>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-
-
-        $('#sidebarCollapse').on('click', function () {
-            $('#sidebar, #content').toggleClass('active');
-            $('.collapse.in').toggleClass('in');
-            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-        });
-    });
-</script>
 </body>
 </html>

@@ -76,20 +76,23 @@ def index(request):
         mailusuario = request.POST.get('loginEmail')
         nsenha = request.POST.get('loginSenha')
 
-        usuario = Usuario.get_Usuario_Senha('', mailusuario)
+        usuario = Usuario.objects.get(email=mailusuario)
+        # usuario = Usuario.get_Usuario_Senha('', mailusuario)
         if usuario is None:
             print('Usuario não existe')
         else:
-            if bcrypt.checkpw(str(nsenha).encode(), str(usuario[1]).encode()) is True:
-                print('Senha Validade com sucesso!!!!!!!!!!!!!!!!!!!!!!!!')
-                menu_itens = MenuPrincipal.objects.all()
-                return render(request, 'cafeperfeito/navigation.html', {'menu_itens': menu_itens})
+            if bcrypt.checkpw(str(nsenha).encode(), str(usuario.senha).encode()) is True:
+                menu_itens = Menuprincipal.objects.all()
+                print('usuario', usuario)
+                print('usuario.email', usuario.email)
+                return render(request, 'cafeperfeito/navigation.html', {'usuario': usuario, 'menu_itens': menu_itens})
             else:
                 print('Senha inválida')
 
     # else:
     #     messages.error(request, 'Error wrong username/password')
-    return render(request, 'cafeperfeito/index.html')
+    # return render(request, 'cafeperfeito/index.html')
+    return render(request, 'cafeperfeito/login.html', )
 
     # colaboradores = Colaborador.objects.select_related('cargo').all()
     # print('colaboradores.count {}'.format(colaboradores.count()))

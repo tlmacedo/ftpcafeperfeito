@@ -1,10 +1,19 @@
 {% extends "cafeperfeito/index_base.html" %}
-{% block navigation %}
-    <nav>
-        <ul id="nav" class="menu-items">
-            {% for menu_item in menu_itens %}
-                <li value="{{ menu_item }}">{{ menu_item.menulabel }}</li>
-            {% endfor %}
-        </ul>
-    </nav>
+
+
+{% block username %}
+    <div class="user-view">
+        <div class="background">
+            <img src="../../static/cafeperfeito/img/sistema/login.jpeg">
+        </div>
+        <a href="#user"><img class="circle" src="../../static/cafeperfeito/img/users/{{ usuario.id.apelido }}.jpg"></a>
+        <a href="#name"><span class="white-text name">{{ usuario.id.apelido }}</span></a>
+        <a href="#email"><span class="white-text email">{{ usuario.email }}</span></a>
+    </div>
 {% endblock %}
+
+{#{% block navigation %}#}
+{#            {% for menu_item in menu_itens %}#}
+{#                <li value="{{ menu_item }}"><a href={{ menu_item.menu }}.html>{{ menu_item.menu }}.html</a></li>#}
+{#            {% endfor %}#}
+{#{% endblock %}#}
