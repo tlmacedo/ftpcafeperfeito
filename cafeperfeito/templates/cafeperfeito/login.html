@@ -14,10 +14,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'cafeperfeito/bootstrap/css/bootstrap.css' %}" type="text/css">
 
-    <!--Import Google Icon Font-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext"
-          type="text/css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css"/>
+    {#    <!--Import Google Icon Font-->#}
+    {#    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext"#}
+    {#          type="text/css"/>#}
+    {#    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css"/>#}
+
     <!--Import materialize.css-->
     <link rel="stylesheet" href="{% static 'cafeperfeito/materialize/css/materialize.css' %}"
           media="screen,projection" type="text/css"/>
@@ -34,7 +35,7 @@
 <body class="text-center">
 <form class="form-signin" name="frmlogin" method="post">
     <div class="logo-redonda">
-        <img class="circle responsive-img" src="../../static/cafeperfeito/img/sistema/logo.png" alt="logo.png">
+        <img class="circle responsive-img" src="{% static 'cafeperfeito/img/sistema/logo.png' %}" alt="logo.png">
     </div>
     {% csrf_token %}
     {#    <h1 class="h3 mb-3 font-weight-normal">Login</h1>#}
@@ -49,7 +50,10 @@
     {#    </div>#}
     {#    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>#}
     <button type="submit">Login</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2006-2018</p>
+    <!-- Footer -->
+    <p class="mt-5 mb-3 text-muted">© 2006 - {{ now.year }}.</p>
+    <!-- #Footer -->
+
 </form>
 
 

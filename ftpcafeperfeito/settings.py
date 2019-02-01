@@ -22,20 +22,20 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')ckgxu=yx+dt8y4177-h%lrozd0i+j-wwhsv^yiv(hshq)u=yp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['www.cafeperfeito.com.br', 'cafeperfeito.com.br', '127.0.0.1']
 
 # Application definition
 
 INSTALLED_APPS = [
+    'cafeperfeito',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cafeperfeito',
 ]
 
 MIDDLEWARE = [
