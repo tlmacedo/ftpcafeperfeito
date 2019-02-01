@@ -80,13 +80,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cafeperfeito',
-        'USER': 'cafeperfeito',
-        'PASSWORD': 'Tlm487901',
-        'HOST': 'mysql.cafeperfeito.com.br',
+        'USER': 'root',
+        'PASSWORD': 'Tlm$487901',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
-        'TEST': {
-            'NAME': 'testecafeperfeito',
-        },
+        # 'TEST': {
+        #     'NAME': 'testecafeperfeito',
+        # },
         # 'OPTIONS': {
         #     'init_command': 'SET default_storage_engine=INNODB',
         # }

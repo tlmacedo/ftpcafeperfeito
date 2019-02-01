@@ -1,4 +1,6 @@
 # import xml.etree.ElementTree as ET
+import datetime
+
 import bcrypt
 from django.shortcuts import render
 
@@ -14,6 +16,7 @@ def senhaValida(senha, senha_db):
 
 
 def index(request):
+    now = datetime.datetime.now()
     # tree = ET.parse('cafeperfeito/static/cafeperfeito/xml/configSistema.xml')
     # root = tree.getroot()
     # print('tag: {}, attrib: {}'.format(root.tag, root.attrib))
@@ -85,7 +88,8 @@ def index(request):
                 menu_itens = Menuprincipal.objects.all()
                 print('usuario', usuario)
                 print('usuario.email', usuario.email)
-                return render(request, 'cafeperfeito/navigation.html', {'usuario': usuario, 'menu_itens': menu_itens})
+                return render(request, 'cafeperfeito/navigation.html',
+                              {'now': now, 'usuario': usuario, 'menu_itens': menu_itens})
             else:
                 print('Senha inválida')
 

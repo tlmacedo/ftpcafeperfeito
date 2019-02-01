@@ -527,6 +527,9 @@ class Usuario(models.Model):
     def get_Usuario_Senha(self, mailusuario):
         return Usuario.objects.values_list('email', 'senha').get(email=mailusuario)
 
+    def get_id00(self):
+        return "{:0>2}".format(self.id.id)
+
     def get_usuario_apelido(self):
         return self.id.apelido
 

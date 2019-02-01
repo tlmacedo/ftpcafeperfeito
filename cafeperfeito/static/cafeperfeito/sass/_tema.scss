@@ -100,14 +100,14 @@
         }
       }
 
-      .legal {
-        background-color: $corSecundaria;
-
-        .copyright {
-          a {
-            color: $corPrincipal !important;
-          }
-        }
+      .copyright {
+        position: relative;
+        button: 0px;
+        padding-right: 5px;
+        text-align: right;
+        font-size: 10px;
+        background-color: $sisColor_whiteblack;
+        color: $sisColor_cafe-perfeito;
       }
     }
   }
