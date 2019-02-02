@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')ckgxu=yx+dt8y4177-h%lrozd0i+j-wwhsv^yiv(hshq)u=yp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['www.cafeperfeito.com.br', 'cafeperfeito.com.br', '127.0.0.1']
 
@@ -80,9 +80,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cafeperfeito',
-        'USER': 'root',
-        'PASSWORD': 'Tlm$487901',
-        'HOST': '127.0.0.1',
+        'USER': 'cafeperfeito',
+        'PASSWORD': 'Tlm487901',
+        'HOST': 'mysql.cafeperfeito.com.br',
         'PORT': '3306',
         # 'TEST': {
         #     'NAME': 'testecafeperfeito',
