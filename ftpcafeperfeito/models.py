@@ -1,10 +1,3 @@
-# This is an auto-generated Django model module.
-# You'll have to do the following manually to clean this up:
-#   * Rearrange models' order
-#   * Make sure each model has one field with primary_key=True
-#   * Make sure each ForeignKey has `on_delete` set to the desired behavior.
-#   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
-# Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
 
@@ -515,17 +508,14 @@ class Uf(models.Model):
 
 class Usuario(models.Model):
     id = models.OneToOneField(Colaborador, models.DO_NOTHING, db_column='id', primary_key=True)
-    email = models.CharField(max_length=120)
-    senha = models.CharField(max_length=60)
+    email = models.CharField(max_length=120, blank=False, null=False)
+    senha = models.CharField(max_length=60, blank=False, null=False)
     imagem = models.TextField(blank=True, null=True)
     userativo = models.IntegerField(db_column='userAtivo', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
         managed = False
         db_table = 'usuario'
-
-    def get_Usuario_Senha(self, mailusuario):
-        return Usuario.objects.values_list('email', 'senha').get(email=mailusuario)
 
     def get_id00(self):
         return "{:0>2}".format(self.id.id)

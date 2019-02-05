@@ -23,6 +23,7 @@ html {
 @-ms-viewport {
     width: device-width;
 }
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
 }
@@ -61,6 +62,7 @@ p {
 abbr[title],
 abbr[data-original-title] {
     text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
     cursor: help;
     border-bottom: 0;
@@ -296,6 +298,7 @@ progress {
 }
 
 [type="search"] {
+    outline-offset: -2px;
     -webkit-appearance: none;
 }
 
@@ -325,5 +328,4 @@ template {
 [hidden] {
     display: none !important;
 }
-
 /*# sourceMappingURL=bootstrap-reboot.css.map */
