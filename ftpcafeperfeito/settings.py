@@ -24,7 +24,7 @@ SECRET_KEY = ')ckgxu=yx+dt8y4177-h%lrozd0i+j-wwhsv^yiv(hshq)u=yp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.cafeperfeito.com.br']
 
 # Application definition
 
