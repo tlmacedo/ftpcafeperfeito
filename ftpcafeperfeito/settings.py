@@ -35,9 +35,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'widget_tweaks',
     'ftpcafeperfeito',
     'cafeperfeito',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'ftpcafeperfeito.middlewares.FiltraIPMiddleware',
+    # 'ftpcafeperfeito.middlewares.FiltraIPMiddleware',
 ]
 
 ROOT_URLCONF = 'ftpcafeperfeito.urls'
