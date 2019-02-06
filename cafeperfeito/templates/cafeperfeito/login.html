@@ -63,14 +63,13 @@
                             {% endfor %}
                         </ul>
                     {% endif %}
-                    <form method="post">
-                        {% csrf_token %}
+                    <form method="post">{% csrf_token %}
                         {#                        {{ form.as_p }}#}
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Email</span>
                             </div>
-                            <input type="email" name="email" class="form-control"
+                            <input type="text" name="email" class="form-control"
                                    placeholder="Email"
                                    required
                                    autofocus>

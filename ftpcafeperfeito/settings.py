@@ -24,7 +24,7 @@ SECRET_KEY = ')ckgxu=yx+dt8y4177-h%lrozd0i+j-wwhsv^yiv(hshq)u=yp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.cafeperfeito.com.br']
+ALLOWED_HOSTS = ['127.0.0.1', 'www.cafeperfeito.com.br']
 
 # Application definition
 
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'ftpcafeperfeito',
     'cafeperfeito',
     'widget_tweaks',
+    'passlib.ext.django',
 ]
 
 MIDDLEWARE = [
@@ -84,9 +85,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cafeperfeito',
+
         'USER': 'cafeperfeito',
         'PASSWORD': 'Tlm487901',
         'HOST': 'mysql.cafeperfeito.com.br',
+
+        # 'USER': 'root',
+        # 'PASSWORD': 'Tlm$487901',
+        # 'HOST': '127.0.0.1',
+
         'PORT': '3306',
         # 'TEST': {
         #     'NAME': 'testecafeperfeito',
@@ -103,6 +110,13 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
+# PASSWORD_HASHERS = [
+#     'ftpcafeperfeito.hashers.MyBCryptSHA256PasswordHasher',
+#     'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+#     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+#     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+#     'django.contrib.auth.hashers.Argon2PasswordHasher',
+# ]
 
 AUTH_PASSWORD_VALIDATORS = [
     {

@@ -1,5 +1,5 @@
-import bcrypt
 from django import forms
+from passlib.handlers.django import django_pbkdf2_sha256
 
 from ftpcafeperfeito.models import *
 
@@ -32,13 +32,13 @@ class LoginForm(forms.ModelForm):
         mailusuario = self.cleaned_data.get('email')
         nsenha = self.cleaned_data.get('senha')
         try:
-            usuario = Usuario.objects.get(email=mailusuario)
-            # if usuario is None:
-            #     print('Usuario não existe')
-            #     return None
-            # else:
-            if bcrypt.checkpw(str(nsenha).encode(), str(usuario.senha).encode()) is True:
-                print('Senha Validade com sucesso!!!!!!!!!!!!!!!!!!!!!!!!')
+            if not '@' in mailusuario:
+                # colaborador = Colaborador.objects.get(apelido=mailusuario)
+                usuario = Usuario.objects.get(id=Colaborador.objects.get(apelido=mailusuario))
+            else:
+                usuario = Usuario.objects.get(email=mailusuario)
+            if django_pbkdf2_sha256.verify(nsenha, usuario.senha) is True:
+                print('Senha Validada com sucesso!!!!!!!!!!!!!!!!!!!!!!!!')
                 return usuario;
             else:
                 print('Senha inválida')
