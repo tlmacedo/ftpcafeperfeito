@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'cafeperfeito',
     'widget_tweaks',
     'passlib.ext.django',
+    # 'mptt',
+    # 'treewidget',
 ]
 
 MIDDLEWARE = [

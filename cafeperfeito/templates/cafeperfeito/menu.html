@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+{% load mptt_tags %}
+<html lang="en">
+
+
+<head>
+</head>
+
+<body>
+{% load mptt_tags %}
+<ul class="root">
+    {% recursetree genres %}
+        <li>
+            {{ node.menu_id.menulabel }}
+            {% if not node.is_leaf_node %}
+                <ul class="children">
+                    {{ children }}
+                </ul>
+            {% endif %}
+        </li>
+    {% endrecursetree %}
+</ul>
+</body>
+
+
+</html>

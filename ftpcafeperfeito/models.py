@@ -1,6 +1,10 @@
 from django.db import models
 
 
+# from mptt.models import MPTTModel
+# from treewidget.fields import TreeForeignKey
+
+
 class AuthGroup(models.Model):
     name = models.CharField(unique=True, max_length=80)
 
@@ -387,6 +391,9 @@ class Menuprincipal(models.Model):
     teclaatalho = models.CharField(db_column='teclaAtalho', max_length=45, blank=True,
                                    null=True)  # Field name made lowercase.
 
+    # def __str__(self):
+    #     return self.menu
+
     class Meta:
         managed = False
         db_table = 'menuPrincipal'
@@ -525,3 +532,10 @@ class Usuario(models.Model):
 
     def __str__(self):
         return self.id.apelido
+
+# class Menutree(MPTTModel):
+#     menu_id = models.OneToOneField(Menuprincipal, models.DO_NOTHING)
+#     parent = TreeForeignKey('self', on_delete=models.CASCADE, null=True, blank=True, related_name='children')
+#
+#     # class MPTTMeta:
+#     #     order_insertion_by = ['menu_id.menulabel']
