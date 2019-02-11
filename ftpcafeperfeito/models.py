@@ -1,10 +1,6 @@
 from django.db import models
 
 
-# from mptt.models import MPTTModel
-# from treewidget.fields import TreeForeignKey
-
-
 class AuthGroup(models.Model):
     name = models.CharField(unique=True, max_length=80)
 
@@ -98,6 +94,15 @@ class Colaborador(models.Model):
     ativo = models.TextField()  # This field type is a guess.
     empresa = models.ForeignKey('Empresa', models.DO_NOTHING, blank=True, null=True)
     cargo = models.ForeignKey(Cargo, models.DO_NOTHING, blank=True, null=True)
+    imgcolaborador = models.BinaryField(db_column='imgColaborador', blank=True, null=True)  # Field name made lowercase.
+
+    # def set_imgcolaborador(self, imgcolaborador):
+    #     self._imgcolaborador = base64.encodestring(imgcolaborador)
+    #
+    # def get_imgcolaborador(self):
+    #     return base64.decodestring(self._imgcolaborador)
+    #
+    # imgcolaborador = property(get_imgcolaborador, set_imgcolaborador)
 
     class Meta:
         managed = False
@@ -108,19 +113,6 @@ class Colaborador(models.Model):
 
     def getColaborador(self):
         return {'id': self.id, 'nome': self.nome, 'apelido': self.apelido, 'ativo': self.ativo, 'cargo': self.cargo}
-        # return str('\n\tid : {:0>2}' \
-        #        '\n\tnome : {}' \
-        #        '\n\tapelido : {}' \
-        #        '\n\tativo : {}' \
-        #        '\n\tcargo : {}' \
-        #        '\n' \
-        #     .format(
-        #     self.id,
-        #     self.nome,
-        #     self.apelido,
-        #     SituacaoNoSistema(self.ativo).name,
-        #     self.cargo
-        # ))
 
 
 class Contato(models.Model):
@@ -532,10 +524,3 @@ class Usuario(models.Model):
 
     def __str__(self):
         return self.id.apelido
-
-# class Menutree(MPTTModel):
-#     menu_id = models.OneToOneField(Menuprincipal, models.DO_NOTHING)
-#     parent = TreeForeignKey('self', on_delete=models.CASCADE, null=True, blank=True, related_name='children')
-#
-#     # class MPTTMeta:
-#     #     order_insertion_by = ['menu_id.menulabel']

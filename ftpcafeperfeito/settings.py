@@ -15,6 +15,8 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -40,7 +42,7 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'passlib.ext.django',
     # 'mptt',
-    # 'treewidget',
+    'treewidget',
 ]
 
 MIDDLEWARE = [
@@ -154,3 +156,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = '/home/cafeperfeito/www/static'
+
+MEDIA_URL = '/media/'

@@ -1,4 +1,5 @@
 import datetime
+from base64 import b64encode
 
 from django.contrib import messages
 from django.contrib.auth import login, authenticate
@@ -50,75 +51,27 @@ class HomeTemplateView(LoginRequiredMixin, TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(HomeTemplateView, self).get_context_data(**kwargs)
-        # home = []
-        # nivel_1 = []
-        # for nv_1 in Menuprincipal.objects.all():
-        #     while nv_1.menupai_id ==1:
-        #         nivel_1.append()
+        logUsuario = Usuario.objects.get(id=self.request.user.id)
+        context['logUser'] = logUsuario
+        context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
 
-        menus = [
-            {'text': " MenuPrincipal",
-             'href': "#home",
-             'icon': "glyphicon glyphicon-home",
-             'nodes': [
-                 {'text': " Cadastros",
-                  'icon': "cafeico",  # "glyphicon glyphicon-home",
-                  'nodes': [
-                      {'text': " Cadastro de empresa",
-                       'href': "#empresa",
-                       'icon': "glyphicon glyphicon-home",
-                       'selectable': 'true',
-                       },
+        # image2bytes()
 
-                      {'text': " Cadastro de produto",
-                       'href': "#produto",
-                       'icon': "glyphicon glyphicon-home",
-                       'selectable': 'true',
-                       },
+        # image = Image.open(io.BytesIO(ImageGrab.grabclipboard()))
+        # image.show()
 
-                      {'text': " MenuPrincipal",
-                       'href': "#home",
-                       'icon': "glyphicon glyphicon-home",
-                       'selectable': 'true',
-                       },
-                  ]
-                  },
+        # img = Image
+        # img_bytes = logUsuario.id.imgcolaborador
+        # img.save(img_bytes, format='PNG')
+        #
+        # base64_data = codecs.encode(logUsuario.id.imgcolaborador, 'base64')
+        # base64_text = codecs.decode(base64_data, 'ascii')
+        # context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
 
-             ]
-             },
-            {'text': "Parent 2"},
-            {'text': "Parent 3"},
-            {'text': "Parent 4"},
-            {'text': "Parent 5"}]
+        # print('base64_data:', base64_data)
+        # print('base64_text:', base64_text)
 
-        # home_item = Menuprincipal.objects.get(id=1)
-        # home = {'id': home_item.id, 'menu':home_item.menu, 'menulabel':home_item.menulabel, 'menupai_id':home_item.menupai_id}
-        # menus['home']=home
-        # for parent1 in Menuprincipal.objects.get(menupai_id=1):
-        # for parent2 in Menuprincipal.objects.get(menupai_id=parent1.menupai_id):
-        #         for parent3 in Menuprincipal.objects.get(menupai_id=parent2.menupai_id):
-
-        print("menus:", menus)
-
-        # tree = Tree()
-        # tree.create_node("Home", "home")
-        # for itemMenu in Menuprincipal.objects.all():
-        #     if itemMenu.menupai_id != 0:
-        #         # print("menulabel:", itemMenu.menulabel)
-        #         print("menu:", itemMenu.menu)
-        #         # print("menupai_id:", itemMenu.menupai_id)
-        #         # print("pesquisa:", Menuprincipal.objects.get(id=itemMenu.menupai_id).menu)
-        #         tree.create_node(itemMenu.menulabel, itemMenu.menu,
-        #                          parent=Menuprincipal.objects.get(id=itemMenu.menupai_id).menu)
-        #     print(tree.get_node(itemMenu.menu))
-        # #tree.create_node("Sair", "sair")
-        context['logUser'] = Usuario.objects.get(id=self.request.user.id)
-        context['menus'] = menus
         return context
-    # def get(self, request, *args, **kwargs):
-    #     context = super(HomeTemplateView, self).get_context_data(**kwargs)
-    #     context['usuario'] = Usuario.objects.get(id=request.user.id)
-    #     return context
 
 
 class EmpresaTemplateView(TemplateView):

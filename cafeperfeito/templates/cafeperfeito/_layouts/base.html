@@ -16,108 +16,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    {#    <!-- Bootstrap CSS -->#}
-    <link rel="stylesheet" href="{% static 'cafeperfeito/bootstrap/css/bootstrap.css' %}" type="text/css">
-    {#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"#}
-    {#          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">#}
-
-    <!-- Bootstrap-Treeview CSS -->
-    <link rel="stylesheet" href="{% static 'cafeperfeito/bootstrap-treeview/css/bootstrap-treeview.css' %}"
-          type="text/css">
-
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'cafeperfeito/externo/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
 
     <!--Import Google Icon Font-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext"
-          type="text/css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet">
 
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="{% static 'cafeperfeito/materialize/css/materialize.css' %}"
-          media="screen, projection" type="text/css"/>
-
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-            integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-            crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-            crossorigin="anonymous"></script>
+    {#    <!--Import materialize.css-->#}
+    {#    <link href="{% static 'cafeperfeito/externo/materialize/css/materialize.min.css' %}" media="screen,projection"#}
+    {#          rel="stylesheet" type="text/css">#}
 
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="{% static 'cafeperfeito/css/cafeperfeito.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'cafeperfeito/style/css/ftpcafeperfeito.min.css' %}" type="text/css"/>
 
 </head>
 <!-- #Head -->
 <body>
 
-{#<!-- Page Loader -->#}
-{#<div id="logo" class="logo-abertura tela-branca">#}
-{#    <div class="hoja">#}
-{#        <img src="../../static/cafeperfeito/img/sistema/logo.png">#}
-{#    </div>#}
-{#</div>#}
-{#<!-- #Page Loader -->#}
-{#<!-- Overlay for Sidebars -->#}
-{#<div class="overlay"></div>#}
-{#<!-- #Overlay for Sidebars -->#}
-
-
-<ul id="slide-out" class="sidenav sidenav-fixed">
-    <li>
-        <div class="user-view">
-            <div class="background">
-                <img src="{% static 'cafeperfeito/img/sistema/login.jpeg' %}">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'cafeperfeito:home' %}">
+        <img src="{% static 'cafeperfeito/img/sistema/logo.png' %}" width="35" height="35"
+             class="d-inline-block align-top" alt="">
+        CaféPerfeito
+    </a>
+    <div class="container">
+        <div class="row">
+            <div>
+                <img class="img-log-user" alt="logUserImagem" src="data:image;base64,{{ logUserImagem }}"/>
             </div>
-            <a href="#user"><img class="circle"
-                                 src="../../static/cafeperfeito/img/users/user_{{ logUser.get_id00 }}.jpeg"></a>
-            <a href="#name"><span class="white-text name">{{ logUser.id.apelido }}</span></a>
-            <a href="#email"><span class="white-text email">{{ logUser.email }}</span></a>
+            <div class="align-self-center">
+                <div>
+                    <div class="row name-log-user align-middle">
+                        <i class="material-icons">person</i> {{ logUser.id.apelido }}
+                    </div>
+                    <div class="row email-log-user align-middle">
+                        <i class="material-icons">alternate_email</i> {{ logUser.email }}
+                    </div>
+                </div>
+            </div>
         </div>
-    </li>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav ">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cadastros
+                </a>
+                <div class="dropdown-menu mr-sm-2" aria-labelledby="navbarDropdownCadastros">
+                    <a class="dropdown-item" href="#">Cadastro de empresas</a>
+                    <a class="dropdown-item" href="#">Cadastro de produtos</a>
+                    <a class="dropdown-item" href="#">Cadastro de equipamentos</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-    {#    <div class="icon node-icon"></div>#}
-    <div class="icon"></div>
-    <div id="tree"></div>
 
-    {#    {% for menu in menus %}#}
-    {#        <li><a href="#!">{{ menu }}</a></li>#}
-    {#    {% endfor %}#}
-    {#    <ul id="myUlMenu">#}
-    {#        <li><span class="caret">menu.menulabel</span>#}
-    {#            <ul class="nested">#}
-    {#                <li>Water</li>#}
-    {#                <li>Coffee</li>#}
-    {#                <li><span class="caret">Tea</span>#}
-    {#                    <ul class="nested">#}
-    {#                        <li>Black Tea</li>#}
-    {#                        <li>White Tea</li>#}
-    {#                        <li><span class="caret">Green Tea</span>#}
-    {#                            <ul class="nested">#}
-    {#                                <li>Sencha</li>#}
-    {#                                <li>Gyokuro</li>#}
-    {#                                <li>Matcha</li>#}
-    {#                                <li>Pi Lo Chun</li>#}
-    {#                            </ul>#}
-    {#                        </li>#}
-    {#                    </ul>#}
-    {#                </li>#}
-    {#            </ul>#}
-    {#        </li>#}
-    {#    </ul>#}
-    {#    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>#}
-    {#    <li><a href="#!">Second Link</a></li>#}
-    {#    <li><a class="subheader">Subheader</a></li>#}
-    {#    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>#}
-    <li>
-        <!-- Footer -->
-        <div class="copyright">
-            Café Perfeito © 2006 - {{ now.year }}.<br>
-            <b>Version: </b> 1.0.5
-        </div>
-        <!-- #Footer -->
-    </li>
-</ul>
-<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+{#        <div class="user-view">#}
+{#            <div class="background">#}
+{#                <img src="{% static 'cafeperfeito/img/sistema/teste1.jpg' %}">#}
+{#            </div>#}
+{#            <a href="#user"><img class="circle"#}
+{#                                 src="../../static/cafeperfeito/img/users/user_{{ logUser.get_id00 }}.jpeg"></a>#}
+{#            <a href="#name"><span class="white-text name">{{ logUser.id.apelido }}</span></a>#}
+{#            <a href="#email"><span class="white-text email">{{ logUser.email }}</span></a>#}
+{#        </div>#}
+{#        <img src="/docs/4.2/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">#}
+
+
+{#<nav class="nav-extended">#}
+{#    <div class="nav-wrapper">#}
+{#        <a href="#" class="brand-logo">Logo</a>#}
+{#        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>#}
+{#        <ul id="nav-mobile" class="right hide-on-med-and-down">#}
+{#            <li><a href="sass.html">Sass</a></li>#}
+{#            <li><a href="badges.html">Components</a></li>#}
+{#            <li><a href="collapsible.html">JavaScript</a></li>#}
+{#        </ul>#}
+{#    </div>#}
+{#    <div class="nav-content">#}
+{#        <ul class="tabs tabs-transparent">#}
+{#            <li class="tab"><a href="#test1">Test 1</a></li>#}
+{#            <li class="tab"><a class="active" href="#test2">Test 2</a></li>#}
+{#            <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>#}
+{#            <li class="tab"><a href="#test4">Test 4</a></li>#}
+{#        </ul>#}
+{#    </div>#}
+{#</nav>#}
+{##}
+{#<ul class="sidenav" id="mobile-demo">#}
+{#    <li><a href="sass.html">Sass</a></li>#}
+{#    <li><a href="badges.html">Components</a></li>#}
+{#    <li><a href="collapsible.html">JavaScript</a></li>#}
+{#</ul>#}
+{##}
+{#<div id="test1" class="col s12">Test 1</div>#}
+{#<div id="test2" class="col s12">Test 2</div>#}
+{#<div id="test3" class="col s12">Test 3</div>#}
+{#<div id="test4" class="col s12">Test 4</div>#}
 
 
 <!-- Bloco de conteúdo -->
@@ -125,54 +128,30 @@
 
 
 <!-- jQuery - Slim version (=without AJAX) -->
-<script type="text/javascript" src="{% static 'cafeperfeito/jquery/jquery.js' %}"></script>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-{#<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>#}
-
-<!-- Bootstrap JS -->
-<script type="text/javascript" src="{% static 'cafeperfeito/bootstrap/js/bootstrap.js' %}"></script>
-{#<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"#}
-{#        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"#}
-{#        crossorigin="anonymous"></script>#}
-
-<!-- Bootstrap-Treeview -->
-<script type="text/javascript" src="{% static 'cafeperfeito/bootstrap-treeview/js/bootstrap-treeview.js' %}"></script>
+<script src="{% static 'cafeperfeito/externo/jQueryPopper/jquery-3.3.1.slim.min.js' %}" type="text/javascript"></script>
 
 <!-- Popper.JS -->
-<script type="text/javascript" src="{% static 'cafeperfeito/bootstrap/js/bootstrap.bundle.js' %}"></script>
+<script src="{% static 'cafeperfeito/externo/jQueryPopper/popper.min.js' %}" type="text/javascript"></script>
 
-<!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="{% static 'cafeperfeito/materialize/js/materialize.js' %}"></script>
+<!-- Bootstrap JS -->
+<script src="{% static 'cafeperfeito/externo/bootstrap/js/bootstrap.min.js' %}" type="text/javascript"></script>
 
 <!-- Our Custom CSS -->
-{#<script type="text/javascript" src="{% static 'cafeperfeito/js/cafeperfeito.js' %}"></script>#}
+<script type="text/javascript" src="{% static 'cafeperfeito/style/js/ftpcafeperfeito.js' %}"></script>
 
 
 {% block scripts %}{% endblock %}
 
 
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems, options);
-    });
-    $(document).ready(function () {
-        $('.sidenav').sidenav();
-    });
-
-
-    function getTree() {
-        var data = JSON.stringify({{ menus|safe }});
-        return data;
-    }
-
-    $('#tree').treeview({
-        data: getTree(),
-        levels: 5,
-        color: 'Safety Orange',
-    });
-</script>
+{#<script type="text/javascript">#}
+{#    document.addEventListener('DOMContentLoaded', function () {#}
+{#        var elems = document.querySelectorAll('.sidenav');#}
+{#        var instances = M.Sidenav.init(elems, options);#}
+{#    });#}
+{#    $(document).ready(function () {#}
+{#        $('.sidenav').sidenav();#}
+{#    });#}
+{#</script>#}
 
 </body>
 

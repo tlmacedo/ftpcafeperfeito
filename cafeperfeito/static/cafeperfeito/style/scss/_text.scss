@@ -1,0 +1,23 @@
+i, .name-log-user, .email-log-user {
+
+  margin-left: 0px;
+  padding-left: 0px;
+  height: 50%;
+  //color: $sisColor_amber;
+  //font-size: $fontSizeh6;
+  //align-self: center;
+
+  display: block;
+  font-family: Times;
+  font-weight: bold;
+  font-size: $fontSizeh6;
+  color: $sisColor_amber;
+  line-height: 100%;
+  text-align: left;
+
+  i.material-icons {
+    color: $corPricipal;
+    font-size: $fontSizeh6;
+    alignment: center;
+  }
+}
