@@ -55,52 +55,8 @@ class HomeTemplateView(LoginRequiredMixin, TemplateView):
         context['logUser'] = logUsuario
         context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
 
-        # image2bytes()
-
-        # image = Image.open(io.BytesIO(ImageGrab.grabclipboard()))
-        # image.show()
-
-        # img = Image
-        # img_bytes = logUsuario.id.imgcolaborador
-        # img.save(img_bytes, format='PNG')
-        #
-        # base64_data = codecs.encode(logUsuario.id.imgcolaborador, 'base64')
-        # base64_text = codecs.decode(base64_data, 'ascii')
-        # context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
-
-        # print('base64_data:', base64_data)
-        # print('base64_text:', base64_text)
-
         return context
 
 
 class EmpresaTemplateView(TemplateView):
     template_name = 'cafeperfeito/empresa.html'
-
-# class MenuView(TemplateView):
-#     template_name = 'cafeperfeito/home.html'
-#     title = "genre poxa view"
-#
-#     def get_context_data(self, **kwargs):
-#         context = super(MenuView, self).get_context_data(**kwargs)
-#
-#         menus = [{'text': "Parent 1",
-#                   'nodes': [{'text': "Child 1", 'nodes': [{'text': "Grandchild 1"}, {'text': "Grandchild 2"}]},
-#                             {'text': "Child 2"}]}, {'text': "Parent 2"}, {'text': "Parent 3"}, {'text': "Parent 4"},
-#                  {'text': "Parent 5"}]
-#
-#         # for x in Menuprincipal.objects.all():
-#         #     if x.menupai_id == 0:
-#         #         Menutree.objects.create(menu_id=x)
-#         #     else:
-#         #         Menutree.objects.create(menu_id=x, parent=Menuprincipal.objects.get(id=x.id))
-#
-#         for x in Menutree.objects.all():
-#             print(x.menu_id.menulabel)
-#         # rock = Genre.objects.create(name="Rock")
-#         # blues = Genre.objects.create(name="Blues")
-#         # Genre.objects.create(name="Hard Rock", parent=rock)
-#         # Genre.objects.create(name="Pop Rock", parent=rock)
-#
-#         context['menus'] = menus
-#         return context
