@@ -10,6 +10,7 @@ from django.views.generic import TemplateView, FormView
 from django.views.generic.list import ListView
 
 from cafeperfeito.forms import LoginForm
+from cafeperfeito.service import bytes2image
 from ftpcafeperfeito.models import Usuario, Produto
 
 now = datetime.datetime.now()
@@ -49,11 +50,32 @@ class HomeTemplateView(LoginRequiredMixin, TemplateView):
     extra_context = {'now': now}
     template_name = 'cafeperfeito/home.html'
 
+    def post(self, request, *args, **kwargs):
+        if request.FILES['logUserNewImagem']:
+            logUsuario = Usuario.objects.get(id=self.request.user.id)
+            f = request.FILES['logUserNewImagem']
+            with open('cafeperfeito/static/cafeperfeito/img/name.png', 'wb+') as destination:
+                for chunk in f.chunks():
+                    destination.write(chunk)
+                    print(destination.name)
+            # for line in upload:
+            #     print(line)
+            # path = upload.content_type
+            # arquivo = upload.read()  # For small files
+            # print('local:', upload)
+            with open('cafeperfeito/static/cafeperfeito/img/name.png', 'rb') as file:
+                bynaryData = file.read()
+            print(bynaryData)
+            logUsuario.id.imgcolaborador = bynaryData
+            logUsuario.save()
+            bytes2image(bynaryData)
+            return render(request, self.template_name)
+
     def get_context_data(self, **kwargs):
         context = super(HomeTemplateView, self).get_context_data(**kwargs)
         logUsuario = Usuario.objects.get(id=self.request.user.id)
         context['logUser'] = logUsuario
-        context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
+        # context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
 
         return context
 

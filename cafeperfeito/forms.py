@@ -4,6 +4,15 @@ from passlib.handlers.django import django_pbkdf2_sha256
 from ftpcafeperfeito.models import *
 
 
+class DocumentForm(forms.ModelForm):
+    class Meta:
+        model = Document
+        fields = [
+            'description',
+            'document',
+        ]
+
+
 class LoginForm(forms.ModelForm):
     # email = forms.CharField(
     #     required=True,
@@ -21,11 +30,13 @@ class LoginForm(forms.ModelForm):
 
         fields = [
             'email',
-            'senha'
+            'senha',
+            # 'imagem',
         ]
 
         widgets = {
-            'senha': forms.PasswordInput()
+            'senha': forms.PasswordInput(),
+            # 'imagem': forms.FileInput(attrs={'accept': 'Image/*capture-camera'}),
         }
 
     def valida_usuario(self):

@@ -20,3 +20,4 @@ urlpatterns = [
     path('', include('cafeperfeito.urls', namespace='cafeperfeito')),
     path('admin/', admin.site.urls),
 ]
+

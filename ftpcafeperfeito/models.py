@@ -1,3 +1,5 @@
+from base64 import b64encode
+
 from django.db import models
 
 
@@ -522,5 +524,14 @@ class Usuario(models.Model):
     def get_usuario_apelido(self):
         return self.id.apelido
 
+    def get_colaborador_imagem(self):
+        return b64encode(self.id.imgcolaborador).decode('ascii')
+
     def __str__(self):
         return self.id.apelido
+
+
+class Document(models.Model):
+    description = models.CharField(max_length=255, blank=True)
+    document = models.FileField(upload_to='documents/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)

@@ -69,7 +69,8 @@
                             {% endfor %}
                         </ul>
                     {% endif %}
-                    <form method="post">{% csrf_token %}
+                    <form method="post">
+                        {% csrf_token %}
                         {#                        {{ form.as_p }}#}
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -89,7 +90,7 @@
                                    required>
                         </div>
                         <button class="btn btn-primary">Login</button>
-                        <input type="file" accept="image/*" capture="camera"/>
+                        {#                        <input type="file" accept="image/*" capture="camera-camera"/>#}
                     </form>
                 </div>
                 <div class="card-footer">

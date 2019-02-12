@@ -43,7 +43,8 @@
     <div class="container">
         <div class="row">
             <div>
-                <img class="img-log-user" alt="logUserImagem" src="data:image;base64,{{ logUserImagem }}"/>
+                <img class="img-log-user" alt="logUserImagem"
+                     src="data:image;base64,{{ logUser.get_colaborador_imagem }}"/>
             </div>
             <div class="align-self-center">
                 <div>
@@ -54,6 +55,18 @@
                         <i class="material-icons">alternate_email</i> {{ logUser.email }}
                     </div>
                 </div>
+            </div>
+            <div>
+                {#                <input type="file" name="logUserNewImagem"placeholder="mudar imagem" accept="image/*"#}
+                {#                       capture="capture-camera"/>#}
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="file" name="logUserNewImagem"/>
+                    <button type="submit">alterar imagem</button>
+                    {% if uploaded_file_url %}
+                        <p>File uploaded at: </p>
+                    {% endif %}
+                </form>
             </div>
         </div>
     </div>

@@ -9,7 +9,8 @@ def blob2base64(image_data):
 
 
 def bytes2image(bytes):
-    return Image.open(io.BytesIO(bytes))
+    print('tentando abrir imagem')
+    Image.open(io.BytesIO(bytes))
 
 
 def image2bytes():
