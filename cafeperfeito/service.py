@@ -1,5 +1,5 @@
 import io
-from base64 import b64encode, b64decode
+from base64 import b64encode
 
 from PIL import Image, ImageGrab
 
@@ -18,6 +18,6 @@ def image2bytes():
     # Store the bytes in a byte stream
     img_bytes = io.BytesIO()
     img.save(img_bytes, format='PNG')
-
-    print(b64decode(img_bytes.getvalue()))
+    print(img_bytes.getvalue())
+    return img_bytes.getvalue()
     # return img_bytes.getbuffer()

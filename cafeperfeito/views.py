@@ -53,9 +53,7 @@ class HomeTemplateView(LoginRequiredMixin, TemplateView):
         context = super(HomeTemplateView, self).get_context_data(**kwargs)
         logUsuario = Usuario.objects.get(id=self.request.user.id)
         context['logUser'] = logUsuario
-        context['logUserImagem'] = b64encode(logUsuario.imagem).decode('ascii')
-
-        # context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
+        context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
 
         return context
 

@@ -509,7 +509,7 @@ class Usuario(models.Model):
     id = models.OneToOneField('Colaborador', models.DO_NOTHING, db_column='id', primary_key=True)
     email = models.CharField(max_length=120, blank=False, null=False)
     senha = models.CharField(max_length=60, blank=False, null=False)
-    imagem = models.TextField(blank=True, null=True)
+    imagem = models.BinaryField(blank=True, null=True)
     userativo = models.IntegerField(db_column='userAtivo', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
