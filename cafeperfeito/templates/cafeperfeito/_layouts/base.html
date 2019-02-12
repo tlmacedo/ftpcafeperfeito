@@ -56,18 +56,16 @@
                     </div>
                 </div>
             </div>
-            <div>
-                {#                <input type="file" name="logUserNewImagem"placeholder="mudar imagem" accept="image/*"#}
-                {#                       capture="capture-camera"/>#}
-                <form method="post" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    <input type="file" name="logUserNewImagem"/>
-                    <button type="submit">alterar imagem</button>
-                    {% if uploaded_file_url %}
-                        <p>File uploaded at: </p>
-                    {% endif %}
-                </form>
-            </div>
+            {#            <div>#}
+            {#                <form method="post" enctype="multipart/form-data">#}
+            {#                    {% csrf_token %}#}
+            {#                    <input type="file" name="logUserNewImagem"/>#}
+            {#                    <button type="submit">alterar imagem</button>#}
+            {#                    {% if uploaded_file_url %}#}
+            {#                        <p>File uploaded at: </p>#}
+            {#                    {% endif %}#}
+            {#                </form>#}
+            {#            </div>#}
         </div>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
