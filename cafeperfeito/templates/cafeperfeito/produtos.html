@@ -14,6 +14,12 @@
                             <p class="card-text">
                                 Aqui está a lista de <code>Produtos</code> cadastrados.
                             </p>
+                            <div class="text-right">
+                                {#                            <a href="{% url 'website:cadastra_funcionario' %}" class="btn btn-primary">#}
+                                <a href="{% url 'cafeperfeito:produto_cadastrar' %}" class="btn btn-primary">
+                                    Cadastrar Funcionário
+                                </a>
+                            </div>
 
                             <table class="table">
                                 <thead class="thead-dark">
@@ -34,15 +40,15 @@
                                         <td>{{ produto.precoconsumidor }}</td>
                                         <td>
                                             {#                                            <a href="{% url 'website:atualiza_funcionario' pk=produto.id %}"#}
-                                            <a href="#"
+                                            <a href="{% url 'cafeperfeito:produto_atualizar' pk=produto.id %}"
                                                class="btn btn-info">
                                                 Atualizar
                                             </a>
                                             {#                                            <a href="{% url 'website:deleta_funcionario' pk=produto.id %}"#}
-                                            <a href="#"
-                                               class="btn btn-outline-danger">
-                                                Excluir
-                                            </a>
+                                            {#                                            <a href=""#}
+                                            {#                                               class="btn btn-outline-danger">#}
+                                            {#                                                Excluir#}
+                                            {#                                            </a>#}
                                         </td>
                                     </tr>
                                 {% endfor %}
@@ -54,12 +60,6 @@
                             </div>
                         {% endif %}
                         <hr/>
-                        <div class="text-right">
-                            {#                            <a href="{% url 'website:cadastra_funcionario' %}" class="btn btn-primary">#}
-                            <a href="#">
-                                Cadastrar Funcionário
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>

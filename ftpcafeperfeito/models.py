@@ -2,6 +2,8 @@ from base64 import b64encode
 
 from django.db import models
 
+from cafeperfeito.enums import UNIDADE_COMERCIAL, SITUACAO_NO_SISTEMA
+
 
 class AuthGroup(models.Model):
     name = models.CharField(unique=True, max_length=80)
@@ -315,6 +317,9 @@ class Fiscalcstorigem(models.Model):
     id = models.BigIntegerField(primary_key=True)
     descricao = models.CharField(max_length=180)
 
+    def __str__(self):
+        return self.descricao
+
     class Meta:
         managed = False
         db_table = 'fiscalCstOrigem'
@@ -411,8 +416,9 @@ class Produto(models.Model):
     codigo = models.CharField(unique=True, max_length=15)
     descricao = models.CharField(max_length=120)
     peso = models.DecimalField(max_digits=19, decimal_places=3)
-    unidadecomercial = models.IntegerField(db_column='unidadeComercial')  # Field name made lowercase.
-    situacao = models.IntegerField()
+    unidadecomercial = models.IntegerField(db_column='unidadeComercial',
+                                           choices=UNIDADE_COMERCIAL.choices())  # Field name made lowercase.
+    situacao = models.IntegerField(choices=SITUACAO_NO_SISTEMA.choices())
     precofabrica = models.DecimalField(db_column='precoFabrica', max_digits=19,
                                        decimal_places=2)  # Field name made lowercase.
     precoconsumidor = models.DecimalField(db_column='precoConsumidor', max_digits=19,
@@ -439,12 +445,12 @@ class Produto(models.Model):
     usuariocadastro = models.ForeignKey('Usuario', models.DO_NOTHING, related_name='usuariocadastroproduto',
                                         db_column='usuarioCadastro_id', blank=True,
                                         null=True)  # Field name made lowercase.
-    datacadastro = models.DateTimeField(db_column='dataCadastro')  # Field name made lowercase.
+    datacadastro = models.DateTimeField(db_column='dataCadastro', auto_now_add=True)  # Field name made lowercase.
     usuarioatualizacao = models.ForeignKey('Usuario', models.DO_NOTHING, related_name='usuarioatualizacaoproduto',
                                            db_column='usuarioAtualizacao_id', blank=True,
                                            null=True)  # Field name made lowercase.
     dataatualizacao = models.DateTimeField(db_column='dataAtualizacao', blank=True,
-                                           null=True)  # Field name made lowercase.
+                                           null=True, auto_now=True)  # Field name made lowercase.
     imgproduto = models.BinaryField(db_column='imgProduto', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
@@ -530,8 +536,18 @@ class Usuario(models.Model):
     def __str__(self):
         return self.id.apelido
 
-
-class Document(models.Model):
-    description = models.CharField(max_length=255, blank=True)
-    document = models.FileField(upload_to='documents/')
-    uploaded_at = models.DateTimeField(auto_now_add=True)
+# class Enums(models.Model):
+#     SITUACAO_NO_SISTEMA_TYPE_CHOICES = (
+#         ('0', ''),
+#         ('1', 'UNIDADE'),
+#         ('2', 'PACOTE'),
+#         ('3', 'PESO'),
+#         ('4', 'FARDO'),
+#         ('5', 'CAIXA'),
+#         ('6', 'VIDRO'),
+#         ('7', 'DUZIA')
+#         ('8', 'LATA'),
+#
+#         situacao_no_sistema = models.CharField(max_length=1, choces=SITUACAO_NO_SISTEMA_TYPE_CHOICES)
+#
+#     )
