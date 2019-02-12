@@ -443,7 +443,7 @@ class Produto(models.Model):
                                            null=True)  # Field name made lowercase.
     dataatualizacao = models.DateTimeField(db_column='dataAtualizacao', blank=True,
                                            null=True)  # Field name made lowercase.
-    imgproduto = models.TextField(db_column='imgProduto', blank=True, null=True)  # Field name made lowercase.
+    imgproduto = models.BinaryField(db_column='imgProduto', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
         managed = False
@@ -506,7 +506,7 @@ class Uf(models.Model):
 
 
 class Usuario(models.Model):
-    id = models.OneToOneField(Colaborador, models.DO_NOTHING, db_column='id', primary_key=True)
+    id = models.OneToOneField('Colaborador', models.DO_NOTHING, db_column='id', primary_key=True)
     email = models.CharField(max_length=120, blank=False, null=False)
     senha = models.CharField(max_length=60, blank=False, null=False)
     imagem = models.TextField(blank=True, null=True)

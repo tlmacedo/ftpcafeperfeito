@@ -1,12 +1,12 @@
 from django.urls import path
 
-from cafeperfeito.views import LoginTemplateView, HomeTemplateView
+from cafeperfeito.views import LoginTemplateView, HomeTemplateView, ProdutosListView
 
 app_name = 'cafeperfeito'
 
 urlpatterns = [
     path('', LoginTemplateView.as_view(), name='login'),
     path('home/', HomeTemplateView.as_view(), name='home'),
-    # path('produto/', views.produto, name='produto'),
+    path('produtos/', ProdutosListView.as_view(), name='lista_produtos'),
     # path('empresa/', views.empresa, name='empresa'),
 ]

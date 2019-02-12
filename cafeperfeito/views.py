@@ -7,9 +7,10 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, FormView
+from django.views.generic.list import ListView
 
 from cafeperfeito.forms import LoginForm
-from ftpcafeperfeito.models import Usuario
+from ftpcafeperfeito.models import Usuario, Produto
 
 now = datetime.datetime.now()
 
@@ -21,7 +22,6 @@ class LoginTemplateView(FormView):
     context_object_name = 'usuario'
     extra_context = {'now': now, }
     success_url = reverse_lazy('cafeperfeito:home')
-    error_message = 'Deu zebra meu filho'
 
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
@@ -53,10 +53,28 @@ class HomeTemplateView(LoginRequiredMixin, TemplateView):
         context = super(HomeTemplateView, self).get_context_data(**kwargs)
         logUsuario = Usuario.objects.get(id=self.request.user.id)
         context['logUser'] = logUsuario
-        context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
+        context['logUserImagem'] = b64encode(logUsuario.imagem).decode('ascii')
+
+        # context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
 
         return context
 
 
-class EmpresaTemplateView(TemplateView):
-    template_name = 'cafeperfeito/empresa.html'
+class ProdutosListView(LoginRequiredMixin, ListView):
+    login_url = '/'
+    permission_denied_message = 'não está conectado'
+    raise_exception = True
+    redirect_field_name = 'next'
+
+    extra_context = {'now': now}
+    model = Produto
+    context_object_name = 'produtos'
+    template_name = 'cafeperfeito/produtos.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(ProdutosListView, self).get_context_data()
+        logUsuario = Usuario.objects.get(id=self.request.user.id)
+        context['logUser'] = logUsuario
+        context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
+
+        return context
