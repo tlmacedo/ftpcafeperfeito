@@ -9,7 +9,7 @@ from django.urls import reverse_lazy
 from django.views.generic import TemplateView, FormView, CreateView, UpdateView
 from django.views.generic.list import ListView
 
-from cafeperfeito.forms import LoginForm, InsereProdutoForm
+from cafeperfeito.forms import LoginForm, ProdutoForm
 from ftpcafeperfeito.models import Usuario, Produto
 
 now = datetime.datetime.now()
@@ -87,7 +87,7 @@ class ProdutoCreateView(LoginRequiredMixin, CreateView):
     extra_context = {'now': now}
     template_name = 'cafeperfeito/produto_cadastrar.html'
     model = Produto
-    form_class = InsereProdutoForm
+    form_class = ProdutoForm
     success_url = reverse_lazy('cafeperfeito:lista_produtos')
 
     def get_context_data(self, **kwargs):

@@ -30,20 +30,26 @@ ALLOWED_HOSTS = ['127.0.0.1', 'www.cafeperfeito.com.br']
 
 # Application definition
 
-INSTALLED_APPS = [
+DEFAULT_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ftpcafeperfeito',
-    'cafeperfeito',
+]
+
+THIRD_PARTY_APPS = [
     'widget_tweaks',
     'passlib.ext.django',
-    # 'mptt',
-    # 'treewidget',
 ]
+
+LOCAL_APPS = [
+    'cafeperfeito',
+    'ftpcafeperfeito',
+]
+
+INSTALLED_APPS = LOCAL_APPS + THIRD_PARTY_APPS + DEFAULT_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
