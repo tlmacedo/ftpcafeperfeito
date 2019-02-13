@@ -38,25 +38,25 @@ class LoginForm(forms.ModelForm):
 
 
 class InsereProdutoForm(forms.ModelForm):
-    # id = forms.IntegerField(
-    #     label='id',
-    #     min_value=0,
-    # )
-    # codigo = forms.CharField(
-    #     label='Código',
-    #     max_length=15,
-    #     required=True,
-    # )
-    # descricao = forms.CharField(
-    #     label='Descrição',
-    #     max_length=120
-    # )
-    # peso = forms.DecimalField(
-    #     label='Peso',
-    #     max_digits=19,
-    #     decimal_places=3,
-    #
-    # )
+    id = forms.IntegerField(
+        label='id',
+        min_value=0,
+    )
+    codigo = forms.CharField(
+        label='Código',
+        max_length=15,
+        required=True,
+    )
+    descricao = forms.CharField(
+        label='Descrição',
+        max_length=120
+    )
+    peso = forms.DecimalField(
+        label='Peso',
+        max_digits=19,
+        decimal_places=3,
+
+    )
     # unidadecomercial = forms.ModelChoiceField(queryset=None,
     #     # choices=UNIDADE_COMERCIAL.choices()
     # )  # .IntegerField(db_column='unidadeComercial')  # Field name made lowercase.
