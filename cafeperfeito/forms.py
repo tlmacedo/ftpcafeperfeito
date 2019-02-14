@@ -107,25 +107,25 @@ class ProdutoForm(forms.ModelForm):
     )
     fiscalcstorigem = forms.ModelChoiceField(
         label='cst origem',
-        queryset=Fiscalcstorigem.objects.all(),
+        queryset=FiscalCstOrigem.objects.all(),
         # blank=True,
         # null=True,
     )
     fiscalicms = forms.ModelChoiceField(
         label='icms',
-        queryset=Fiscalicms.objects.all(),
+        queryset=FiscalIcms.objects.all(),
         # blank=True,
         # null=True,
     )
     fiscalpis = forms.ModelChoiceField(
         label='pis',
-        queryset=Fiscalpiscofins.objects.all(),
+        queryset=FiscalPisCofins.objects.all(),
         # blank=True,
         # null=True,
     )
     fiscalcofins = forms.ModelChoiceField(
         label='cofins',
-        queryset=Fiscalpiscofins.objects.all(),
+        queryset=FiscalPisCofins.objects.all(),
         # blank=True,
         # null=True,
     )

@@ -123,14 +123,15 @@ class Contato(models.Model):
         db_table = 'contato'
 
 
-class ContatoEmailhomepage(models.Model):
+class ContatoEmailHomePage(models.Model):
     contato = models.ForeignKey(Contato, models.DO_NOTHING, db_column='Contato_id')
-    emailhomepagelist = models.OneToOneField('Emailhomepage', models.DO_NOTHING, db_column='emailHomePageList_id',
+    emailhomepagelist = models.OneToOneField('EmailHomePage', models.DO_NOTHING,
+                                             db_column='emailHomePageList_id',
                                              unique=True)
 
     class Meta:
         managed = False
-        db_table = 'contato_emailHomePage'
+        db_table = 'contato_email_home_page'
 
 
 class ContatoTelefone(models.Model):
@@ -187,14 +188,14 @@ class DjangoSession(models.Model):
         db_table = 'django_session'
 
 
-class Emailhomepage(models.Model):
+class EmailHomePage(models.Model):
     id = models.BigAutoField(primary_key=True)
     descricao = models.CharField(max_length=80)
     tipo = models.IntegerField()
 
     class Meta:
         managed = False
-        db_table = 'emailHomePage'
+        db_table = 'email_home_page'
 
 
 class Empresa(models.Model):
@@ -238,14 +239,14 @@ class EmpresaContato(models.Model):
         db_table = 'empresa_contato'
 
 
-class EmpresaEmailhomepage(models.Model):
+class EmpresaEmailHomePage(models.Model):
     empresa = models.ForeignKey(Empresa, models.DO_NOTHING, db_column='Empresa_id')
-    emailhomepagelist = models.OneToOneField(Emailhomepage, models.DO_NOTHING, db_column='emailHomePageList_id',
+    emailhomepagelist = models.OneToOneField(EmailHomePage, models.DO_NOTHING, db_column='emailHomePageList_id',
                                              unique=True)
 
     class Meta:
         managed = False
-        db_table = 'empresa_emailHomePage'
+        db_table = 'empresa_email_home_page'
 
 
 class EmpresaEndereco(models.Model):
@@ -258,15 +259,15 @@ class EmpresaEndereco(models.Model):
         db_table = 'empresa_endereco'
 
 
-class EmpresaInforeceitafederal(models.Model):
+class EmpresaInfoReceitaFederal(models.Model):
     empresa = models.ForeignKey(Empresa, models.DO_NOTHING, db_column='Empresa_id')
-    inforeceitafederallist = models.OneToOneField('Inforeceitafederal', models.DO_NOTHING,
+    inforeceitafederallist = models.OneToOneField('InfoReceitaFederal', models.DO_NOTHING,
                                                   db_column='infoReceitaFederalList_id',
                                                   unique=True)
 
     class Meta:
         managed = False
-        db_table = 'empresa_infoReceitaFederal'
+        db_table = 'empresa_info_receita_federal'
 
 
 class EmpresaTelefone(models.Model):
@@ -295,7 +296,7 @@ class Endereco(models.Model):
         db_table = 'endereco'
 
 
-class Fiscalcestncm(models.Model):
+class FiscalCestNcm(models.Model):
     id = models.BigAutoField(primary_key=True)
     segmento = models.CharField(max_length=100)
     descricao = models.CharField(max_length=600)
@@ -304,55 +305,55 @@ class Fiscalcestncm(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'fiscalCestNcm'
+        db_table = 'fiscal_cest_ncm'
 
 
-class Fiscalcstorigem(models.Model):
+class FiscalCstOrigem(models.Model):
     id = models.BigIntegerField(primary_key=True)
     descricao = models.CharField(max_length=180)
 
     class Meta:
         managed = False
-        db_table = 'fiscalCstOrigem'
+        db_table = 'fiscal_cst_origem'
 
 
-class Fiscalfretesituacaotributaria(models.Model):
+class FiscalFreteSituacaoTributaria(models.Model):
     id = models.BigIntegerField(primary_key=True)
     descricao = models.CharField(max_length=60)
 
     class Meta:
         managed = False
-        db_table = 'fiscalFreteSituacaoTributaria'
+        db_table = 'fiscal_frete_situacao_tributaria'
 
 
-class Fiscalicms(models.Model):
+class FiscalIcms(models.Model):
     id = models.BigIntegerField(primary_key=True)
     descricao = models.CharField(max_length=150)
 
     class Meta:
         managed = False
-        db_table = 'fiscalIcms'
+        db_table = 'fiscal_icms'
 
 
-class Fiscalpiscofins(models.Model):
+class FiscalPisCofins(models.Model):
     id = models.BigIntegerField(primary_key=True)
     descricao = models.CharField(max_length=150)
 
     class Meta:
         managed = False
-        db_table = 'fiscalPisCofins'
+        db_table = 'fiscal_pis_cofins'
 
 
-class Fiscaltributossefazam(models.Model):
+class FiscalTributosSefazAm(models.Model):
     id = models.BigIntegerField(primary_key=True)
     descricao = models.CharField(max_length=150)
 
     class Meta:
         managed = False
-        db_table = 'fiscalTributosSefazAm'
+        db_table = 'fiscal_tributos_sefaz_am'
 
 
-class Inforeceitafederal(models.Model):
+class InfoReceitaFederal(models.Model):
     id = models.BigAutoField(primary_key=True)
     tipo = models.IntegerField()
     code = models.CharField(max_length=70)
@@ -360,10 +361,10 @@ class Inforeceitafederal(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'infoReceitaFederal'
+        db_table = 'info_receita_federal'
 
 
-class Menuprincipal(models.Model):
+class MenuPrincipal(models.Model):
     id = models.BigAutoField(primary_key=True)
     menu = models.CharField(max_length=45)
     menulabel = models.CharField(db_column='menuLabel', max_length=45)
@@ -376,7 +377,7 @@ class Menuprincipal(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'menuPrincipal'
+        db_table = 'menu_principal'
 
 
 class Municipio(models.Model):
@@ -411,14 +412,17 @@ class Produto(models.Model):
     comissao = models.DecimalField(max_digits=19, decimal_places=2)
     ncm = models.CharField(max_length=8, blank=True, null=True)
     cest = models.CharField(max_length=7, blank=True, null=True)
-    fiscalcstorigem = models.ForeignKey('Fiscalcstorigem', models.DO_NOTHING, db_column='fiscalCstOrigem_id',
+    fiscalcstorigem = models.ForeignKey('FiscalCstOrigem', models.DO_NOTHING,
+                                        db_column='fiscalCstOrigem_id',
                                         blank=True, null=True)
-    fiscalicms = models.ForeignKey('Fiscalicms', models.DO_NOTHING, db_column='fiscalIcms_id', blank=True,
+    fiscalicms = models.ForeignKey('FiscalIcms', models.DO_NOTHING, db_column='fiscalIcms_id',
+                                   blank=True,
                                    null=True)
-    fiscalpis = models.ForeignKey('Fiscalpiscofins', models.DO_NOTHING, related_name='fiscalpis',
+    fiscalpis = models.ForeignKey('FiscalPisCofins', models.DO_NOTHING, related_name='fiscalpis',
                                   db_column='fiscalPis_id', blank=True,
                                   null=True)
-    fiscalcofins = models.ForeignKey('Fiscalpiscofins', models.DO_NOTHING, related_name='fiscalcofins',
+    fiscalcofins = models.ForeignKey('FiscalPisCofins', models.DO_NOTHING,
+                                     related_name='fiscalcofins',
                                      db_column='fiscalCofins_id', blank=True,
                                      null=True)
     nfegenero = models.CharField(db_column='nfeGenero', max_length=255, blank=True,
@@ -439,31 +443,31 @@ class Produto(models.Model):
         db_table = 'produto'
 
 
-class Produtocodigobarra(models.Model):
+class ProdutoCodigoBarra(models.Model):
     id = models.BigAutoField(primary_key=True)
     codigobarra = models.CharField(db_column='codigoBarra', unique=True, max_length=13)
     imgcogigobarra = models.BinaryField(db_column='imgCogigoBarra', blank=True, null=True)
 
     class Meta:
         managed = False
-        db_table = 'produtoCodigoBarra'
+        db_table = 'produto_codigo_barra'
 
 
-class ProdutoProdutocodigobarra(models.Model):
+class ProdutoProdutoCodigoBarra(models.Model):
     produto = models.OneToOneField('Produto', models.DO_NOTHING, db_column='Produto_id')
-    produtocodigobarralist = models.OneToOneField('Produtocodigobarra', models.DO_NOTHING,
+    produtocodigobarralist = models.OneToOneField('ProdutoCodigoBarra', models.DO_NOTHING,
                                                   db_column='produtoCodigoBarraList_id',
                                                   unique=True)
 
     class Meta:
         managed = False
-        db_table = 'produto_produtoCodigoBarra'
+        db_table = 'produto_produto_codigo_barra'
 
 
 class Telefone(models.Model):
     id = models.BigAutoField(primary_key=True)
     descricao = models.CharField(max_length=11)
-    telefoneoperadora = models.ForeignKey('Telefoneoperadora', models.DO_NOTHING, db_column='telefoneOperadora_id',
+    telefoneoperadora = models.ForeignKey('TelefoneOperadora', models.DO_NOTHING, db_column='telefoneOperadora_id',
                                           blank=True, null=True)
 
     class Meta:
@@ -471,7 +475,7 @@ class Telefone(models.Model):
         db_table = 'telefone'
 
 
-class Telefoneoperadora(models.Model):
+class TelefoneOperadora(models.Model):
     id = models.BigAutoField(primary_key=True)
     descricao = models.CharField(max_length=30)
     tipo = models.IntegerField()
@@ -481,7 +485,7 @@ class Telefoneoperadora(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'telefoneOperadora'
+        db_table = 'telefone_operadora'
 
 
 class Uf(models.Model):

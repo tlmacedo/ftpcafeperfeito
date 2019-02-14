@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('tree_id', models.PositiveIntegerField(db_index=True, editable=False)),
                 ('level', models.PositiveIntegerField(db_index=True, editable=False)),
                 ('menu_id', models.OneToOneField(on_delete=django.db.models.deletion.DO_NOTHING,
-                                                 to='ftpcafeperfeito.Menuprincipal')),
+                                                 to='ftpcafeperfeito.MenuPrincipal')),
                 ('parent',
                  treewidget.fields.TreeForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE,
                                                   related_name='children', to='ftpcafeperfeito.Menutree')),

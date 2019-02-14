@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                 ('tree_id', models.PositiveIntegerField(db_index=True, editable=False)),
                 ('level', models.PositiveIntegerField(db_index=True, editable=False)),
                 ('location', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL,
-                                               to='ftpcafeperfeito.Menuprincipal')),
+                                               to='ftpcafeperfeito.MenuPrincipal')),
                 ('owner', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL,
                                             to='ftpcafeperfeito.Usuario')),
                 ('parent',
