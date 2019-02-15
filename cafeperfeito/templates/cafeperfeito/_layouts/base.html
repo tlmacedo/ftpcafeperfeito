@@ -23,68 +23,93 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet">
 
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+            integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+            crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+            crossorigin="anonymous"></script>
+
     {#    <!--Import materialize.css-->#}
     {#    <link href="{% static 'cafeperfeito/externo/materialize/css/materialize.min.css' %}" media="screen,projection"#}
     {#          rel="stylesheet" type="text/css">#}
 
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="{% static 'cafeperfeito/style/css/ftpcafeperfeito.min.css' %}" type="text/css"/>
+    <link href="{% static 'cafeperfeito/style/css/ftpcafeperfeito.min.css' %}" type="text/css" rel="stylesheet"/>
 
 </head>
 <!-- #Head -->
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <a class="navbar-brand" href="{% url 'cafeperfeito:home' %}">
-        <img src="{% static 'cafeperfeito/img/sistema/logo.png' %}" width="35" height="35"
-             class="d-inline-block align-top" alt="">
-        CaféPerfeito
+        <img src="{% static 'cafeperfeito/img/sistema/logo.png' %}" width="60" height="60" alt="logo">
     </a>
-    <div class="container">
-        <div class="row">
+    <div class="row">
+        <div>
+            <img class="img-log-user" alt="user_img"
+                 src="{% static 'cafeperfeito/img/user.png' %}"/>
+        </div>
+        <div class="align-self-center">
             <div>
-                <img class="img-log-user" alt="logUserImagem"
-                     src="data:image;base64,{{ logUser.get_colaborador_imagem }}"/>
-            </div>
-            <div class="align-self-center">
-                <div>
-                    <div class="row name-log-user align-middle">
-                        <i class="material-icons">person</i> {{ logUser.id.apelido }}
-                    </div>
-                    <div class="row email-log-user align-middle">
-                        <i class="material-icons">alternate_email</i> {{ logUser.email }}
-                    </div>
+                <div class="row name-log-user align-middle">
+                    <i class="material-icons md-14">person</i> {{ logUser.id.apelido }}
+                </div>
+                <div class="row email-log-user align-middle">
+                    <i class="material-icons md-14">alternate_email</i> {{ logUser.email }}
                 </div>
             </div>
-            {#            <div>#}
-            {#                <form method="post" enctype="multipart/form-data">#}
-            {#                    {% csrf_token %}#}
-            {#                    <input type="file" name="logUserNewImagem"/>#}
-            {#                    <button type="submit">alterar imagem</button>#}
-            {#                    {% if uploaded_file_url %}#}
-            {#                        <p>File uploaded at: </p>#}
-            {#                    {% endif %}#}
-            {#                </form>#}
-            {#            </div>#}
         </div>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="material-icons md-24">menu</i>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-        <ul class="navbar-nav ">
+    <div class="collapse navbar-collapse justify-content-sm-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Cadastros
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownCadastros">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#">Cadastro de empresas</a>
                     <a class="dropdown-item" href="{% url 'cafeperfeito:lista_produtos' %}">Cadastro de produtos</a>
                     <a class="dropdown-item" href="#">Cadastro de equipamentos</a>
                 </div>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Movimentações
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    {#                    <a class="dropdown-item" href="#">Cadastro de empresas</a>#}
+                    {#                    <a class="dropdown-item" href="{% url 'cafeperfeito:lista_produtos' %}">Cadastro de produtos</a>#}
+                    {#                    <a class="dropdown-item" href="#">Cadastro de equipamentos</a>#}
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Relatorios
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    {#                    <a class="dropdown-item" href="#">Cadastro de empresas</a>#}
+                    {#                    <a class="dropdown-item" href="{% url 'cafeperfeito:lista_produtos' %}">Cadastro de produtos</a>#}
+                    {#                    <a class="dropdown-item" href="#">Cadastro de equipamentos</a>#}
+                </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" id="logout" href="#"><i class="material-icons">exit_to_app</i>Sair</a>
+            </li>
+            {#            <li class="nav-item">#}
+            {#                <a class="nav-link" href="#">Features</a>#}
+            {#            </li>#}
+            {#            <li class="nav-item">#}
+            {#                <a class="nav-link" href="#">Pricing</a>#}
+            {#            </li>#}
         </ul>
     </div>
 </nav>

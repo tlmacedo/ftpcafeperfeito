@@ -1,5 +1,9 @@
 $.CafePerfeito = {};
 
+function clicked(e) {
+    if (!confirm('Are you sure?')) e.preventDefault();
+}
+
 /* Searchbar - Function ================================================================================================
 *  You can manage the search bar
 *
@@ -53,3 +57,10 @@ $.CafePerfeito = {};
 //         $('#logo').fadeOut();
 //     }, 1000);
 // });
+
+function logout() {
+    if (!confirm('tem?')) e.preventDefault();
+}
+
+var elUserlogout = document.getElementById('logout');
+elUserlogout.addEventListener('click', logout, false);

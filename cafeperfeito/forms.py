@@ -22,7 +22,6 @@ class LoginForm(forms.ModelForm):
         nsenha = self.cleaned_data.get('senha')
         try:
             if not '@' in mailusuario:
-                # colaborador = Colaborador.objects.get(apelido=mailusuario)
                 usuario = Usuario.objects.get(id=Colaborador.objects.get(apelido=mailusuario))
             else:
                 usuario = Usuario.objects.get(email=mailusuario)
@@ -32,7 +31,7 @@ class LoginForm(forms.ModelForm):
             else:
                 print('Senha inválida')
                 return False
-        except Usuario.DoesNotExist:
+        except Colaborador.DoesNotExist or Usuario.DoesNotExist:
             return None
         pass
 

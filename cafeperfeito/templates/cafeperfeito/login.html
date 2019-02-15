@@ -44,8 +44,8 @@
     {#            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"#}
     {#            crossorigin="anonymous"></script>#}
 
-    {#    <!-- Our Custom CSS -->#}
-    {#    <link rel="stylesheet" href="{% static 'cafeperfeito/css/cafeperfeito.css' %}" type="text/css"/>#}
+    <!-- Our Custom CSS -->
+    <link href="{% static 'cafeperfeito/style/css/ftpcafeperfeito.min.css' %}" type="text/css" rel="stylesheet"/>
 
 </head>
 
@@ -53,25 +53,26 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
-            <div class="card">
+            <div class="card  text-center">
                 <div class="card-header">
                     <h5 class="card-title">Login de sistema</h5>
                     <div>
-                        <img class="circle responsive-img" src="{% static 'cafeperfeito/img/sistema/logo.png' %}"
+                        <img class="circle responsive-img"
+                             src="{% static 'cafeperfeito/img/sistema/logo.png' %}"
                              alt="logo.png">
                     </div>
                 </div>
                 <div class="card-body">
-                    {% if messages %}
-                        <ul class="messages">
-                            {% for message in messages %}
-                                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-                            {% endfor %}
-                        </ul>
-                    {% endif %}
                     <form method="post">
                         {% csrf_token %}
-                        {#                        {{ form.as_p }}#}
+                        {#{{ form.as_p }}#}
+                        {% if messages %}
+                            <ul class="messages">
+                                {% for message in messages %}
+                                    <li class="{{ message.tags }}">{{ message }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Email</span>
@@ -95,7 +96,10 @@
                 </div>
                 <div class="card-footer">
                     <!-- Footer -->
-                    <p class="mt-5 mb-3 text-muted">© 2006 - {{ now.year }}</p>
+                    <p class="mt-5 mb-3 text-muted">Copyright © 2006 - {% now 'Y' %}</p>
+                    {#                    <div>#}
+                    {#                        It is {% now "SHORT_DATETIME_FORMAT" %}#}
+                    {#                    </div>#}
                     <!-- #Footer -->
                 </div>
             </div>

@@ -8,10 +8,11 @@ i, .name-log-user, .email-log-user {
   //align-self: center;
 
   display: block;
-  font-family: Times;
-  font-weight: bold;
+  //font-family: $fontFamily;
+  //font-weight: bold;
+
   font-size: $fontSizeh6;
-  color: $sisColor_amber;
+  color: $corPricipal;
   line-height: 100%;
   text-align: left;
 
@@ -20,4 +21,5 @@ i, .name-log-user, .email-log-user {
     font-size: $fontSizeh6;
     alignment: center;
   }
+
 }
