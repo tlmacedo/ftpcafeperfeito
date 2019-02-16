@@ -1,5 +1,3 @@
-from django.conf import settings
-from django.conf.urls.static import static
 from django.urls import path
 
 from cafeperfeito.views import LoginTemplateView, HomeTemplateView, ProdutosListView, ProdutoCreateView, \
@@ -15,6 +13,3 @@ urlpatterns = [
     path('produto/<pk>', ProdutoUpdateView.as_view(), name='produto_atualizar'),
 
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
