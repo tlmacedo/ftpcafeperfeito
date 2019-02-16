@@ -1,11 +1,7 @@
-import io
-
-from PIL import Image
 from django import forms
-from django.template.context_processors import media
 from passlib.handlers.django import django_pbkdf2_sha256
 
-from ftpcafeperfeito.models import *
+from cafeperfeito.models import *
 
 
 class LoginForm(forms.ModelForm):
@@ -31,9 +27,8 @@ class LoginForm(forms.ModelForm):
                 usuario = Usuario.objects.get(email=mailusuario)
             if django_pbkdf2_sha256.verify(nsenha, usuario.senha) is True:
                 print('Senha Validada com sucesso!!!!!!!!!!!!!!!!!!!!!!!!')
-                stream = io.BytesIO(usuario.id.imgcolaborador)
-                img = Image.open(stream)
-                img.save(media('cafeperfeito/img/user.png'))
+                # stream = io.BytesIO(usuario.id.imgcolaborador)
+                # img = Image.open(stream)
                 # img.save('static/cafeperfeito/img/user.png')
                 return usuario
             else:
@@ -142,27 +137,29 @@ class ProdutoForm(forms.ModelForm):
         # blank=True,
         # null=True,
     )
-    usuariocadastro = forms.ModelChoiceField(
+    usuariocadastro = forms.CharField(
         label='usuario cadastro',
-        queryset=Usuario.objects.all(),
+        max_length=40,
         # blank=True,
         # null=True,
     )
-    datacadastro = forms.DateTimeField(
+    datacadastro = forms.CharField(
         label='data cadastro',
     )
-    usuarioatualizacao = forms.ModelChoiceField(
+    usuarioatualizacao = forms.CharField(
         label='usuario atualização',
-        queryset=Usuario.objects.all(),
+        max_length=40,
+        # queryset=Usuario.objects.all(),
         # blank=True,
         # null=True,
     )
-    dataatualizacao = forms.DateTimeField(
+    dataatualizacao = forms.CharField(
         label='data atualização',
     )
-    imgproduto = forms.ImageField(
-        label='imagem produto',
-    )
+
+    # imgproduto = forms.ImageField(
+    #     label='imagem produto',
+    # )
 
     class Meta:
         model = Produto

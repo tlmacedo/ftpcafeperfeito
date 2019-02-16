@@ -13,8 +13,7 @@ urlpatterns = [
                   path('produtos/', ProdutosListView.as_view(), name='lista_produtos'),
                   path('produto/cadastrar/', ProdutoCreateView.as_view(), name='produto_cadastrar'),
                   path('produto/<pk>', ProdutoUpdateView.as_view(), name='produto_atualizar'),
+]  ## + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-# if settings.DEBUG:
-#     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

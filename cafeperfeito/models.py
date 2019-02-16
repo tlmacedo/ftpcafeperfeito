@@ -3,6 +3,7 @@ from base64 import b64encode
 from django.db import models
 
 from cafeperfeito.enums import UNIDADE_COMERCIAL, SITUACAO_NO_SISTEMA
+from cafeperfeito.formatString import formatNcm
 
 
 class AuthGroup(models.Model):
@@ -307,6 +308,9 @@ class FiscalCestNcm(models.Model):
         managed = False
         db_table = 'fiscal_cest_ncm'
 
+    def __str__(self):
+        return str('{}-{} ncm[{}]'.format(self.id, self.descricao, formatNcm))
+
 
 class FiscalCstOrigem(models.Model):
     id = models.BigIntegerField(primary_key=True)
@@ -315,6 +319,9 @@ class FiscalCstOrigem(models.Model):
     class Meta:
         managed = False
         db_table = 'fiscal_cst_origem'
+
+    def __str__(self):
+        return '{:0>2}-{}'.format(self.id, self.descricao)
 
 
 class FiscalFreteSituacaoTributaria(models.Model):
@@ -325,6 +332,9 @@ class FiscalFreteSituacaoTributaria(models.Model):
         managed = False
         db_table = 'fiscal_frete_situacao_tributaria'
 
+    def __str__(self):
+        return '{:0>2}-{}'.format(self.id, self.descricao)
+
 
 class FiscalIcms(models.Model):
     id = models.BigIntegerField(primary_key=True)
@@ -333,6 +343,9 @@ class FiscalIcms(models.Model):
     class Meta:
         managed = False
         db_table = 'fiscal_icms'
+
+    def __str__(self):
+        return '{:0>2}-{}'.format(self.id, self.descricao)
 
 
 class FiscalPisCofins(models.Model):
@@ -343,6 +356,9 @@ class FiscalPisCofins(models.Model):
         managed = False
         db_table = 'fiscal_pis_cofins'
 
+    def __str__(self):
+        return '{:0>2}-{}'.format(self.id, self.descricao)
+
 
 class FiscalTributosSefazAm(models.Model):
     id = models.BigIntegerField(primary_key=True)
@@ -351,6 +367,9 @@ class FiscalTributosSefazAm(models.Model):
     class Meta:
         managed = False
         db_table = 'fiscal_tributos_sefaz_am'
+
+    def __str__(self):
+        return '{}-{}'.format(self.id, self.descricao)
 
 
 class InfoReceitaFederal(models.Model):

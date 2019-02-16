@@ -14,14 +14,23 @@
                         <form method="post">
                             <!-- Não se esqueça dessa tag -->
                             {% csrf_token %}
-                            {{ form.as_p }}
+                            {#                            {{ form.as_p }}#}
 
+                            {% for field in form.visible_fields %}
+                                <div class="form-group">
+                                    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                    {{ field|add_class:'form-control' }}
+                                    {% for error in field.errors %}
+                                        <span class="help-block">{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% endfor %}
                             {#                            <!-- Código -->#}
                             {#                            <div class="input-group mb-3">#}
                             {#                                <div class="input-group-prepend">#}
                             {#                                    <span class="input-group-text">Nome</span>#}
                             {#                                </div>#}
-                            {#                                {% render_field form.codigo class+="form-control" %}#}
+                            {#                                {% render_field form.codigo %}#}
                             {#                            </div>#}
                             {##}
                             {#                            <!-- Descrição -->#}

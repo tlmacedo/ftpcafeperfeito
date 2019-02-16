@@ -1,6 +1,3 @@
-import io
-from base64 import b64encode
-
 from django.contrib import messages
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -9,7 +6,7 @@ from django.views.generic import TemplateView, FormView, CreateView, UpdateView
 from django.views.generic.list import ListView
 
 from cafeperfeito.forms import LoginForm, ProdutoForm
-from ftpcafeperfeito.models import Usuario, Produto
+from cafeperfeito.models import Usuario, Produto, Colaborador
 
 
 class LoginTemplateView(FormView):
@@ -32,51 +29,34 @@ class LoginTemplateView(FormView):
                     login(request, user)
                     return self.form_valid(form)
             return self.form_invalid(**{'form': form})
-        # return render(request, 'cafeperfeito/login.html', {'form': form})
 
 
 class HomeTemplateView(LoginRequiredMixin, TemplateView):
     login_url = '/'
-    # permission_denied_message = 'não está conectado'
-    # raise_exception = True
-    # redirect_field_name = 'next'
 
     template_name = 'cafeperfeito/home.html'
 
     def get_context_data(self, **kwargs):
         context = super(HomeTemplateView, self).get_context_data(**kwargs)
-        logUsuario = Usuario.objects.get(id=self.request.user.id)
-        context['logUser'] = logUsuario
-        context['logUserImagem'] = io.BytesIO(logUsuario.id.imgcolaborador)
-        # context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
-
+        context['userImagem'] = Colaborador.objects.get(id=self.request.user.id).get_colaborador_imagem()
         return context
 
 
 class ProdutosListView(LoginRequiredMixin, ListView):
     login_url = '/'
-    # permission_denied_message = 'não está conectado'
-    # raise_exception = True
-    # redirect_field_name = 'next'
 
     template_name = 'cafeperfeito/produtos.html'
     model = Produto
     context_object_name = 'produtos'
 
-    def get_context_data(self, **kwargs):
+    def get_context_data(self, *, object_list=None, **kwargs):
         context = super(ProdutosListView, self).get_context_data()
-        logUsuario = Usuario.objects.get(id=self.request.user.id)
-        context['logUser'] = logUsuario
-        context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
-
+        context['userImagem'] = Colaborador.objects.get(id=self.request.user.id).get_colaborador_imagem()
         return context
 
 
 class ProdutoCreateView(LoginRequiredMixin, CreateView):
     login_url = '/'
-    permission_denied_message = 'não está conectado'
-    raise_exception = True
-    redirect_field_name = 'next'
 
     template_name = 'cafeperfeito/produto_cadastrar.html'
     model = Produto
@@ -85,31 +65,21 @@ class ProdutoCreateView(LoginRequiredMixin, CreateView):
 
     def get_context_data(self, **kwargs):
         context = super(ProdutoCreateView, self).get_context_data()
-        logUsuario = Usuario.objects.get(id=self.request.user.id)
-        context['logUser'] = logUsuario
-        context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
-
+        context['userImagem'] = Colaborador.objects.get(id=self.request.user.id).get_colaborador_imagem()
         return context
 
 
 class ProdutoUpdateView(LoginRequiredMixin, UpdateView):
     login_url = '/'
-    permission_denied_message = 'não está conectado'
-    raise_exception = True
-    redirect_field_name = 'next'
 
     template_name = 'cafeperfeito/produto_atualizar.html'
     model = Produto
-    fields = '__all__'
-    context_object_name = 'produto'
+    form_class = ProdutoForm
     success_url = reverse_lazy('cafeperfeito:lista_produtos')
 
     def get_context_data(self, **kwargs):
         context = super(ProdutoUpdateView, self).get_context_data()
-        logUsuario = Usuario.objects.get(id=self.request.user.id)
-        context['logUser'] = logUsuario
-        context['logUserImagem'] = b64encode(logUsuario.id.imgcolaborador).decode('ascii')
-
+        context['userImagem'] = Colaborador.objects.get(id=self.request.user.id).get_colaborador_imagem()
         return context
 
     def get_object(self, queryset=None):
@@ -120,10 +90,7 @@ class ProdutoUpdateView(LoginRequiredMixin, UpdateView):
 
         if id is not None:
             produto = Produto.objects.filter(id=id).first()
-
         elif slug is not None:
             campo_slug = self.get_slug_field()
-
             produto = Produto.objects.filter(**{campo_slug: slug}).first()
-
         return produto

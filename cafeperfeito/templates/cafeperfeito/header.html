@@ -1,57 +1,15 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 {% load staticfiles %}
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>
-        {% block title %}Sistema de Gerenciamento de Fucionários{% endblock %}
-    </title>
-
-    <link rel="shortcut icon" href="{% static 'cafeperfeito/img/sistema/icon.iconset/icon_16x16.png' %}"
-          type="image/png">
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Bootstrap CSS -->
-    <link href="{% static 'cafeperfeito/externo/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
-
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet">
-
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-            integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-            crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-            crossorigin="anonymous"></script>
-
-    {#    <!--Import materialize.css-->#}
-    {#    <link href="{% static 'cafeperfeito/externo/materialize/css/materialize.min.css' %}" media="screen,projection"#}
-    {#          rel="stylesheet" type="text/css">#}
-
-    <!-- Our Custom CSS -->
-    <link href="{% static 'cafeperfeito/style/css/ftpcafeperfeito.min.css' %}" type="text/css" rel="stylesheet"/>
-
-</head>
-<!-- #Head -->
-<body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <a class="navbar-brand" href="{% url 'cafeperfeito:home' %}">
         <img src="{% static 'cafeperfeito/img/sistema/logo.png' %}" width="60" height="60" alt="logo">
     </a>
     <div class="row">
-        <div>
-            <img class="img-log-user" alt="user_img"
-                    {#                         src="{% static 'cafeperfeito/img/user.png' %}"/>#}
-                 src="data:image;base64,{{ userImagem }}"/>
-        </div>
+        {#        <div>#}
+        {#            <img class="img-log-user" alt="user_img"#}
+        {#                 src="{% static 'cafeperfeito/img/user.png' %}"/>#}
+        {#                 src="data:image;base64,{{ logUser.get_colaborador_imagem }}"/>#}
+        {#        </div>#}
         <div class="align-self-center">
             <div>
                 <div class="row name-log-user align-middle">
@@ -114,40 +72,3 @@
         </ul>
     </div>
 </nav>
-
-<!-- Bloco de conteúdo -->
-<section id="secContent">
-    {% block conteudo %}{% endblock %}
-</section>
-<!-- #Bloco de conteúdo -->
-
-
-<!-- jQuery - Slim version (=without AJAX) -->
-<script src="{% static 'cafeperfeito/externo/jQueryPopper/jquery-3.3.1.slim.min.js' %}" type="text/javascript"></script>
-
-<!-- Popper.JS -->
-<script src="{% static 'cafeperfeito/externo/jQueryPopper/popper.min.js' %}" type="text/javascript"></script>
-
-<!-- Bootstrap JS -->
-<script src="{% static 'cafeperfeito/externo/bootstrap/js/bootstrap.min.js' %}" type="text/javascript"></script>
-
-<!-- Our Custom CSS -->
-<script type="text/javascript" src="{% static 'cafeperfeito/style/js/ftpcafeperfeito.js' %}"></script>
-
-
-{% block scripts %}{% endblock %}
-
-
-{#<script type="text/javascript">#}
-{#    document.addEventListener('DOMContentLoaded', function () {#}
-{#        var elems = document.querySelectorAll('.sidenav');#}
-{#        var instances = M.Sidenav.init(elems, options);#}
-{#    });#}
-{#    $(document).ready(function () {#}
-{#        $('.sidenav').sidenav();#}
-{#    });#}
-{#</script>#}
-
-</body>
-
-</html>
