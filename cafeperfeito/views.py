@@ -1,7 +1,6 @@
 import io
 from base64 import b64encode
 
-from PIL import Image
 from django.contrib import messages
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -31,9 +30,6 @@ class LoginTemplateView(FormView):
                 else:
                     user = authenticate(username=usuario.id.apelido, password=form.cleaned_data['senha'])
                     login(request, user)
-                    stream = io.BytesIO(usuario.id.imgcolaborador)
-                    img = Image.open(stream)
-                    img.save('cafeperfeito/static/cafeperfeito/img/user.png')
                     return self.form_valid(form)
             return self.form_invalid(**{'form': form})
         # return render(request, 'cafeperfeito/login.html', {'form': form})
