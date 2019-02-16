@@ -75,3 +75,29 @@ function clicked(e) {
 //         }
 //     });
 // }());
+
+
+(function () {
+    var pwd = document.getElementById('password');
+    var chk = document.getElementById('showPassword');
+
+    chk.addEventListener('change', function (e) {
+        var target = e.target || e.srcElement;
+        try {
+            if (target.checked) {
+                pwd.type = 'text';
+            } else {
+                pwd.type = 'password';
+            }
+        } catch (error) {
+            alert('não é possivel mudar o tipo')
+        }
+    });
+}());
+
+
+
+
+
+
+
