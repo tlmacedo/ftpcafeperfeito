@@ -1,6 +1,3 @@
-import io
-
-from PIL import Image
 from django import forms
 from passlib.handlers.django import django_pbkdf2_sha256
 
@@ -30,9 +27,9 @@ class LoginForm(forms.ModelForm):
                 usuario = Usuario.objects.get(email=mailusuario)
             if django_pbkdf2_sha256.verify(nsenha, usuario.senha) is True:
                 print('Senha Validada com sucesso!!!!!!!!!!!!!!!!!!!!!!!!')
-                stream = io.BytesIO(usuario.id.imgcolaborador)
-                img = Image.open(stream)
-                img.save('cafeperfeito/static/cafeperfeito/img/user.png')
+                # stream = io.BytesIO(usuario.id.imgcolaborador)
+                # img = Image.open(stream)
+                # img.save('cafeperfeito/static/cafeperfeito/img/user.png')
                 return usuario
             else:
                 print('Senha inválida')
