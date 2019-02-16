@@ -58,25 +58,6 @@ function clicked(e) {
 //     }, 1000);
 // });
 
-// (function () {
-//     var pwd = document.getElementById('password');
-//     var chk = document.getElementById('showPassword');
-//
-//     addEventListener(chk, 'change', function (e) {
-//         var target = e.target || e.srcElement;
-//         try {
-//             if (target.checked) {
-//                 pwd.type = 'text';
-//             } else {
-//                 pwd.type = 'password';
-//             }
-//         } catch (error) {
-//             alert('não é possivel mudar o tipo')
-//         }
-//     });
-// }());
-
-
 (function () {
     var pwd = document.getElementById('password');
     var chk = document.getElementById('showPassword');
