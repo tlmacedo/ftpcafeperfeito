@@ -58,9 +58,20 @@ function clicked(e) {
 //     }, 1000);
 // });
 
-function logout() {
-    if (!confirm('tem?')) e.preventDefault();
-}
-
-var elUserlogout = document.getElementById('logout');
-elUserlogout.addEventListener('click', logout, false);
+// (function () {
+//     var pwd = document.getElementById('password');
+//     var chk = document.getElementById('showPassword');
+//
+//     addEventListener(chk, 'change', function (e) {
+//         var target = e.target || e.srcElement;
+//         try {
+//             if (target.checked) {
+//                 pwd.type = 'text';
+//             } else {
+//                 pwd.type = 'password';
+//             }
+//         } catch (error) {
+//             alert('não é possivel mudar o tipo')
+//         }
+//     });
+// }());
