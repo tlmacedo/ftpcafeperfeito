@@ -3,7 +3,6 @@ from base64 import b64encode
 from django.db import models
 
 from cafeperfeito.enums import UNIDADE_COMERCIAL, SITUACAO_NO_SISTEMA
-from cafeperfeito.formatString import formatNcm
 
 
 class AuthGroup(models.Model):
@@ -414,48 +413,43 @@ class Municipio(models.Model):
 
 class Produto(models.Model):
     id = models.BigAutoField(primary_key=True)
-    codigo = models.CharField(unique=True, max_length=15)
-    descricao = models.CharField(max_length=120)
-    peso = models.DecimalField(max_digits=19, decimal_places=3)
-    unidadecomercial = models.IntegerField(db_column='unidadeComercial',
-                                           choices=UNIDADE_COMERCIAL.choices())
-    situacao = models.IntegerField(choices=SITUACAO_NO_SISTEMA.choices())
+    codigo = models.CharField(unique=True, max_length=15, verbose_name=u'Códigos')
+    descricao = models.CharField(max_length=120, verbose_name=u'Descrição')
+    peso = models.DecimalField(max_digits=19, decimal_places=3, verbose_name=u'Peso')
+    unidadecomercial = models.IntegerField(db_column='unidadeComercial', choices=UNIDADE_COMERCIAL.choices(),
+                                           verbose_name=u'Und Comercial')
+    situacao = models.IntegerField(choices=SITUACAO_NO_SISTEMA.choices(), verbose_name=u'Situação')
     precofabrica = models.DecimalField(db_column='precoFabrica', max_digits=19,
-                                       decimal_places=2)
+                                       decimal_places=2, verbose_name=u'Preço Fabrica')
     precoconsumidor = models.DecimalField(db_column='precoConsumidor', max_digits=19,
-                                          decimal_places=2)
-    varejo = models.IntegerField()
+                                          decimal_places=2, verbose_name=u'Preço Consumidor')
+    varejo = models.IntegerField(verbose_name=u'Varejo')
     ultimpostosefaz = models.DecimalField(db_column='ultImpostoSefaz', max_digits=19,
-                                          decimal_places=2)
-    ultfrete = models.DecimalField(db_column='ultFrete', max_digits=19, decimal_places=2)
-    comissao = models.DecimalField(max_digits=19, decimal_places=2)
-    ncm = models.CharField(max_length=8, blank=True, null=True)
-    cest = models.CharField(max_length=7, blank=True, null=True)
-    fiscalcstorigem = models.ForeignKey('FiscalCstOrigem', models.DO_NOTHING,
-                                        db_column='fiscalCstOrigem_id',
-                                        blank=True, null=True)
+                                          decimal_places=2, verbose_name=u'Último Imposto')
+    ultfrete = models.DecimalField(db_column='ultFrete', max_digits=19, decimal_places=2, verbose_name=u'Último Frete')
+    comissao = models.DecimalField(max_digits=19, decimal_places=2, verbose_name=u'Comissão')
+    ncm = models.CharField(max_length=8, blank=True, null=True, verbose_name=u'Ncm')
+    cest = models.CharField(max_length=7, blank=True, null=True, verbose_name=u'Cest')
+    fiscalcstorigem = models.ForeignKey('FiscalCstOrigem', models.DO_NOTHING, db_column='fiscalCstOrigem_id',
+                                        blank=True, null=True, verbose_name=u'Cst Origem')
     fiscalicms = models.ForeignKey('FiscalIcms', models.DO_NOTHING, db_column='fiscalIcms_id',
-                                   blank=True,
-                                   null=True)
+                                   blank=True, null=True, verbose_name=u'Icms')
     fiscalpis = models.ForeignKey('FiscalPisCofins', models.DO_NOTHING, related_name='fiscalpis',
-                                  db_column='fiscalPis_id', blank=True,
-                                  null=True)
+                                  db_column='fiscalPis_id', blank=True, null=True, verbose_name=u'Pis')
     fiscalcofins = models.ForeignKey('FiscalPisCofins', models.DO_NOTHING,
-                                     related_name='fiscalcofins',
-                                     db_column='fiscalCofins_id', blank=True,
-                                     null=True)
-    nfegenero = models.CharField(db_column='nfeGenero', max_length=255, blank=True,
-                                 null=True)
+                                     related_name='fiscalcofins', db_column='fiscalCofins_id', blank=True,
+                                     null=True, verbose_name=u'Cofins')
+    nfegenero = models.CharField(db_column='nfeGenero', max_length=255, blank=True, null=True, verbose_name=u'Gênero')
     usuariocadastro = models.ForeignKey('Usuario', models.DO_NOTHING, related_name='usuariocadastroproduto',
-                                        db_column='usuarioCadastro_id', blank=True,
-                                        null=True)
-    datacadastro = models.DateTimeField(auto_now_add=True, db_column='dataCadastro')
+                                        db_column='usuarioCadastro_id', blank=True, null=True,
+                                        verbose_name=u'Usuário Cadastro')
+    datacadastro = models.DateTimeField(auto_now_add=True, db_column='dataCadastro', verbose_name=u'Data Cadastro')
     usuarioatualizacao = models.ForeignKey('Usuario', models.DO_NOTHING, related_name='usuarioatualizacaoproduto',
-                                           db_column='usuarioAtualizacao_id', blank=True,
-                                           null=True)
-    dataatualizacao = models.DateTimeField(auto_now=True, db_column='dataAtualizacao', blank=True,
-                                           null=True)
-    imgproduto = models.BinaryField(db_column='imgProduto', blank=True, null=True)
+                                           db_column='usuarioAtualizacao_id', blank=True, null=True,
+                                           verbose_name=u'Usuário Atualização')
+    dataatualizacao = models.DateTimeField(auto_now=True, db_column='dataAtualizacao', blank=True, null=True,
+                                           verbose_name=u'Data Atualização')
+    imgproduto = models.BinaryField(db_column='imgProduto', blank=True, null=True, verbose_name=u'Imagem Produto')
 
     class Meta:
         managed = False

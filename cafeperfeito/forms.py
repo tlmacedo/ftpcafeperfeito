@@ -1,4 +1,5 @@
 from django import forms
+from django.forms import TextInput
 from passlib.handlers.django import django_pbkdf2_sha256
 
 from cafeperfeito.models import *
@@ -40,14 +41,22 @@ class LoginForm(forms.ModelForm):
 
 
 class ProdutoForm(forms.ModelForm):
-    id = forms.IntegerField(
-        label='id',
-        min_value=0,
-    )
+    # id = forms.CharField(
+    #     label='Pkd',
+    #     widget=forms.TextInput(
+    #         attrs={
+    #             'readonly': 'readonly',
+    #             'class': 'text-right',
+    #         }),
+    # )
     codigo = forms.CharField(
-        label='Código',
+        label='codigoteste',
         max_length=15,
-        required=True,
+        required='True',
+        widget=forms.TextInput(
+            attrs={
+                'class': 'text-right msk-telefone',
+            }),
     )
     descricao = forms.CharField(
         label='Descrição',
@@ -97,7 +106,8 @@ class ProdutoForm(forms.ModelForm):
     )
     ncm = forms.CharField(
         label='ncm',
-        max_length=8,
+        # max_length=8,
+        widget=TextInput(attrs={'class': 'mask-ncm'})
         # blank=True,
         # null=True,
     )
@@ -146,17 +156,18 @@ class ProdutoForm(forms.ModelForm):
     datacadastro = forms.CharField(
         label='data cadastro',
     )
-    usuarioatualizacao = forms.CharField(
-        label='usuario atualização',
-        max_length=40,
-        # queryset=Usuario.objects.all(),
-        # blank=True,
-        # null=True,
-    )
-    dataatualizacao = forms.CharField(
-        label='data atualização',
-    )
 
+    # usuarioatualizacao = forms.CharField(
+    #     label='usuario atualização',
+    #     max_length=40,
+    #     # queryset=Usuario.objects.all(),
+    #     # blank=True,
+    #     # null=True,
+    # )
+    # dataatualizacao = forms.CharField(
+    #     label='data atualização',
+    # )
+    #
     # imgproduto = forms.ImageField(
     #     label='imagem produto',
     # )
@@ -165,3 +176,14 @@ class ProdutoForm(forms.ModelForm):
         model = Produto
 
         fields = '__all__'
+
+        # fields = (
+        #     'id', 'codigo', 'descricao', 'peso', 'unidadecomercial', 'situacao', 'precofabrica',
+        #     'precoconsumidor', 'varejo', 'ultimpostosefaz', 'ultfrete', 'comissao', 'ncm',
+        #     'cest', 'fiscalcstorigem', 'fiscalicms', 'fiscalpis', 'fiscalcofins', 'nfegenero',
+        #     'usuariocadastro', 'usuarioatualizacao',
+        # )
+        # widgets = {
+        #     'id': TextInput(attrs={'readonly': 'readonly', 'class': 'text-right'}),
+        #     'name': TextInput(attrs={'class': 'text-right', 'rows': 20}),
+        # }

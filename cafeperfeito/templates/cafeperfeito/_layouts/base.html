@@ -23,14 +23,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet">
 
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-            integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-            crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-            crossorigin="anonymous"></script>
-
+    {#    <!-- Font Awesome JS -->#}
+    {#    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"#}
+    {#            integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"#}
+    {#            crossorigin="anonymous"></script>#}
+    {#    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"#}
+    {#            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"#}
+    {#            crossorigin="anonymous"></script>#}
+    {##}
     {#    <!--Import materialize.css-->#}
     {#    <link href="{% static 'cafeperfeito/externo/materialize/css/materialize.min.css' %}" media="screen,projection"#}
     {#          rel="stylesheet" type="text/css">#}
@@ -105,13 +105,14 @@
             <li class="nav-item active">
                 <a class="nav-link" id="logout" href="#"><i class="material-icons">exit_to_app</i>Sair</a>
             </li>
-            {#            <li class="nav-item">#}
-            {#                <a class="nav-link" href="#">Features</a>#}
-            {#            </li>#}
-            {#            <li class="nav-item">#}
-            {#                <a class="nav-link" href="#">Pricing</a>#}
-            {#            </li>#}
         </ul>
+        {#                <div id="newItemButton">#}
+        {#                    <button href="#" id="showForm">novo item</button>#}
+        {#                </div>#}
+        {#                <form id="newItemForm">#}
+        {#                    <input type="text" id="itemDescription" placeholder="Add description..."/>#}
+        {#                    <input type="submit" id="addButton" value="add"/>#}
+        {#                </form>#}
     </div>
 </nav>
 
@@ -122,20 +123,23 @@
 <!-- #Bloco de conteúdo -->
 
 
+{% block scripts %}{% endblock %}
+
+
 <!-- jQuery - Slim version (=without AJAX) -->
-<script src="{% static 'cafeperfeito/externo/jQueryPopper/jquery-3.3.1.slim.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'cafeperfeito/externo/jQueryPopper/jquery-3.3.1.slim.js' %}" type="text/javascript"></script>
 
 <!-- Popper.JS -->
-<script src="{% static 'cafeperfeito/externo/jQueryPopper/popper.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'cafeperfeito/externo/jQueryPopper/popper.js' %}" type="text/javascript"></script>
 
 <!-- Bootstrap JS -->
-<script src="{% static 'cafeperfeito/externo/bootstrap/js/bootstrap.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'cafeperfeito/externo/bootstrap/js/bootstrap.js' %}" type="text/javascript"></script>
 
 <!-- Our Custom CSS -->
-<script type="text/javascript" src="{% static 'cafeperfeito/style/js/ftpcafeperfeito.js' %}"></script>
+<script src="{% static 'cafeperfeito/externo/jquery-mask/jquery.mask.min.js' %}" type="text/javascript"></script>
 
-
-{% block scripts %}{% endblock %}
+<!-- Our Custom CSS -->
+<script src="{% static 'cafeperfeito/style/js/ftpcafeperfeito.js' %}" type="text/javascript"></script>
 
 
 {#<script type="text/javascript">#}

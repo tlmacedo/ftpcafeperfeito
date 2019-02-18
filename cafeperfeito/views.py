@@ -73,7 +73,6 @@ class ProdutoUpdateView(LoginRequiredMixin, UpdateView):
     login_url = '/'
 
     template_name = 'cafeperfeito/produto_atualizar.html'
-    model = Produto
     form_class = ProdutoForm
     success_url = reverse_lazy('cafeperfeito:lista_produtos')
 
