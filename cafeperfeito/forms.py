@@ -55,7 +55,7 @@ class ProdutoForm(forms.ModelForm):
         required='True',
         widget=forms.TextInput(
             attrs={
-                'class': 'text-right msk-telefone',
+                'class': 'text-right', 'id': 'codigo',
             }),
     )
     descricao = forms.CharField(
