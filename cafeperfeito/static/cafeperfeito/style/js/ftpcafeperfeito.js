@@ -27,15 +27,16 @@ $(function () {
 //     $('.msk-money').mask('000.000.000.000.000,00', {reverse: true});
 // });
 
-$('#codigo').mask('AA/SS/YYYY', {
-    'translation': {
-        A: {pattern: /[A-Z]/},
-        S: {pattern: /[a-z]/},
-        Y: {pattern: /[0-9]/},
-    }
-});
+// $('#codigo').mask('AA/SS/YYYY', {
+//     'translation': {
+//         A: {pattern: /[A-Z]/},
+//         S: {pattern: /[a-z]/},
+//         Y: {pattern: /[0-9]/},
+//     }
+// });
 
 $(document).ready(function () {
+    $('.numero').mask('000000000000000000000000000000')
     $('.date').mask('00/00/0000');
     $('.time').mask('00:00:00');
     $('.date_time').mask('00/00/0000 00:00:00');
@@ -48,6 +49,7 @@ $(document).ready(function () {
     $('.cnpj').mask('00.000.000/0000-00', {reverse: true});
     $('.money').mask('000.000.000.000.000,00', {reverse: true});
     $('.money2').mask("#.##0,00", {reverse: true});
+    $('.peso3').mask("#.##0,000", {reverse: true});
     $('.ip_address').mask('0ZZ.0ZZ.0ZZ.0ZZ', {
         translation: {
             'Z': {
@@ -71,33 +73,14 @@ $(document).ready(function () {
     $('.selectonfocus').mask("00/00/0000", {selectOnFocus: true});
 });
 
-var options = {
-    onComplete: function (cep) {
-        alert('CEP Completed!:' + cep);
-    },
-    onKeyPress: function (cep, event, currentField, options) {
-        console.log('A key was pressed!:', cep, ' event: ', event,
-            'currentField: ', currentField, ' options: ', options);
-    },
-    onChange: function (cep) {
-        console.log('cep changed! ', cep);
-    },
-    onInvalid: function (val, e, f, invalid, options) {
-        var error = invalid[0];
-        console.log("Digit: ", error.v, " is invalid for the position: ", error.p, ". We expect something like: ", error.e);
-    }
-};
 
-$('.cep_with_callback').mask('00000-000', options);
-
-
-var SPMaskBehavior = function (val) {
-        return val.replace(/\D/g, '').length === 9 ? '0 0000-0000' : '9 0000-0000';
-    },
-    spOptions = {
-        onKeyPress: function (val, e, field, options) {
-            field.mask(SPMaskBehavior.apply({}, arguments), options);
-        }
-    };
-
-$('.sp_celphones').mask(SPMaskBehavior, spOptions);
+// var SPMaskBehavior = function (val) {
+//         return val.replace(/\D/g, '').length === 9 ? '0 0000-0000' : '9 0000-0000';
+//     },
+//     spOptions = {
+//         onKeyPress: function (val, e, field, options) {
+//             field.mask(SPMaskBehavior.apply({}, arguments), options);
+//         }
+//     };
+//
+// $('.sp_celphones').mask(SPMaskBehavior, spOptions);

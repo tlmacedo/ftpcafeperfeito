@@ -55,7 +55,7 @@ class ProdutoForm(forms.ModelForm):
         required='True',
         widget=forms.TextInput(
             attrs={
-                'class': 'text-right', 'id': 'codigo',
+                'class': 'text-right numero',
             }),
     )
     descricao = forms.CharField(
@@ -66,6 +66,10 @@ class ProdutoForm(forms.ModelForm):
         label='Peso',
         max_digits=19,
         decimal_places=3,
+        widget=forms.TextInput(
+            attrs={
+                'class': 'text-right peso3',
+            }),
     )
     unidadecomercial = forms.ChoiceField(
         label='Und Comercial',
@@ -79,11 +83,19 @@ class ProdutoForm(forms.ModelForm):
         label='vlr fabrica',
         max_digits=19,
         decimal_places=2,
+        widget=forms.TextInput(
+            attrs={
+                'class': 'text-right money2',
+            }),
     )
     precoconsumidor = forms.DecimalField(
         label='vlr Consumidor',
         max_digits=19,
         decimal_places=2,
+        widget=forms.TextInput(
+            attrs={
+                'class': 'text-right money2',
+            }),
     )
     varejo = forms.IntegerField(
         label='varejo',
