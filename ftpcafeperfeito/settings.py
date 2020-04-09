@@ -26,7 +26,7 @@ SECRET_KEY = '+$bcgui^k=-2c+by8fyo^mvi_faj5&^wu(o9h$ofa)f5qw4kk^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'www.ftp_v201.com.br', 'ftp_v201.com.br']
+ALLOWED_HOSTS = ['127.0.0.1', 'www.cafeperfeito.com.br', 'cafeperfeito.com.br']
 
 # Application definition
 
@@ -38,7 +38,7 @@ DEFAULT_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'widget_tweaks',
-    # 'ftp_v201.apps.CafeperfeitoConfig',
+    # 'cafeperfeito.apps.CafeperfeitoConfig',
 ]
 
 THIRD_PARTY_APPS = [
@@ -94,11 +94,11 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ftp_v201',
+        'NAME': 'cafeperfeito',
 
-        # 'USER': 'ftp_v201',
+        # 'USER': 'cafeperfeito',
         # 'PASSWORD': 'Tlm@487901',
-        # 'HOST': 'mysql.ftp_v201.com.br',
+        # 'HOST': 'mysql.cafeperfeito.com.br',
 
         'USER': 'root',
         'PASSWORD': 'Tlm$487901',
@@ -141,9 +141,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Manaus'
 
 USE_I18N = True
 
@@ -156,4 +156,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/home/ftp_v201/www/static'
+STATIC_ROOT = '/home/cafeperfeito/www/static'

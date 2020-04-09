@@ -1,397 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8bb7ae8-3a6c-47c2-9725-09739218bbcd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ftpcafeperfeito.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/enums.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/formatString.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/service.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/certificados/TokenGDStarSign.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/certificados/TokenSafeNet5100.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/jquery-3.3.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/jquery-3.3.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/jquery-3.3.1.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/jquery-3.3.1.slim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/jquery-3.3.1.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/popper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jqueryMask/jquery.mask.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jqueryMask/jquery.mask.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/css/materialize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/css/materialize.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/js/materialize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/js/materialize.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_add_celular_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_add_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_add_phone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_atencao_losango_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_atencao_triangulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_barcode_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_barcode_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_barcode_update_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_cadastro_empresa_cancel_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_cadastro_produto_cancel_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_cadeado_senha_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_celular_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_celular_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_check_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_email_@_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_email_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_email_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_email_update_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_empresa_cliente_ativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_empresa_cliente_desativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_empresa_fornecedor_ativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_empresa_fornecedor_desativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_empresa_tranportadora_ativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_empresa_tranportadora_desativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_endereco_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_endereco_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_err_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_err_quadrado_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_file_move_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_list_end_cobranca_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_list_end_correspondencia_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_list_end_entrega_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_list_end_principal_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_list_end_recado_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_list_end_residencial_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_menu_cadastro_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_menu_cadastro_empresa_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_menu_cadastro_equipamento_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_menu_cadastro_produto_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_menu_config_item_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_menu_fechar_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_menu_home_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_menu_item_cargo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_menu_movimentacao_entrada_produto_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_menu_movimentacao_saida_produto_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_menu_movimentacoes_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_menu_relatorio_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_password_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_phone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_principal_ativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_principal_desativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_relogio_16dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_relogio_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_relogio_vazado_16dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_remove_celular_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_remove_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_remove_phone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_repositorio_db_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_repositorio_git_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_telefone_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_telefone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_tpn_contato_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_tpn_contatos_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_tpn_email_@_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_tpn_enderecos_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_tpn_inf_cadastral_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_tpn_telefone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_tpn_web_home_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_user_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_user_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_user_update_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_usuario_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_web_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_web_home_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_web_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_web_update_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_webservice_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/black/ic_xml_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/ic_repositorio_git_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_add_celular_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_add_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_add_phone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_add_quadrado_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_atencao_losango_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_atencao_triangulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_barcode_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_barcode_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_barcode_update_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_cadastro_empresa_cancel_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_cadastro_produto_cancel_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_cadeado_senha_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_celular_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_celular_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_check_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_email_@_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_email_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_email_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_email_update_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_empresa_cliente_ativo_18dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_empresa_cliente_ativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_empresa_cliente_desativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_empresa_fornecedor_ativo_18dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_empresa_fornecedor_ativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_empresa_fornecedor_desativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_empresa_tranportadora_ativo_18dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_empresa_tranportadora_ativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_empresa_tranportadora_desativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_endereco_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_endereco_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_err_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_err_quadrado_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_file_move_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_list_end_cobranca_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_list_end_correspondencia_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_list_end_entrega_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_list_end_principal_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_list_end_recado_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_list_end_residencial_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_menu_cadastro_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_menu_cadastro_empresa_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_menu_cadastro_equipamento_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_menu_cadastro_produto_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_menu_config_item_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_menu_fechar_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_menu_home_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_menu_item_cargo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_menu_movimentacao_entrada_produto_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_menu_movimentacao_saida_produto_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_menu_movimentacoes_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_menu_relatorio_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_password_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_phone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_principal_ativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_principal_desativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_relogio_16dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_relogio_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_relogio_vazado_16dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_remove_celular_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_remove_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_remove_phone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_repositorio_db_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_telefone_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_telefone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_tpn_contato_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_tpn_contatos_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_tpn_email_@_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_tpn_enderecos_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_tpn_inf_cadastral_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_tpn_telefone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_tpn_web_home_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_user_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_user_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_user_update_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_usuario_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_web_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_web_home_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_web_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_web_update_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_webservice_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/principal/ic_xml_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_add_celular_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_add_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_add_phone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_add_quadrado_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_atencao_losango_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_atencao_triangulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_barcode_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_barcode_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_barcode_update_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_cadastro_empresa_cancel_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_cadastro_produto_cancel_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_cadeado_senha_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_celular_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_celular_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_check_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_email_@_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_email_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_email_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_email_update_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_empresa_cliente_ativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_empresa_cliente_desativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_empresa_fornecedor_ativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_empresa_fornecedor_desativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_empresa_tranportadora_ativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_empresa_tranportadora_desativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_endereco_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_endereco_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_err_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_err_quadrado_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_file_move_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_list_end_cobranca_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_list_end_correspondencia_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_list_end_entrega_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_list_end_principal_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_list_end_recado_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_list_end_residencial_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_menu_cadastro_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_menu_cadastro_empresa_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_menu_cadastro_equipamento_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_menu_cadastro_produto_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_menu_config_item_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_menu_fechar_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_menu_home_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_menu_item_cargo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_menu_movimentacao_entrada_produto_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_menu_movimentacao_saida_produto_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_menu_movimentacoes_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_menu_relatorio_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_password_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_phone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_principal_ativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_principal_desativo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_relogio_16dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_relogio_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_relogio_vazado_16dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_remove_celular_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_remove_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_remove_phone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_repositorio_db_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_repositorio_git_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_telefone_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_telefone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_tpn_contato_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_tpn_contatos_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_tpn_email_@_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_tpn_enderecos_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_tpn_inf_cadastral_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_tpn_telefone_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_tpn_web_home_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_user_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_user_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_user_update_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_usuario_circulo_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_web_add_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_web_home_14dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_web_remove_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_web_update_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_webservice_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/ico/secundario/ic_xml_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-114-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-120-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-144-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-152-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-180-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-72-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/Favicons/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/background-user-img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/icon.iconset/icon_128x128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/icon.iconset/icon_128x128@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/icon.iconset/icon_16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/icon.iconset/icon_16x16@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/icon.iconset/icon_32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/icon.iconset/icon_32x32@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/icon.iconset/icon_512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/login.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/sistema/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/users/user_01.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/img/users/user_02.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/pretty-checkbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/pretty-checkbox.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/js/ftpcafeperfeito.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/less/animacaoCirculo.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/_check-box.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/_cores.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/_imagem.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/_material-icons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/_message.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/_pretty-checkbox.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/_text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/_variaveis.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/ftpcafeperfeito.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/_core.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/elements/default/_fill.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/elements/default/_outline.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/elements/default/_thick.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/elements/font-icon/_general.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/elements/image/_general.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/elements/svg/_general.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/elements/switch/_fill.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/elements/switch/_general.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/elements/switch/_slim.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/essentials/_functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/essentials/_keyframes.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/essentials/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/extras/_animation.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/extras/_bigger.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/extras/_colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/extras/_curve.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/extras/_disabled.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/extras/_locked.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/extras/_plain.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/extras/_print.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/extras/_round.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/extras/_toggle.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/states/_focus.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/states/_hover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/pretty-checkbox/states/_indeterminate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/xml/configSistema.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/xml/cte/in/35180906186733000220570010005423021009457382-cte.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/xml/cte/in/35181006186733000220570010005547151009693569-cte.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/xml/nfe/in/35180906981833000248550010000000931027894094-nfe.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/xml/nfe/in/35181006981833000248550010000001061104075382-nfe.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/_layouts/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/empresa.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/produto_atualizar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/produto_cadastrar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/produtos.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpcafeperfeito/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ftpcafeperfeito/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpcafeperfeito/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/ftpcafeperfeito/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-    </list>
+    <list default="true" id="c8bb7ae8-3a6c-47c2-9725-09739218bbcd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -515,6 +125,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="ftpcafeperfeito.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -619,6 +230,7 @@
       <workItem from="1586467202020" duration="62000" />
       <workItem from="1586467270999" duration="58000" />
       <workItem from="1586467359681" duration="27000" />
+      <workItem from="1586467390862" duration="164000" />
     </task>
     <task id="LOCAL-00001" summary="auto-commit">
       <created>1586278602955</created>
@@ -648,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586397502465</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="auto-commit">
+      <created>1586467448481</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586467448481</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -677,11 +296,12 @@
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586275282608" />
-    <state x="364" y="25" key="CommitChangelistDialog2" timestamp="1586397502195">
+    <state x="364" y="25" key="CommitChangelistDialog2" timestamp="1586467447126">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="364" y="51" key="CommitChangelistDialog2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278954607" />
     <state x="364" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586397502195" />
+    <state x="364" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586467447126" />
     <state width="1558" height="214" key="GridCell.Tab.0.bottom" timestamp="1586398155128">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
@@ -708,11 +328,12 @@
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278880939" />
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399149519" />
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586467379814" />
-    <state x="400" y="188" key="Vcs.Push.Dialog.v2" timestamp="1586399169352">
+    <state x="400" y="188" key="Vcs.Push.Dialog.v2" timestamp="1586467461909">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278975521" />
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399169352" />
+    <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586467461909" />
     <state x="649" y="354" key="WebDeployment.AddServerDialog.v.1" timestamp="1586281413199">
       <screen x="0" y="23" width="1600" height="851" />
     </state>

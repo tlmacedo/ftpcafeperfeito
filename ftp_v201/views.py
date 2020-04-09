@@ -12,4 +12,4 @@ from ftp_v201.models import Usuario
 class LoginTemplateView(FormView):
     model = Usuario
     form_class = LoginForm
-    template_name = 'ftp_v201/login.html'
+    template_name = 'cafeperfeito/login.html'
