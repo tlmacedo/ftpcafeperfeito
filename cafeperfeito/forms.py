@@ -1,6 +1,6 @@
 from django import forms
 
-from ftp_v201.models import Usuario
+from cafeperfeito.models import Usuario
 
 
 class LoginForm(forms.ModelForm):

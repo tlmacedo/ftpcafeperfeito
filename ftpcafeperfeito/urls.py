@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('ftp_v201.urls', namespace='cafeperfeito')),
+    path('', include('cafeperfeito.urls', namespace='cafeperfeito')),
     path('admin/', admin.site.urls),
 ]

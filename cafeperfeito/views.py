@@ -5,8 +5,8 @@ from django.urls import reverse_lazy
 from django.views.generic import TemplateView, FormView, CreateView, UpdateView
 from django.views.generic.list import ListView
 
-from ftp_v201.forms import LoginForm
-from ftp_v201.models import Usuario
+from cafeperfeito.forms import LoginForm
+from cafeperfeito.models import Usuario
 
 
 class LoginTemplateView(FormView):

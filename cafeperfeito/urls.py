@@ -1,6 +1,6 @@
 from django.urls import path
 
-from ftp_v201.views import *
+from cafeperfeito.views import *
 
 app_name = 'cafeperfeito'
 

@@ -15,7 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -46,7 +46,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    'ftp_v201',
+    'cafeperfeito',
     'ftpcafeperfeito',
 ]
 
@@ -67,7 +67,7 @@ ROOT_URLCONF = 'ftpcafeperfeito.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'ftp_v201/templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'cafeperfeito/templates')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
