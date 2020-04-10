@@ -24,7 +24,7 @@ SECRET_KEY = '#-hh^%3o^m83b4m0ue$951u%0&e(x%gx5ib1(k(v+eogwv12tg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'www.cafeperfeito.com.br']
 
 # Application definition
 
@@ -71,9 +71,33 @@ WSGI_APPLICATION = 'ftpcafeperfeito.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'cafeperfeito',
+
+        'USER': 'cafeperfeito',
+        'PASSWORD': 'Tlm487901',
+        'HOST': 'mysql.cafeperfeito.com.br',
+
+        # 'USER': 'root',
+        # 'PASSWORD': 'Tlm$487901',
+        # 'HOST': '127.0.0.1',
+
+        'PORT': '3306',
+        # 'TEST': {
+        #     'NAME': 'testecafeperfeito',
+        # },
+        # 'OPTIONS': {
+        #     'init_command': 'SET default_storage_engine=INNODB',
+        # }
+        'OPTIONS': {
+            # 'charset': 'utf8mb4',
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        }
     }
 }
 
