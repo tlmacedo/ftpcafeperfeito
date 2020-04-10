@@ -15,6 +15,8 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -22,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#-hh^%3o^m83b4m0ue$951u%0&e(x%gx5ib1(k(v+eogwv12tg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'www.cafeperfeito.com.br']
 
@@ -81,13 +83,13 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cafeperfeito',
 
-        'USER': 'cafeperfeito',
-        'PASSWORD': 'Tlm487901',
-        'HOST': 'mysql.cafeperfeito.com.br',
+        # 'USER': 'cafeperfeito',
+        # 'PASSWORD': 'Tlm487901',
+        # 'HOST': 'mysql.cafeperfeito.com.br',
 
-        # 'USER': 'root',
-        # 'PASSWORD': 'Tlm$487901',
-        # 'HOST': '127.0.0.1',
+        'USER': 'root',
+        'PASSWORD': 'Tlm$487901',
+        'HOST': '127.0.0.1',
 
         'PORT': '3306',
         # 'TEST': {
