@@ -140,3 +140,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = '/home/cafeperfeito/www/static'
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = '/home/cafeperfeito/www/media'
