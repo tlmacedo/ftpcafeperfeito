@@ -24,9 +24,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = '#-hh^%3o^m83b4m0ue$951u%0&e(x%gx5ib1(k(v+eogwv12tg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'www.cafeperfeito.com.br']
+ALLOWED_HOSTS = ['127.0.0.1', 'www.cafeperfeito.com.br', 'cafeperfeito.com.br']
 
 # Application definition
 
@@ -39,16 +39,16 @@ DEFAULT_APPS = [
     'django.contrib.staticfiles',
 ]
 
-THIRD_PARTY_APPS = [
-    'widget_tweaks',
-]
-
 LOCAL_APPS = [
     'cafeperfeito',
     'ftpcafeperfeito',
 ]
 
-INSTALLED_APPS = LOCAL_APPS + THIRD_PARTY_APPS + DEFAULT_APPS
+THIRD_PARTY_APPS = [
+    'widget_tweaks',
+]
+
+INSTALLED_APPS = DEFAULT_APPS + LOCAL_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -148,11 +148,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "static"),
-#     '/var/www/static/',
-# ]
 
 STATIC_URL = '/static/'
 
