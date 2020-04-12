@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'www.cafeperfeito.com.br']
 
 # Application definition
 
-INSTALLED_APPS = [
+DEFAULT_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,6 +38,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+THIRD_PARTY_APPS = [
+
+]
+
+LOCAL_APPS = [
+    'cafeperfeito',
+]
+
+INSTALLED_APPS = LOCAL_APPS + THIRD_PARTY_APPS + DEFAULT_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -143,5 +153,5 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = '/home/cafeperfeito/www/static'
 
-MEDIA_URL = 'media/'
-MEDIA_ROOT = '/home/cafeperfeito/www/media'
+# MEDIA_URL = 'media/'
+# MEDIA_ROOT = '/home/cafeperfeito/www/media'

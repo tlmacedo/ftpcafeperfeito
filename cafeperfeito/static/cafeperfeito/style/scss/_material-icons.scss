@@ -1,0 +1,57 @@
+.material-icons {
+  color: $corPricipal;
+  opacity: 1;
+  //@include transition(.4s);
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &.md-8 {
+    font-size: 8px;
+  }
+
+  &.md-10 {
+    font-size: 10px;
+  }
+
+  &.md-12 {
+    font-size: 12px;
+  }
+
+  &.md-14 {
+    font-size: 14px;
+  }
+
+  &.md-18 {
+    font-size: 18px;
+  }
+
+  &.md-24 {
+    font-size: 24px;
+  }
+
+  &.md-26 {
+    font-size: 26px;
+  }
+
+  &.md-28 {
+    font-size: 28px;
+  }
+
+  &.md-30 {
+    font-size: 30px;
+  }
+
+  &.md-32 {
+    font-size: 32px;
+  }
+
+  &.md-36 {
+    font-size: 36px;
+  }
+
+  &.md-48 {
+    font-size: 48px;
+  }
+}
