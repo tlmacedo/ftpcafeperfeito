@@ -6,7 +6,11 @@
 #   * Make sure each ForeignKey and OneToOneField has `on_delete` set to the desired behavior
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
+from base64 import b64encode, b64decode
+
 from django.db import models
+
+from cafeperfeito.enums import UNIDADE_COMERCIAL, SITUACAO_NO_SISTEMA
 
 
 class AuthGroup(models.Model):
@@ -103,13 +107,26 @@ class Colaborador(models.Model):
     dtadmisao = models.DateTimeField(db_column='dtAdmisao')  # Field name made lowercase.
     salario = models.DecimalField(max_digits=19, decimal_places=4)
     situacao = models.IntegerField(blank=True, null=True)
-    imagem = models.TextField(blank=True, null=True)
+    imagem = models.BinaryField(blank=True, null=True)
     lojaativo = models.ForeignKey('Empresa', models.DO_NOTHING, db_column='lojaAtivo_id', blank=True,
                                   null=True)  # Field name made lowercase.
 
     class Meta:
         managed = False
         db_table = 'colaborador'
+
+    def get_colaborador_imagem(self):
+        return b64encode(b64decode(self.imagem)).decode()
+
+    def __str__(self):
+        return self.nome
+
+    def getApelido(self):
+        return self.apelido
+
+    def getColaborador(self):
+        return {'id': self.id, 'nome': self.nome, 'apelido': self.apelido, 'situacao': self.situacao,
+                'imagem': self.imagem}
 
 
 class ContasAReceber(models.Model):
@@ -646,8 +663,9 @@ class Produto(models.Model):
     codigo = models.CharField(unique=True, max_length=15)
     descricao = models.CharField(max_length=120)
     peso = models.DecimalField(max_digits=19, decimal_places=3)
-    unidadecomercial = models.IntegerField(db_column='unidadeComercial')  # Field name made lowercase.
-    situacao = models.IntegerField()
+    unidadecomercial = models.IntegerField(db_column='unidadeComercial', choices=UNIDADE_COMERCIAL.choices(),
+                                           verbose_name=u'Und Comercial')  # Field name made lowercase.
+    situacao = models.IntegerField(choices=SITUACAO_NO_SISTEMA.choices(), verbose_name=u'Situação')
     precocompra = models.DecimalField(db_column='precoCompra', max_digits=19,
                                       decimal_places=4)  # Field name made lowercase.
     precovenda = models.DecimalField(db_column='precoVenda', max_digits=19,
@@ -668,10 +686,10 @@ class Produto(models.Model):
     nfegenero = models.CharField(db_column='nfeGenero', max_length=2)  # Field name made lowercase.
     ncm = models.CharField(max_length=8, blank=True, null=True)
     cest = models.CharField(max_length=7, blank=True, null=True)
-    fiscalcstorigem = models.ForeignKey(FiscalCstOrigem, models.DO_NOTHING, db_column='fiscalCstOrigem_id',
-                                        blank=True, null=True)  # Field name made lowercase.
-    fiscalicms = models.ForeignKey(FiscalIcms, models.DO_NOTHING, db_column='fiscalIcms_id',
-                                   blank=True, null=True)  # Field name made lowercase.
+    fiscalcstorigem = models.ForeignKey(FiscalCstOrigem, models.DO_NOTHING, db_column='fiscalCstOrigem_id', blank=True,
+                                        null=True)  # Field name made lowercase.
+    fiscalicms = models.ForeignKey(FiscalIcms, models.DO_NOTHING, db_column='fiscalIcms_id', blank=True,
+                                   null=True)  # Field name made lowercase.
     fiscalpis = models.ForeignKey(FiscalPisCofins, models.DO_NOTHING, db_column='fiscalPis_id',
                                   blank=True, null=True, related_name='fiscalpisproduto')  # Field name made lowercase.
     fiscalcofins = models.ForeignKey(FiscalPisCofins, models.DO_NOTHING, db_column='fiscalCofins_id',

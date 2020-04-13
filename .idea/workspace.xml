@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8bb7ae8-3a6c-47c2-9725-09739218bbcd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ftpcafeperfeito/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ftpcafeperfeito/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ftpcafeperfeito/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/ftpcafeperfeito/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +64,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito" />
-      <recent name="$PROJECT_DIR$/cafeperfeito_v201/static/cafeperfeito" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cafeperfeito" />
       <recent name="$PROJECT_DIR$/cafeperfeito_v201" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito" />
+      <recent name="$PROJECT_DIR$/cafeperfeito_v201/static/cafeperfeito" />
     </key>
   </component>
   <component name="RunManager">
@@ -250,7 +266,8 @@
       <workItem from="1586654949050" duration="6558000" />
       <workItem from="1586662592548" duration="24000" />
       <workItem from="1586738328355" duration="3146000" />
-      <workItem from="1586742495710" duration="319000" />
+      <workItem from="1586742495710" duration="415000" />
+      <workItem from="1586790634170" duration="15211000" />
     </task>
     <task id="LOCAL-00001" summary="auto-commit">
       <created>1586278602955</created>
@@ -525,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586742585916</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="auto commit">
+      <created>1586742930606</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1586742930606</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,70 +570,70 @@
     </state>
     <state x="400" y="114" key="#Deployment/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281791639" />
     <state x="400" y="114" key="#Deployment/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586392519304" />
-    <state x="264" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586486658378">
+    <state x="264" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586792876991">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="264" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278890490" />
-    <state x="264" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586486658378" />
+    <state x="264" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586792876991" />
     <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586739994325">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586275282608" />
     <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586739994325" />
-    <state x="322" y="25" key="CommitChangelistDialog2" timestamp="1586742585656">
+    <state x="322" y="25" key="CommitChangelistDialog2" timestamp="1586742930397">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="364" y="51" key="CommitChangelistDialog2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278954607" />
     <state x="364" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586397502195" />
-    <state x="322" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586742585656" />
+    <state x="322" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586742930397" />
     <state x="611" y="234" key="FileChooserDialogImpl" timestamp="1586741195477">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="611" y="234" key="FileChooserDialogImpl/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586741195477" />
-    <state width="1558" height="214" key="GridCell.Tab.0.bottom" timestamp="1586741849662">
+    <state width="1558" height="214" key="GridCell.Tab.0.bottom" timestamp="1586814651087">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
     <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586741849662" />
-    <state width="1558" height="214" key="GridCell.Tab.0.center" timestamp="1586741849662">
+    <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586814651087" />
+    <state width="1558" height="214" key="GridCell.Tab.0.center" timestamp="1586814651084">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
     <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586741849662" />
-    <state width="1558" height="214" key="GridCell.Tab.0.left" timestamp="1586741849661">
+    <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586814651084" />
+    <state width="1558" height="214" key="GridCell.Tab.0.left" timestamp="1586814651083">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854698" />
     <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155127" />
-    <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586741849661" />
-    <state width="1558" height="214" key="GridCell.Tab.0.right" timestamp="1586741849662">
+    <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586814651083" />
+    <state width="1558" height="214" key="GridCell.Tab.0.right" timestamp="1586814651086">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
     <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586741849662" />
-    <state x="585" y="31" key="SettingsEditor" timestamp="1586742553702">
+    <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586814651086" />
+    <state x="585" y="31" key="SettingsEditor" timestamp="1586792759882">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278880939" />
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399149519" />
-    <state x="585" y="31" key="SettingsEditor/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586742553702" />
-    <state x="400" y="188" key="Vcs.Push.Dialog.v2" timestamp="1586742589326">
+    <state x="585" y="31" key="SettingsEditor/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586792759882" />
+    <state x="400" y="188" key="Vcs.Push.Dialog.v2" timestamp="1586742932214">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278975521" />
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399169352" />
-    <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586742589326" />
+    <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586742932214" />
     <state x="649" y="354" key="WebDeployment.AddServerDialog.v.1" timestamp="1586281413199">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="649" y="354" key="WebDeployment.AddServerDialog.v.1/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281413199" />
-    <state x="100" y="123" width="1400" height="651" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586658812821">
+    <state x="100" y="123" width="1400" height="651" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586792621993">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
-    <state x="100" y="123" width="1400" height="651" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586658812821" />
+    <state x="100" y="123" width="1400" height="651" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586792621993" />
     <state x="707" y="186" key="ftp.server.browser" timestamp="1586281785391">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
