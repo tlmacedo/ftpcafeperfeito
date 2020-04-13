@@ -40,15 +40,15 @@ DEFAULT_APPS = [
 ]
 
 LOCAL_APPS = [
-    'cafeperfeito',
     'ftpcafeperfeito',
+    'cafeperfeito',
 ]
 
 THIRD_PARTY_APPS = [
     'widget_tweaks',
 ]
 
-INSTALLED_APPS = DEFAULT_APPS + LOCAL_APPS + THIRD_PARTY_APPS
+INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
