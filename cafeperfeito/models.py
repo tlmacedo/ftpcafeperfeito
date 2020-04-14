@@ -6,7 +6,8 @@
 #   * Make sure each ForeignKey and OneToOneField has `on_delete` set to the desired behavior
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
-from base64 import b64encode
+import io
+from base64 import b64encode, b64decode, decodebytes, encodebytes
 
 from django.db import models
 
@@ -128,9 +129,16 @@ class Colaborador(models.Model):
     #     return b64encode(self.imagem).decode()
 
     # def getImgEncode(self):
+    def set_colaborador_imagem(self):
+        with open("/Users/thiagomacedo/Desktop/thiago1.jpg", "rb") as imageFile:
+            blobData = imageFile.read()
+            print(blobData)
+            return blobData
+
     def get_colaborador_imagem(self):
         # print(self.imagem)
         # print(b64encode(self.imagem).decode())
+        # return b64encode(self.set_colaborador_imagem()).decode()
         return b64encode(self.imagem).decode()
 
     def __str__(self):
