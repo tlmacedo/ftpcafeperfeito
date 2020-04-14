@@ -115,8 +115,29 @@ class Colaborador(models.Model):
         managed = False
         db_table = 'colaborador'
 
+    def getImgBD(self):
+        print('getImgBD: {}\n'.format(self.imagem))
+        return self.imagem
+
+    def getImgDecode(self):
+        print('getImgDecode: {}\n'.format(self.imagem))
+        return b64encode(self.imagem).decode()
+
+    # def get_colaborador_imagem(self):
+    def getImgEncode(self):
+        return b64encode(self.imagem).decode()
+
+    # def getImgEncode(self):
     def get_colaborador_imagem(self):
-        return b64encode(b64decode(self.imagem)).decode()
+        img = self.imagem
+        print('img_bd: {}'.format(img))
+        imgdec = b64decode(img)
+        print('decode: {}'.format(imgdec))
+        imgenc = b64encode(imgdec).decode()
+        # imgenc = b64encode(img).decode()
+        # imgenc = img
+        print('encode: {}\n'.format(imgenc))
+        return imgenc
 
     def __str__(self):
         return self.nome
