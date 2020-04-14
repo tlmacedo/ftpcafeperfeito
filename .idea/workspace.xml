@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8bb7ae8-3a6c-47c2-9725-09739218bbcd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/497ce041-44eb-4693-a5f8-3d1513bbf049.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/497ce041-44eb-4693-a5f8-3d1513bbf049.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ftpcafeperfeito.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ftpcafeperfeito.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/_layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/_layouts/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,9 +139,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="ftpcafeperfeito.settings" />
       </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -256,7 +260,11 @@
       <workItem from="1586814926858" duration="26000" />
       <workItem from="1586815059122" duration="328000" />
       <workItem from="1586825569429" duration="1373000" />
-      <workItem from="1586831706337" duration="9000" />
+      <workItem from="1586831706337" duration="29000" />
+      <workItem from="1586831892255" duration="166000" />
+      <workItem from="1586832831655" duration="100000" />
+      <workItem from="1586832937915" duration="481000" />
+      <workItem from="1586833424508" duration="2253000" />
     </task>
     <task id="LOCAL-00001" summary="auto-commit">
       <created>1586278602955</created>
@@ -559,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586831605987</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="auto commit">
+      <created>1586831718503</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1586831718503</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,56 +605,76 @@
     </state>
     <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586275282608" />
     <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586739994325" />
-    <state x="322" y="25" key="CommitChangelistDialog2" timestamp="1586831605636">
+    <state x="506" y="54" key="#ftpcafeperfeito" timestamp="1586832974208">
+      <screen x="0" y="23" width="1600" height="851" />
+    </state>
+    <state x="506" y="54" key="#ftpcafeperfeito/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586832974208" />
+    <state x="322" y="25" key="CommitChangelistDialog2" timestamp="1586831718348">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="364" y="51" key="CommitChangelistDialog2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278954607" />
     <state x="364" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586397502195" />
-    <state x="322" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586831605636" />
+    <state x="322" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586831718348" />
     <state x="611" y="234" key="FileChooserDialogImpl" timestamp="1586741195477">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="611" y="234" key="FileChooserDialogImpl/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586741195477" />
-    <state width="1558" height="214" key="GridCell.Tab.0.bottom" timestamp="1586831624344">
+    <state width="1558" height="214" key="GridCell.Tab.0.bottom" timestamp="1586835139194">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
     <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586831624344" />
-    <state width="1558" height="214" key="GridCell.Tab.0.center" timestamp="1586831624343">
+    <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586835139194" />
+    <state width="1558" height="214" key="GridCell.Tab.0.center" timestamp="1586835139193">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
     <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586831624343" />
-    <state width="1558" height="214" key="GridCell.Tab.0.left" timestamp="1586831624343">
+    <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586835139193" />
+    <state width="1558" height="214" key="GridCell.Tab.0.left" timestamp="1586835139193">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854698" />
     <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155127" />
-    <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586831624343" />
-    <state width="1558" height="214" key="GridCell.Tab.0.right" timestamp="1586831624343">
+    <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586835139193" />
+    <state width="1558" height="214" key="GridCell.Tab.0.right" timestamp="1586835139194">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
     <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586831624343" />
-    <state x="585" y="31" key="SettingsEditor" timestamp="1586792759882">
+    <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586835139194" />
+    <state x="585" y="31" key="SettingsEditor" timestamp="1586833494350">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278880939" />
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399149519" />
-    <state x="585" y="31" key="SettingsEditor/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586792759882" />
-    <state x="400" y="188" key="Vcs.Push.Dialog.v2" timestamp="1586831610209">
+    <state x="585" y="31" key="SettingsEditor/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586833494350" />
+    <state x="400" y="188" key="Vcs.Push.Dialog.v2" timestamp="1586831720065">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278975521" />
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399169352" />
-    <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586831610209" />
+    <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586831720065" />
     <state x="649" y="354" key="WebDeployment.AddServerDialog.v.1" timestamp="1586281413199">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="649" y="354" key="WebDeployment.AddServerDialog.v.1/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281413199" />
+    <state x="670" y="332" width="323" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586834877939">
+      <screen x="0" y="23" width="1600" height="851" />
+    </state>
+    <state x="670" y="332" width="323" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586834877939" />
+    <state x="538" y="260" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1586834816957">
+      <screen x="0" y="23" width="1600" height="851" />
+    </state>
+    <state x="538" y="260" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586834816957" />
+    <state x="586" y="276" width="428" height="337" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1586834855223">
+      <screen x="0" y="23" width="1600" height="851" />
+    </state>
+    <state x="586" y="276" width="428" height="337" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586834855223" />
+    <state x="388" y="87" width="769" height="733" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586834983017">
+      <screen x="0" y="23" width="1600" height="851" />
+    </state>
+    <state x="388" y="87" width="769" height="733" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586834983017" />
     <state x="100" y="123" width="1400" height="651" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586831466960">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
