@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c8bb7ae8-3a6c-47c2-9725-09739218bbcd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -262,7 +261,8 @@
       <workItem from="1586832831655" duration="100000" />
       <workItem from="1586832937915" duration="481000" />
       <workItem from="1586833424508" duration="7021000" />
-      <workItem from="1586840472056" duration="25000" />
+      <workItem from="1586840472056" duration="46000" />
+      <workItem from="1586840648939" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="auto-commit">
       <created>1586278602955</created>
@@ -579,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586835691793</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="auto commit">
+      <created>1586840508290</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1586840508290</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,12 +621,12 @@
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="506" y="54" key="#ftpcafeperfeito/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586832974208" />
-    <state x="322" y="25" key="CommitChangelistDialog2" timestamp="1586835691507">
+    <state x="322" y="25" key="CommitChangelistDialog2" timestamp="1586840508078">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="364" y="51" key="CommitChangelistDialog2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278954607" />
     <state x="364" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586397502195" />
-    <state x="322" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586835691507" />
+    <state x="322" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586840508078" />
     <state x="611" y="234" key="FileChooserDialogImpl" timestamp="1586741195477">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
@@ -654,12 +661,12 @@
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278880939" />
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399149519" />
     <state x="585" y="31" key="SettingsEditor/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586833494350" />
-    <state x="400" y="188" key="Vcs.Push.Dialog.v2" timestamp="1586835693402">
+    <state x="400" y="188" key="Vcs.Push.Dialog.v2" timestamp="1586840509888">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278975521" />
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399169352" />
-    <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586835693402" />
+    <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586840509888" />
     <state x="649" y="354" key="WebDeployment.AddServerDialog.v.1" timestamp="1586281413199">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
