@@ -1,12 +1,18 @@
-.img-log-user {
+.img-circle {
   position: relative;
   top: 0;
   left: 0;
-  height: 50px;
-  width: 50px;
   border-radius: 50%;
   margin-right: 5px;
+
+  &.log-user {
+    height: 50px;
+    width: 50px;
+  }
+
+  &.login {
+    height: 250px;
+    width: 250px;
+  }
 }
-
-
 

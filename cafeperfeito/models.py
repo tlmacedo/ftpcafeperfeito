@@ -718,11 +718,16 @@ class Produto(models.Model):
     fiscalcofins = models.ForeignKey(FiscalPisCofins, models.DO_NOTHING, db_column='fiscalCofins_id',
                                      blank=True, null=True,
                                      related_name='fiscalcofinsproduto')  # Field name made lowercase.
-    imgproduto = models.TextField(db_column='imgProduto', blank=True, null=True)  # Field name made lowercase.
+    imgproduto = models.BinaryField(db_column='imgProduto', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
         managed = False
         db_table = 'produto'
+
+    # def image_tag(self):
+    #     return mark_safe('<img src="/directory/%s" width="150" height="150" />' % (self.image))
+
+    # image_tag.short_description = 'Image'
 
 
 class ProdutoCodigoBarra(models.Model):

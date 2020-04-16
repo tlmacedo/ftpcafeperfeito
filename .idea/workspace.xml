@@ -2,7 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8bb7ae8-3a6c-47c2-9725-09739218bbcd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/497ce041-44eb-4693-a5f8-3d1513bbf049.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/497ce041-44eb-4693-a5f8-3d1513bbf049.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/jquery-3.3.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/jquery-3.3.1.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/jquery-3.3.1.slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/jquery-3.3.1.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jQueryPopper/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jqueryMask/jquery.mask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/jqueryMask/jquery.mask.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/css/materialize.css" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/css/materialize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/css/materialize.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/css/materialize.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/js/materialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/js/materialize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/js/materialize.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/externo/materialize/js/materialize.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/_imagem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/_imagem.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/_layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/_layouts/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/produto_atualizar.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/produto_atualizar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +92,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -262,7 +308,16 @@
       <workItem from="1586832937915" duration="481000" />
       <workItem from="1586833424508" duration="7021000" />
       <workItem from="1586840472056" duration="46000" />
-      <workItem from="1586840648939" duration="19000" />
+      <workItem from="1586840648939" duration="34000" />
+      <workItem from="1586879480276" duration="2033000" />
+      <workItem from="1586882766075" duration="380000" />
+      <workItem from="1586884091672" duration="10350000" />
+      <workItem from="1586907708783" duration="4613000" />
+      <workItem from="1586984213072" duration="192000" />
+      <workItem from="1586998342829" duration="6682000" />
+      <workItem from="1587049634842" duration="3886000" />
+      <workItem from="1587056923354" duration="23000" />
+      <workItem from="1587057347062" duration="936000" />
     </task>
     <task id="LOCAL-00001" summary="auto-commit">
       <created>1586278602955</created>
@@ -586,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586840508290</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="auto commit">
+      <created>1586840672765</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1586840672765</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,6 +664,10 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="593" y="296" key="#Configure_Path_Variables" timestamp="1586998353269">
+      <screen x="0" y="23" width="1600" height="851" />
+    </state>
+    <state x="593" y="296" key="#Configure_Path_Variables/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586998353269" />
     <state x="400" y="114" key="#Deployment" timestamp="1586392519304">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
@@ -612,61 +678,81 @@
     </state>
     <state x="264" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278890490" />
     <state x="264" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586792876991" />
-    <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586739994325">
+    <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586886140039">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586275282608" />
-    <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586739994325" />
+    <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586886140039" />
     <state x="506" y="54" key="#ftpcafeperfeito" timestamp="1586832974208">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="506" y="54" key="#ftpcafeperfeito/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586832974208" />
-    <state x="322" y="25" key="CommitChangelistDialog2" timestamp="1586840508078">
+    <state x="322" y="25" key="CommitChangelistDialog2" timestamp="1586840672527">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="364" y="51" key="CommitChangelistDialog2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278954607" />
     <state x="364" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586397502195" />
-    <state x="322" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586840508078" />
+    <state x="322" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586840672527" />
+    <state x="709" y="169" key="EditFileWatcherDialog" timestamp="1586885684605">
+      <screen x="0" y="23" width="1600" height="851" />
+    </state>
+    <state x="709" y="169" key="EditFileWatcherDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586885684605" />
     <state x="611" y="234" key="FileChooserDialogImpl" timestamp="1586741195477">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="611" y="234" key="FileChooserDialogImpl/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586741195477" />
-    <state width="1558" height="214" key="GridCell.Tab.0.bottom" timestamp="1586840462119">
+    <state width="1558" height="114" key="GridCell.Tab.0.bottom" timestamp="1587058283259">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
     <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586840462119" />
-    <state width="1558" height="214" key="GridCell.Tab.0.center" timestamp="1586840462115">
+    <state width="1558" height="114" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587058283259" />
+    <state width="1558" height="114" key="GridCell.Tab.0.center" timestamp="1587058283258">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
     <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586840462115" />
-    <state width="1558" height="214" key="GridCell.Tab.0.left" timestamp="1586840462114">
+    <state width="1558" height="114" key="GridCell.Tab.0.center/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587058283258" />
+    <state width="1558" height="114" key="GridCell.Tab.0.left" timestamp="1587058283257">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854698" />
     <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155127" />
-    <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586840462114" />
-    <state width="1558" height="214" key="GridCell.Tab.0.right" timestamp="1586840462118">
+    <state width="1558" height="114" key="GridCell.Tab.0.left/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587058283257" />
+    <state width="1558" height="114" key="GridCell.Tab.0.right" timestamp="1587058283258">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
     <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586840462118" />
-    <state x="585" y="31" key="SettingsEditor" timestamp="1586833494350">
+    <state width="1558" height="114" key="GridCell.Tab.0.right/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587058283258" />
+    <state width="1558" height="203" key="GridCell.Tab.1.bottom" timestamp="1587055743987">
+      <screen x="0" y="23" width="1600" height="851" />
+    </state>
+    <state width="1558" height="203" key="GridCell.Tab.1.bottom/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587055743987" />
+    <state width="1558" height="203" key="GridCell.Tab.1.center" timestamp="1587055743986">
+      <screen x="0" y="23" width="1600" height="851" />
+    </state>
+    <state width="1558" height="203" key="GridCell.Tab.1.center/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587055743986" />
+    <state width="1558" height="203" key="GridCell.Tab.1.left" timestamp="1587055743985">
+      <screen x="0" y="23" width="1600" height="851" />
+    </state>
+    <state width="1558" height="203" key="GridCell.Tab.1.left/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587055743985" />
+    <state width="1558" height="203" key="GridCell.Tab.1.right" timestamp="1587055743986">
+      <screen x="0" y="23" width="1600" height="851" />
+    </state>
+    <state width="1558" height="203" key="GridCell.Tab.1.right/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587055743986" />
+    <state x="553" y="23" key="SettingsEditor" timestamp="1586885686429">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278880939" />
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399149519" />
-    <state x="585" y="31" key="SettingsEditor/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586833494350" />
-    <state x="400" y="188" key="Vcs.Push.Dialog.v2" timestamp="1586840509888">
+    <state x="553" y="23" key="SettingsEditor/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586885686429" />
+    <state x="400" y="188" key="Vcs.Push.Dialog.v2" timestamp="1586840674714">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278975521" />
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399169352" />
-    <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586840509888" />
+    <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586840674714" />
     <state x="649" y="354" key="WebDeployment.AddServerDialog.v.1" timestamp="1586281413199">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
@@ -687,10 +773,18 @@
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="388" y="87" width="769" height="733" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586834983017" />
-    <state x="100" y="123" width="1400" height="651" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586831466960">
+    <state x="100" y="123" width="1400" height="651" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586896375176">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
-    <state x="100" y="123" width="1400" height="651" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586831466960" />
+    <state x="100" y="123" width="1400" height="651" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586896375176" />
+    <state x="351" y="191" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1587051060905">
+      <screen x="0" y="23" width="1600" height="851" />
+    </state>
+    <state x="351" y="191" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587051060905" />
+    <state x="506" y="205" width="588" height="486" key="find.popup" timestamp="1586880437971">
+      <screen x="0" y="23" width="1600" height="851" />
+    </state>
+    <state x="506" y="205" width="588" height="486" key="find.popup/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586880437971" />
     <state x="707" y="186" key="ftp.server.browser" timestamp="1586281785391">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
@@ -699,5 +793,141 @@
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="564" y="320" key="git4idea.rebase.GitRebaseDialog/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278711083" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>126</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>125</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>123</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>127</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>128</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>130</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>131</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>132</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>133</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>135</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>136</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>138</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>147</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>146</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>144</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>143</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>142</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>141</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>139</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>122</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>134</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>137</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>145</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cafeperfeito/views.py</url>
+          <line>140</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

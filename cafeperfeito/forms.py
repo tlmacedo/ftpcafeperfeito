@@ -1,10 +1,21 @@
 import io
+import os
+from string import Template
 
 from django import forms
-from django.forms import TextInput
+from django.db.models import ImageField
+from django.forms import TextInput, ImageField
+from django.utils.safestring import mark_safe
 from passlib.handlers.django import django_pbkdf2_sha256
 
 from cafeperfeito.models import *
+from cafeperfeito.service import blob2base64, image2bytes
+
+
+class PictureWidget(forms.widgets.Widget):
+    def render(self, name, value, attrs=None, renderer=None):
+        html = Template("""<img src="$link"/>""")
+        return mark_safe(html.substitute(link=value))
 
 
 class LoginForm(forms.ModelForm):
@@ -159,9 +170,9 @@ class ProdutoForm(forms.ModelForm):
         # blank=True,
         # null=True,
     )
-    usuariocadastro = forms.CharField(
+    usuariocadastro = forms.ModelChoiceField(
         label='usuario cadastro',
-        max_length=40,
+        queryset=Usuario.objects.all(),
         # blank=True,
         # null=True,
     )
@@ -180,9 +191,6 @@ class ProdutoForm(forms.ModelForm):
     #     label='data atualização',
     # )
     #
-    # imgproduto = forms.ImageField(
-    #     label='imagem produto',
-    # )
 
     class Meta:
         model = Produto

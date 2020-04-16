@@ -1,11 +1,19 @@
-.img-log-user {
+.img-circle {
     position: relative;
     top: 0;
     left: 0;
-    height: 50px;
-    width: 50px;
     border-radius: 50%;
     margin-right: 5px;
+}
+
+.img-circle.log-user {
+    height: 50px;
+    width: 50px;
+}
+
+.img-circle.login {
+    height: 250px;
+    width: 250px;
 }
 
 i, .name-log-user, .email-log-user {
@@ -375,7 +383,6 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
         box-shadow: 0px 0px 0px 1.5em rgba(189, 195, 199, 0);
     }
 }
-
 .pretty.p-default.p-fill .state label:after {
     transform: scale(1);
 }
@@ -383,7 +390,6 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
 .pretty.p-default .state label:after {
     transform: scale(0.6);
 }
-
 .pretty.p-default input:checked ~ .state label:after {
     background-color: #bdc3c7 !important;
 }
@@ -391,7 +397,6 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
 .pretty.p-default.p-thick .state label:before, .pretty.p-default.p-thick .state label:after {
     border-width: calc(1em / 7);
 }
-
 .pretty.p-default.p-thick .state label:after {
     transform: scale(0.4) !important;
 }
@@ -409,7 +414,6 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     border: 1px solid transparent;
     opacity: 0;
 }
-
 .pretty.p-icon .state .icon:before {
     margin: 0;
     width: 100%;
@@ -421,11 +425,9 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     align-items: center;
     line-height: 1;
 }
-
 .pretty.p-icon input:checked ~ .state .icon {
     opacity: 1;
 }
-
 .pretty.p-icon input:checked ~ .state label:before {
     border-color: #5a656b;
 }
@@ -443,7 +445,6 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     border: 1px solid transparent;
     opacity: 0;
 }
-
 .pretty.p-svg .state svg {
     margin: 0;
     width: 100%;
@@ -455,7 +456,6 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     align-items: center;
     line-height: 1;
 }
-
 .pretty.p-svg input:checked ~ .state .svg {
     opacity: 1;
 }
@@ -533,11 +533,9 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     border-color: #5a656b;
     background-color: #5a656b !important;
 }
-
 .pretty.p-switch.p-fill input:checked ~ .state label:before {
     opacity: 0;
 }
-
 .pretty.p-switch.p-fill input:checked ~ .state label:after {
     background-color: #fff !important;
     left: 1em;
@@ -595,16 +593,13 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     opacity: 1;
     display: inherit;
 }
-
 .pretty.p-toggle .state.p-off .icon {
     color: #bdc3c7;
 }
-
 .pretty.p-toggle input:checked ~ .state.p-on {
     opacity: 1;
     display: inherit;
 }
-
 .pretty.p-toggle input:checked ~ .state.p-off {
     opacity: 0;
     display: none;
@@ -645,17 +640,14 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
 .pretty.p-smooth input:checked + .state label:after {
     transition: all 0.3s ease;
 }
-
 .pretty.p-smooth input:checked + .state .icon,
 .pretty.p-smooth input:checked + .state .svg,
 .pretty.p-smooth input:checked + .state img {
     animation: zoom 0.2s ease;
 }
-
 .pretty.p-smooth.p-default input:checked + .state label:after {
     animation: zoom 0.2s ease;
 }
-
 .pretty.p-smooth.p-plain input:checked + .state label:before {
     content: '';
     transform: scale(0);
@@ -679,7 +671,6 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     animation: jelly 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     opacity: 1;
 }
-
 .pretty.p-jelly:not(.p-default) input:checked + .state label:before {
     border-color: transparent;
 }
@@ -725,15 +716,12 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     color: #fff;
     stroke: #fff;
 }
-
 .pretty input:checked ~ .state.p-primary-o label:before, .pretty.p-toggle .state.p-primary-o label:before {
     border-color: #428bca;
 }
-
 .pretty input:checked ~ .state.p-primary-o label:after, .pretty.p-toggle .state.p-primary-o label:after {
     background-color: transparent;
 }
-
 .pretty input:checked ~ .state.p-primary-o .icon,
 .pretty input:checked ~ .state.p-primary-o .svg,
 .pretty input:checked ~ .state.p-primary-o svg, .pretty.p-toggle .state.p-primary-o .icon,
@@ -742,43 +730,34 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     color: #428bca;
     stroke: #428bca;
 }
-
 .pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label:after {
     background-color: #428bca !important;
 }
-
 .pretty.p-switch input:checked ~ .state.p-primary:before {
     border-color: #428bca;
 }
-
 .pretty.p-switch.p-fill input:checked ~ .state.p-primary:before {
     background-color: #428bca !important;
 }
-
 .pretty.p-switch.p-slim input:checked ~ .state.p-primary:before {
     border-color: #245682;
     background-color: #245682 !important;
 }
-
 .pretty input:checked ~ .state.p-info label:after, .pretty.p-toggle .state.p-info label:after {
     background-color: #5bc0de !important;
 }
-
 .pretty input:checked ~ .state.p-info .icon,
 .pretty input:checked ~ .state.p-info .svg, .pretty.p-toggle .state.p-info .icon,
 .pretty.p-toggle .state.p-info .svg {
     color: #fff;
     stroke: #fff;
 }
-
 .pretty input:checked ~ .state.p-info-o label:before, .pretty.p-toggle .state.p-info-o label:before {
     border-color: #5bc0de;
 }
-
 .pretty input:checked ~ .state.p-info-o label:after, .pretty.p-toggle .state.p-info-o label:after {
     background-color: transparent;
 }
-
 .pretty input:checked ~ .state.p-info-o .icon,
 .pretty input:checked ~ .state.p-info-o .svg,
 .pretty input:checked ~ .state.p-info-o svg, .pretty.p-toggle .state.p-info-o .icon,
@@ -787,43 +766,34 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     color: #5bc0de;
     stroke: #5bc0de;
 }
-
 .pretty.p-default:not(.p-fill) input:checked ~ .state.p-info-o label:after {
     background-color: #5bc0de !important;
 }
-
 .pretty.p-switch input:checked ~ .state.p-info:before {
     border-color: #5bc0de;
 }
-
 .pretty.p-switch.p-fill input:checked ~ .state.p-info:before {
     background-color: #5bc0de !important;
 }
-
 .pretty.p-switch.p-slim input:checked ~ .state.p-info:before {
     border-color: #2390b0;
     background-color: #2390b0 !important;
 }
-
 .pretty input:checked ~ .state.p-success label:after, .pretty.p-toggle .state.p-success label:after {
     background-color: #5cb85c !important;
 }
-
 .pretty input:checked ~ .state.p-success .icon,
 .pretty input:checked ~ .state.p-success .svg, .pretty.p-toggle .state.p-success .icon,
 .pretty.p-toggle .state.p-success .svg {
     color: #fff;
     stroke: #fff;
 }
-
 .pretty input:checked ~ .state.p-success-o label:before, .pretty.p-toggle .state.p-success-o label:before {
     border-color: #5cb85c;
 }
-
 .pretty input:checked ~ .state.p-success-o label:after, .pretty.p-toggle .state.p-success-o label:after {
     background-color: transparent;
 }
-
 .pretty input:checked ~ .state.p-success-o .icon,
 .pretty input:checked ~ .state.p-success-o .svg,
 .pretty input:checked ~ .state.p-success-o svg, .pretty.p-toggle .state.p-success-o .icon,
@@ -832,43 +802,34 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     color: #5cb85c;
     stroke: #5cb85c;
 }
-
 .pretty.p-default:not(.p-fill) input:checked ~ .state.p-success-o label:after {
     background-color: #5cb85c !important;
 }
-
 .pretty.p-switch input:checked ~ .state.p-success:before {
     border-color: #5cb85c;
 }
-
 .pretty.p-switch.p-fill input:checked ~ .state.p-success:before {
     background-color: #5cb85c !important;
 }
-
 .pretty.p-switch.p-slim input:checked ~ .state.p-success:before {
     border-color: #357935;
     background-color: #357935 !important;
 }
-
 .pretty input:checked ~ .state.p-warning label:after, .pretty.p-toggle .state.p-warning label:after {
     background-color: #f0ad4e !important;
 }
-
 .pretty input:checked ~ .state.p-warning .icon,
 .pretty input:checked ~ .state.p-warning .svg, .pretty.p-toggle .state.p-warning .icon,
 .pretty.p-toggle .state.p-warning .svg {
     color: #fff;
     stroke: #fff;
 }
-
 .pretty input:checked ~ .state.p-warning-o label:before, .pretty.p-toggle .state.p-warning-o label:before {
     border-color: #f0ad4e;
 }
-
 .pretty input:checked ~ .state.p-warning-o label:after, .pretty.p-toggle .state.p-warning-o label:after {
     background-color: transparent;
 }
-
 .pretty input:checked ~ .state.p-warning-o .icon,
 .pretty input:checked ~ .state.p-warning-o .svg,
 .pretty input:checked ~ .state.p-warning-o svg, .pretty.p-toggle .state.p-warning-o .icon,
@@ -877,43 +838,34 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     color: #f0ad4e;
     stroke: #f0ad4e;
 }
-
 .pretty.p-default:not(.p-fill) input:checked ~ .state.p-warning-o label:after {
     background-color: #f0ad4e !important;
 }
-
 .pretty.p-switch input:checked ~ .state.p-warning:before {
     border-color: #f0ad4e;
 }
-
 .pretty.p-switch.p-fill input:checked ~ .state.p-warning:before {
     background-color: #f0ad4e !important;
 }
-
 .pretty.p-switch.p-slim input:checked ~ .state.p-warning:before {
     border-color: #c77c11;
     background-color: #c77c11 !important;
 }
-
 .pretty input:checked ~ .state.p-danger label:after, .pretty.p-toggle .state.p-danger label:after {
     background-color: #d9534f !important;
 }
-
 .pretty input:checked ~ .state.p-danger .icon,
 .pretty input:checked ~ .state.p-danger .svg, .pretty.p-toggle .state.p-danger .icon,
 .pretty.p-toggle .state.p-danger .svg {
     color: #fff;
     stroke: #fff;
 }
-
 .pretty input:checked ~ .state.p-danger-o label:before, .pretty.p-toggle .state.p-danger-o label:before {
     border-color: #d9534f;
 }
-
 .pretty input:checked ~ .state.p-danger-o label:after, .pretty.p-toggle .state.p-danger-o label:after {
     background-color: transparent;
 }
-
 .pretty input:checked ~ .state.p-danger-o .icon,
 .pretty input:checked ~ .state.p-danger-o .svg,
 .pretty input:checked ~ .state.p-danger-o svg, .pretty.p-toggle .state.p-danger-o .icon,
@@ -922,19 +874,15 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     color: #d9534f;
     stroke: #d9534f;
 }
-
 .pretty.p-default:not(.p-fill) input:checked ~ .state.p-danger-o label:after {
     background-color: #d9534f !important;
 }
-
 .pretty.p-switch input:checked ~ .state.p-danger:before {
     border-color: #d9534f;
 }
-
 .pretty.p-switch.p-fill input:checked ~ .state.p-danger:before {
     background-color: #d9534f !important;
 }
-
 .pretty.p-switch.p-slim input:checked ~ .state.p-danger:before {
     border-color: #a02622;
     background-color: #a02622 !important;
@@ -948,7 +896,6 @@ i i.material-icons, .name-log-user i.material-icons, .email-log-user i.material-
     font-size: 1.2em !important;
     top: calc((0% - (100% - 1em)) - 35%) !important;
 }
-
 .pretty.p-bigger label {
     text-indent: 1.7em;
 }
