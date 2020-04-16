@@ -1,15 +1,11 @@
-import io
-import os
 from string import Template
 
 from django import forms
-from django.db.models import ImageField
-from django.forms import TextInput, ImageField
+from django.forms import TextInput
 from django.utils.safestring import mark_safe
 from passlib.handlers.django import django_pbkdf2_sha256
 
 from cafeperfeito.models import *
-from cafeperfeito.service import blob2base64, image2bytes
 
 
 class PictureWidget(forms.widgets.Widget):
