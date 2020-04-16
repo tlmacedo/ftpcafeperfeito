@@ -37,7 +37,9 @@ class LoginTemplateView(FormView):
 
 def gera_context(usuario, context):
     context['meuUsuario'] = usuario
-    context['userImagem'] = blob2base64(usuario.id.imagem)
+    context['userImagem'] = None
+    if usuario.id.imagem is not None:
+        context['userImagem'] = blob2base64(usuario.id.imagem)
     return context
 
 
