@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c8bb7ae8-3a6c-47c2-9725-09739218bbcd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafeperfeito/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/css/ftpcafeperfeito.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/min/ftpcafeperfeito.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/min/ftpcafeperfeito.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/_imagem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito/style/scss/_imagem.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/_layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/_layouts/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/produtos.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/templates/cafeperfeito/produtos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -275,14 +283,7 @@
       <workItem from="1587057347062" duration="2058000" />
       <workItem from="1587072382753" duration="1988000" />
       <workItem from="1587075704995" duration="284000" />
-      <workItem from="1587134431030" duration="84000" />
-    </task>
-    <task id="LOCAL-00002" summary="auto-commit">
-      <created>1586278955518</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1586278955518</updated>
+      <workItem from="1587134431030" duration="3409000" />
     </task>
     <task id="LOCAL-00003" summary="auto-commit">
       <created>1586393028924</created>
@@ -620,7 +621,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587075824121</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="auto commit">
+      <created>1587134535420</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1587134535421</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,12 +668,12 @@
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="506" y="54" key="#ftpcafeperfeito/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586832974208" />
-    <state x="322" y="25" key="CommitChangelistDialog2" timestamp="1587075949743">
+    <state x="322" y="25" key="CommitChangelistDialog2" timestamp="1587134535126">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="364" y="51" key="CommitChangelistDialog2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278954607" />
     <state x="364" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586397502195" />
-    <state x="322" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587075949742" />
+    <state x="322" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587134535126" />
     <state x="709" y="169" key="EditFileWatcherDialog" timestamp="1586885684605">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
@@ -674,30 +682,30 @@
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="611" y="234" key="FileChooserDialogImpl/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586741195477" />
-    <state width="1558" height="222" key="GridCell.Tab.0.bottom" timestamp="1587075508745">
+    <state width="1558" height="222" key="GridCell.Tab.0.bottom" timestamp="1587143681545">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
     <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="222" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587075508745" />
-    <state width="1558" height="222" key="GridCell.Tab.0.center" timestamp="1587075508744">
+    <state width="1558" height="222" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587143681545" />
+    <state width="1558" height="222" key="GridCell.Tab.0.center" timestamp="1587143681544">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
     <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="222" key="GridCell.Tab.0.center/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587075508744" />
-    <state width="1558" height="222" key="GridCell.Tab.0.left" timestamp="1587075508743">
+    <state width="1558" height="222" key="GridCell.Tab.0.center/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587143681544" />
+    <state width="1558" height="222" key="GridCell.Tab.0.left" timestamp="1587143681544">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854698" />
     <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155127" />
-    <state width="1558" height="222" key="GridCell.Tab.0.left/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587075508743" />
-    <state width="1558" height="222" key="GridCell.Tab.0.right" timestamp="1587075508744">
+    <state width="1558" height="222" key="GridCell.Tab.0.left/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587143681544" />
+    <state width="1558" height="222" key="GridCell.Tab.0.right" timestamp="1587143681545">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
     <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="222" key="GridCell.Tab.0.right/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587075508744" />
+    <state width="1558" height="222" key="GridCell.Tab.0.right/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587143681545" />
     <state width="1558" height="203" key="GridCell.Tab.1.bottom" timestamp="1587055743987">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
@@ -720,12 +728,12 @@
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278880939" />
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399149519" />
     <state x="553" y="23" key="SettingsEditor/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586885686429" />
-    <state x="362" y="164" key="Vcs.Push.Dialog.v2" timestamp="1587075978269">
+    <state x="362" y="164" key="Vcs.Push.Dialog.v2" timestamp="1587134537143">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278975521" />
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399169352" />
-    <state x="362" y="164" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587075978269" />
+    <state x="362" y="164" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587134537143" />
     <state x="649" y="354" key="WebDeployment.AddServerDialog.v.1" timestamp="1586281413199">
       <screen x="0" y="23" width="1600" height="851" />
     </state>

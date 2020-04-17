@@ -30,9 +30,9 @@
 </head>
 <!-- #Head -->
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <a class="navbar-brand" href="{% url 'cafeperfeito:home' %}">
+<div style="background-image: url('cafeperfeito/img/sistema/principal.png') ;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="{% url 'cafeperfeito:home' %}">
         <img src="{% static 'cafeperfeito/img/sistema/logo.png' %}" width="60" height="60" alt="logo">
     </a>
     <div class="row">
@@ -110,9 +110,9 @@
 <section id="secContent">
     {% block conteudo %}{% endblock %}
 </section>
-<!-- #Bloco de conteúdo -->
+    <!-- #Bloco de conteúdo -->
 
-
+</div>
 {% block scripts %}{% endblock %}
 
 

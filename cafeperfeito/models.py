@@ -6,12 +6,12 @@
 #   * Make sure each ForeignKey and OneToOneField has `on_delete` set to the desired behavior
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
-import io
-from base64 import b64encode, b64decode, decodebytes, encodebytes
+from base64 import b64encode
 
 from django.db import models
 
 from cafeperfeito.enums import UNIDADE_COMERCIAL, SITUACAO_NO_SISTEMA
+from cafeperfeito.service import blob2base64
 
 
 class AuthGroup(models.Model):
@@ -723,6 +723,9 @@ class Produto(models.Model):
     class Meta:
         managed = False
         db_table = 'produto'
+
+    def get_imgProduto(self):
+        return blob2base64(self.imgproduto)
 
     # def image_tag(self):
     #     return mark_safe('<img src="/directory/%s" width="150" height="150" />' % (self.image))

@@ -36,8 +36,10 @@
                                     <tr>
                                         <td>{{ produto.codigo }}</td>
                                         <td>{{ produto.descricao }}</td>
-                                        <td>{{ produto.precofabrica }}</td>
-                                        <td>{{ produto.precoconsumidor }}</td>
+                                        <td>{{ produto.precocompra }}</td>
+                                        <td>{{ produto.precovenda }}</td>
+                                        <td><img src="data:;base64,{{ produto.get_imgProduto }}"
+                                                 class="img-circle prod_list" width="50" height="50"></td>
                                         <td>
                                             {#                                            <a href="{% url 'website:atualiza_funcionario' pk=produto.id %}"#}
                                             <a href="{% url 'cafeperfeito:produto_atualizar' pk=produto.id %}"
