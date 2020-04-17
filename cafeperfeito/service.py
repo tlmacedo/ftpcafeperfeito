@@ -1,7 +1,6 @@
-import io
 from base64 import b64encode
 
-from PIL import Image, ImageGrab
+# from PIL import Image, ImageGrab
 
 
 def blob2base64(image_data):
@@ -10,7 +9,7 @@ def blob2base64(image_data):
 
 def bytes2image(bytes):
     print('tentando abrir imagem')
-    Image.open(io.BytesIO(bytes))
+    # Image.open(io.BytesIO(bytes))
 
 
 def image2bytes(pathFile):

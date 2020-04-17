@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8bb7ae8-3a6c-47c2-9725-09739218bbcd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -272,13 +274,8 @@
       <workItem from="1587056923354" duration="23000" />
       <workItem from="1587057347062" duration="2058000" />
       <workItem from="1587072382753" duration="1988000" />
-    </task>
-    <task id="LOCAL-00001" summary="auto-commit">
-      <created>1586278602955</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1586278602955</updated>
+      <workItem from="1587075704995" duration="284000" />
+      <workItem from="1587134431030" duration="84000" />
     </task>
     <task id="LOCAL-00002" summary="auto-commit">
       <created>1586278955518</created>
@@ -616,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587075479107</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="auto commit">
+      <created>1587075824120</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1587075824121</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,6 +633,7 @@
     <MESSAGE value="auto-commit" />
     <MESSAGE value="auto commit" />
     <option name="LAST_COMMIT_MESSAGE" value="auto commit" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -655,12 +660,12 @@
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="506" y="54" key="#ftpcafeperfeito/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586832974208" />
-    <state x="322" y="25" key="CommitChangelistDialog2" timestamp="1587075478744">
+    <state x="322" y="25" key="CommitChangelistDialog2" timestamp="1587075949743">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="364" y="51" key="CommitChangelistDialog2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278954607" />
     <state x="364" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586397502195" />
-    <state x="322" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587075478744" />
+    <state x="322" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587075949742" />
     <state x="709" y="169" key="EditFileWatcherDialog" timestamp="1586885684605">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
@@ -715,12 +720,12 @@
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278880939" />
     <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399149519" />
     <state x="553" y="23" key="SettingsEditor/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586885686429" />
-    <state x="400" y="188" key="Vcs.Push.Dialog.v2" timestamp="1587075484923">
+    <state x="362" y="164" key="Vcs.Push.Dialog.v2" timestamp="1587075978269">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278975521" />
     <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399169352" />
-    <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587075484923" />
+    <state x="362" y="164" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587075978269" />
     <state x="649" y="354" key="WebDeployment.AddServerDialog.v.1" timestamp="1586281413199">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
@@ -753,10 +758,10 @@
       <screen x="0" y="23" width="1600" height="851" />
     </state>
     <state x="351" y="191" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587051060905" />
-    <state x="506" y="205" width="588" height="486" key="find.popup" timestamp="1586880437971">
+    <state x="506" y="205" width="588" height="486" key="find.popup" timestamp="1587134482261">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
-    <state x="506" y="205" width="588" height="486" key="find.popup/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586880437971" />
+    <state x="506" y="205" width="588" height="486" key="find.popup/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587134482261" />
     <state x="707" y="186" key="ftp.server.browser" timestamp="1586281785391">
       <screen x="0" y="23" width="1600" height="851" />
     </state>
