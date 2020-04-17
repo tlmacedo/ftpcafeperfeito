@@ -1,6 +1,8 @@
 body {
-  background-image: url("cafeperfeito/img/sistema/principal.png");
-  //background-color: #cccccc;
+  &.back-principal {
+    background-color: #cccccc;
+    background-image: url("../../img/sistema/principal.png");
+  }
 }
 
 .img-logo-principal {
@@ -17,6 +19,9 @@ body {
   border-radius: 50%;
   margin-right: 5px;
 
+  &.ico {
+    background-color: #cccccc;
+  }
 
   &.log-user {
     height: 50px;
@@ -33,4 +38,6 @@ body {
     width: 60px;
   }
 }
+
+
 
