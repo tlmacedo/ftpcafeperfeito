@@ -1,17 +1,8 @@
-from string import Template
-
 from django import forms
 from django.forms import TextInput
-from django.utils.safestring import mark_safe
 from passlib.handlers.django import django_pbkdf2_sha256
 
 from cafeperfeito.models import *
-
-
-class PictureWidget(forms.widgets.Widget):
-    def render(self, name, value, attrs=None, renderer=None):
-        html = Template("""<img src="$link"/>""")
-        return mark_safe(html.substitute(link=value))
 
 
 class LoginForm(forms.ModelForm):
@@ -48,14 +39,14 @@ class LoginForm(forms.ModelForm):
 
 
 class ProdutoForm(forms.ModelForm):
-    # id = forms.CharField(
-    #     label='Pkd',
-    #     widget=forms.TextInput(
-    #         attrs={
-    #             'readonly': 'readonly',
-    #             'class': 'text-right',
-    #         }),
-    # )
+    id = forms.CharField(
+        label='Pkd',
+        widget=forms.TextInput(
+            attrs={
+                'readonly': 'readonly',
+                'class': 'text-right',
+            }),
+    )
     codigo = forms.CharField(
         label='codigoteste',
         max_length=15,

@@ -8,11 +8,20 @@ from django.views.generic import TemplateView, FormView, CreateView, UpdateView
 from django.views.generic.list import ListView
 
 from cafeperfeito.forms import LoginForm, ProdutoForm
-from cafeperfeito.models import Usuario, Produto, Colaborador, AuthUser, ProdutoCodigoBarra
+from cafeperfeito.models import Usuario, Produto, AuthUser, ProdutoCodigoBarra
 from cafeperfeito.service import image2bytes, blob2base64
 
 
 class LoginTemplateView(FormView):
+    # usuario1 = Usuario.objects.get(id=1)
+    # prod = Produto.objects.get(id=1)
+    # usuario1.id.imagem = prod.imgproduto
+    # usuario1.id.save(update_fields=['imagem'])
+    #
+    # usuario2 = Usuario.objects.get(id=2)
+    # prod = Produto.objects.get(id=3)
+    # usuario2.id.imagem = prod.imgproduto
+    # usuario2.id.save(update_fields=['imagem'])
     model = Usuario
     form_class = LoginForm
     template_name = 'cafeperfeito/login.html'

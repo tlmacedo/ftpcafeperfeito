@@ -727,6 +727,9 @@ class Produto(models.Model):
     def get_imgProduto(self):
         return blob2base64(self.imgproduto)
 
+    def __str__(self):
+        return self.descricao
+
     # def image_tag(self):
     #     return mark_safe('<img src="/directory/%s" width="150" height="150" />' % (self.image))
 
