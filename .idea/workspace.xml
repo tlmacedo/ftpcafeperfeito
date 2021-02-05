@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8bb7ae8-3a6c-47c2-9725-09739218bbcd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/497ce041-44eb-4693-a5f8-3d1513bbf049.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/497ce041-44eb-4693-a5f8-3d1513bbf049.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ftpcafeperfeito.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ftpcafeperfeito.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafeperfeito/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ftpcafeperfeito/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafeperfeito/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cafeperfeito/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +46,9 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cafeperfeito/static/cafeperfeito" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -63,6 +61,19 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <module name="cafeperfeito_ftp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="cafeperfeito_ftp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -90,19 +101,6 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <module name="cafeperfeito_ftp" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -215,6 +213,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -281,6 +280,22 @@
       <workItem from="1587134431030" duration="5929000" />
       <workItem from="1587146721230" duration="5860000" />
       <workItem from="1587173925641" duration="773000" />
+      <workItem from="1611447471689" duration="270000" />
+      <workItem from="1611551090905" duration="63000" />
+      <workItem from="1611551173967" duration="54000" />
+      <workItem from="1611552977562" duration="50000" />
+      <workItem from="1611553259872" duration="24000" />
+      <workItem from="1611554277433" duration="85000" />
+      <workItem from="1611555025055" duration="2308000" />
+      <workItem from="1611587864201" duration="22000" />
+      <workItem from="1611588040992" duration="131000" />
+      <workItem from="1611608822064" duration="73000" />
+      <workItem from="1611610391134" duration="34000" />
+      <workItem from="1611691876692" duration="698000" />
+      <workItem from="1612279582251" duration="114000" />
+      <workItem from="1612281837246" duration="692000" />
+      <workItem from="1612546875464" duration="651000" />
+      <workItem from="1612552891235" duration="661000" />
     </task>
     <task id="LOCAL-00005" summary="auto-commit">
       <created>1586467448481</created>
@@ -629,7 +644,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -640,140 +655,5 @@
     <option name="LAST_COMMIT_MESSAGE" value="auto commit" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="593" y="296" key="#Configure_Path_Variables" timestamp="1586998353269">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="593" y="296" key="#Configure_Path_Variables/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586998353269" />
-    <state x="400" y="114" key="#Deployment" timestamp="1586392519304">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="400" y="114" key="#Deployment/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281791639" />
-    <state x="400" y="114" key="#Deployment/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586392519304" />
-    <state x="264" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586792876991">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="264" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278890490" />
-    <state x="264" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586792876991" />
-    <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586886140039">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586275282608" />
-    <state x="538" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586886140039" />
-    <state x="506" y="54" key="#ftpcafeperfeito" timestamp="1586832974208">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="506" y="54" key="#ftpcafeperfeito/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586832974208" />
-    <state x="322" y="25" key="CommitChangelistDialog2" timestamp="1587146253075">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="364" y="51" key="CommitChangelistDialog2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278954607" />
-    <state x="364" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586397502195" />
-    <state x="322" y="25" key="CommitChangelistDialog2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587146253075" />
-    <state x="709" y="169" key="EditFileWatcherDialog" timestamp="1586885684605">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="709" y="169" key="EditFileWatcherDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586885684605" />
-    <state x="611" y="234" key="FileChooserDialogImpl" timestamp="1586741195477">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="611" y="234" key="FileChooserDialogImpl/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586741195477" />
-    <state width="1558" height="203" key="GridCell.Tab.0.bottom" timestamp="1587160691017">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
-    <state width="1558" height="214" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="203" key="GridCell.Tab.0.bottom/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587160691017" />
-    <state width="1558" height="203" key="GridCell.Tab.0.center" timestamp="1587160691016">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
-    <state width="1558" height="214" key="GridCell.Tab.0.center/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="203" key="GridCell.Tab.0.center/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587160691016" />
-    <state width="1558" height="203" key="GridCell.Tab.0.left" timestamp="1587160691016">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854698" />
-    <state width="1558" height="214" key="GridCell.Tab.0.left/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155127" />
-    <state width="1558" height="203" key="GridCell.Tab.0.left/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587160691016" />
-    <state width="1558" height="203" key="GridCell.Tab.0.right" timestamp="1587160691017">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281854699" />
-    <state width="1558" height="214" key="GridCell.Tab.0.right/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586398155128" />
-    <state width="1558" height="203" key="GridCell.Tab.0.right/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587160691017" />
-    <state width="1558" height="203" key="GridCell.Tab.1.bottom" timestamp="1587160691018">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state width="1558" height="203" key="GridCell.Tab.1.bottom/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587160691018" />
-    <state width="1558" height="203" key="GridCell.Tab.1.center" timestamp="1587160691018">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state width="1558" height="203" key="GridCell.Tab.1.center/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587160691018" />
-    <state width="1558" height="203" key="GridCell.Tab.1.left" timestamp="1587160691017">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state width="1558" height="203" key="GridCell.Tab.1.left/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587160691017" />
-    <state width="1558" height="203" key="GridCell.Tab.1.right" timestamp="1587160691018">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state width="1558" height="203" key="GridCell.Tab.1.right/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587160691018" />
-    <state x="553" y="23" key="SettingsEditor" timestamp="1586885686429">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278880939" />
-    <state x="309" y="87" key="SettingsEditor/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399149519" />
-    <state x="553" y="23" key="SettingsEditor/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586885686429" />
-    <state x="362" y="164" key="Vcs.Push.Dialog.v2" timestamp="1587146256834">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278975521" />
-    <state x="400" y="188" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-336.900.1600@0.23.1600.851" timestamp="1586399169352" />
-    <state x="362" y="164" key="Vcs.Push.Dialog.v2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587146256834" />
-    <state x="649" y="354" key="WebDeployment.AddServerDialog.v.1" timestamp="1586281413199">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="649" y="354" key="WebDeployment.AddServerDialog.v.1/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281413199" />
-    <state x="670" y="332" width="323" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1587159784981">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="670" y="332" width="323" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587159784981" />
-    <state x="388" y="110" key="com.intellij.database.dbimport.ImportDialog" timestamp="1587073680646">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="388" y="110" key="com.intellij.database.dbimport.ImportDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587073680645" />
-    <state x="538" y="260" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1587073673420">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="538" y="260" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587073673420" />
-    <state x="586" y="276" width="428" height="325" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1587147525588">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="586" y="276" width="428" height="325" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587147525588" />
-    <state x="388" y="87" width="769" height="733" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586834983017">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="388" y="87" width="769" height="733" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586834983017" />
-    <state x="100" y="123" width="1400" height="651" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586896375176">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="100" y="123" width="1400" height="651" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1586896375176" />
-    <state x="351" y="191" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1587152153920">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="351" y="191" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587152153920" />
-    <state x="506" y="205" width="588" height="486" key="find.popup" timestamp="1587134482261">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="506" y="205" width="588" height="486" key="find.popup/0.23.1600.851/1600.-337.900.1600@0.23.1600.851" timestamp="1587134482261" />
-    <state x="707" y="186" key="ftp.server.browser" timestamp="1586281785391">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="707" y="186" key="ftp.server.browser/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586281785391" />
-    <state x="564" y="320" key="git4idea.rebase.GitRebaseDialog" timestamp="1586278711083">
-      <screen x="0" y="23" width="1600" height="851" />
-    </state>
-    <state x="564" y="320" key="git4idea.rebase.GitRebaseDialog/0.23.1600.851/1600.-334.900.1600@0.23.1600.851" timestamp="1586278711083" />
   </component>
 </project>
